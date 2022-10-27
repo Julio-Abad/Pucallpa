@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="l10n_pe_pos_ticket_assets_backend" inherit_id="point_of_sale.assets" name="l10n_pe_pos_ticket_assets_backend">
+      <xpath expr="." position="inside">
+          	<script type="text/javascript" src="/l10n_pe_pos_ticket/static/src/js/screens.js"></script>
+          	<script type="text/javascript" src="/l10n_pe_pos_ticket/static/src/js/models.js"></script>
+          	<link rel="stylesheet" type="text/css" href="/l10n_pe_pos_ticket/static/src/css/pos.css"/>
+      </xpath>
+    </template>
+</odoo>

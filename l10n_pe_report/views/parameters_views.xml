@@ -1,0 +1,138 @@
+<odoo>
+    <data>
+
+        <!-- CONDUCTOR -->
+        <record id="adm_dominios_vendors_tree_view" model="ir.ui.view">
+            <field name="name">adm.dominios.vendors.tree</field>
+            <field name="model">adm.dominios.vendors</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="active" invisible="1"/>
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- ACCOUNT MOVE -->
+        <record id="view_account_move" model="ir.ui.view">
+            <field name="name">account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <!-- <xpath expr="//field[@name='ref']" position="after">
+                    <field name="proyect"/>
+                </xpath> -->
+                <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='other_info']/group[1]/group[@name='sale_info_group']/field[@name='ref']" position="after">
+                    <field name="invoice_origin" string="Orden de Venta"/>
+                    <field name="proyect"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- COMPANY -->
+        <record model="ir.ui.view" id="res_company_parameters_form">
+            <field name="name">res.company.parameters.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='currency_id']" position="after">
+                    <field name="account_bank" widget="image"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- SALE ORDER -->
+        <record id="view_sale_order" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="client_order_ref"/>
+                    <field name="proyect"/>
+                </xpath>
+                <xpath expr="//field[@name='client_order_ref']" position="attributes">
+                    <attribute name="string">OC</attribute>
+                </xpath>
+                <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='other_information']/group[1]/group[@name='sales_person']/field[@name='client_order_ref']" position="attributes">
+                    <attribute name="attrs">{}</attribute>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+        
+        <!-- STOCK PICKING -->
+        <record id="view_picking_form" model="ir.ui.view">
+            <field name="name">stock.picking.form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+
+                <field name="partner_id" position="after">
+                    <field name="pe_number"/>
+                    <field name="einvoice_12"/>
+                    <field name="fecha_kardex"/>
+                    <field name="invoice_id"/>
+                    <field name="state_invoice" invisible="1"/>
+                    <field name="es_fecha_kardex"/>
+                </field>
+
+                <!--<field name="min_date" position="replace">
+                    <field name="min_date" invisible="1"/>
+                </field>-->
+                <xpath expr="//field[@name='origin']" position="after">
+                    <field name="customer_id"/>
+                    <field name="salesman_id"/>
+                    <field name="motive_id"/>
+                    <field name="suma_peso_total" invisible="True"/>
+                </xpath>
+                <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='operations']/field[@name='move_ids_without_package']/tree[1]/field[@name='product_uom']" position="after">
+                    <field name="peso_total" sum="Total"/>
+                </xpath>
+
+                <xpath expr="//form/sheet/notebook" position="inside">
+                    <page string="Transportista">
+                        <group>
+                            <group>
+                                <!-- <field name="propietario_id"/> -->
+                                <field name="vehiculo_id"/>
+                                <field name="marca_id" readonly="False"/>
+                                <field name="placa" readonly="False"/>
+                                <field name="certificado_mtc" readonly="False"/>
+
+                                <!-- <field name="chofer_id"/>
+                                <field name="nombre" readonly="False"/>
+                                <field name="ruc" readonly="False"/>
+                                <field name="licencia" readonly="False"/> -->
+                                <field name="nro_const"/>
+                            </group>
+                            <group>
+                                <field name="tipo"/>
+                                <field name="nro_comp"/>
+                                <field name="nro_guia"/>
+                                <field name="fecha_traslado"/>
+                                <field name="punto_partida"/>
+                                <field name="punto_llegada"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="vpicktree" model="ir.ui.view">
+            <field name="name">stock.picking.tree</field>
+            <field name="inherit_id" ref="stock.vpicktree"/>
+            <field name="model">stock.picking</field>
+            <field name="arch" type="xml">
+                <field name="origin" position="before">
+                    <field name="state_invoice"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>

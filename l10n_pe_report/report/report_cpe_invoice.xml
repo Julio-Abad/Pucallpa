@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="cpe_move_reports_template">
+            <t t-name="l10n_pe_report.cpe_move_reports_template">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <!-- <t t-call="web.external_layout"> -->
+                        <div class="header">
+                            <table width="100%" style="font-size: 10px">
+                                <tr>
+                                    <td colspan="2">
+                                        <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" style="max-height: 90px;position:relative;"/>
+                                        <h6><strong><span t-esc="o.company_id.name"/></strong></h6>
+                                    </td>
+                                    <td style="border: 2px solid black; vertical-align: middle;">
+                                        <h4 class="text-center"><strong>R.U.C.: <span t-esc="o.company_id.partner_id.pe_doc_number"/></strong></h4>
+                                        <h4 class="text-center"><strong><span t-if="o.move_type == 'out_invoice' and o.pe_invoice_code == '01'">FACTURA</span></strong></h4>
+                                        <h4 class="text-center"><strong><span t-if="o.move_type == 'out_invoice' and o.pe_invoice_code == '03'">BOLETA</span></strong></h4>
+                                        <h4 class="text-center"><strong><span t-if="o.move_type == 'out_invoice' and o.pe_invoice_code == '07'">NOTA DE CRÉDITO</span></strong></h4>
+                                        <h4 class="text-center"><strong><span t-if="o.move_type == 'out_invoice' and o.pe_invoice_code == '08'">NOTA DE DÉBITO</span></strong></h4>
+                                        <h4 class="text-center"><strong>N° <span t-esc="o.name"/></strong></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="10%"><strong>Dirección</strong></td>
+                                    <td width="50%">: <span t-field="o.company_id.partner_id.street"/></td>
+                                    <td width="40%"/>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sucursales</strong></td>
+                                    <td colspan="2">: Mz. A, Lote 04 Prog. Viv. Resd. Nueva Esperanza - San Martin de Porres-Lima-Lima</td>
+                                </tr>
+                                <!-- <tr>
+                                    <td><strong></strong></td>
+                                    <td colspan="2">: Av. Universitaria Norte N° 8311-8315, Zonal 10 Coop. Viv. Primavera, Comas-Lima-Lima</td>
+                                </tr> -->
+                                <tr>
+                                    <td><strong>Email</strong></td>
+                                    <td colspan="2">: <span t-field="o.company_id.partner_id.email"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Teléfono</strong></td>
+                                    <td colspan="2">: <span t-field="o.company_id.partner_id.phone"/>
+                                        <!-- <span t-field="o.company_id.partner_id.phone2"/>/
+                                        <span t-field="o.company_id.partner_id.phone3"/>/
+                                        <span t-field="o.company_id.partner_id.mobile"/> -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="page">
+                            <table width="100%" style="border: 1px solid black; font-size: 12px">
+                                <tr>
+                                    <td width="8%">
+                                        <strong>Señor(es)</strong>
+                                    </td>
+                                    <td width="52%">
+                                        : <span t-field="o.partner_id"/>
+                                    </td>
+                                    <td width="16%">
+                                        <strong>Moneda</strong>
+                                    </td>
+                                    <td width="24%">
+                                        : <span t-field="o.currency_id"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            <t t-if="o.partner_id.pe_doc_type == '1'">
+                                                DNI
+                                            </t>
+                                            <t t-if="o.partner_id.pe_doc_type == '6'">
+                                                R.U.C.
+                                            </t>
+                                        </strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.partner_id.pe_doc_number"/>
+                                    </td>
+                                    <td>
+                                        <strong>Condiciones de pago</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.invoice_payment_term_id"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Dirección</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.partner_id.street"/>
+                                    </td>
+                                    <td>
+                                        <strong>Fecha de Vencimiento</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.invoice_date_due"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Fecha</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.invoice_date"/>
+                                    </td>
+                                    <td>
+                                        <strong>Vendedor</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.user_id"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Teléfono</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.partner_id.phone"/>
+                                    </td>
+                                    <td>
+                                        <t t-if="o.pe_invoice_code not in ['07', '08']">
+                                            <strong>Orden de Compra</strong>
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-if="o.pe_invoice_code not in ['07', '08']">
+                                            : <span t-field="o.ref"/>
+                                        </t>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <t t-if="o.pe_invoice_code not in ['07', '08']">
+                                            <strong>Nro Venta</strong>
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-if="o.pe_invoice_code not in ['07', '08']">
+                                            : <span t-field="o.invoice_origin"/>
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-if="o.pe_invoice_code not in ['07', '08']">
+                                            <strong>Proyecto</strong>
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-if="o.pe_invoice_code not in ['07', '08']">
+                                            : <span t-field="o.proyect"/>
+                                        </t>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br/>
+
+                            <style>
+                                .header-custom td{
+                                    vertical-align: middle;
+                                    border: 1px solid black;
+                                }
+                                .body-custom td{
+                                    border-left: 1px solid black;
+                                }
+                                .table-total tr, td{
+                                    padding: 3px;
+                                }
+                            </style>
+
+                            <table width="100%" style="border: 1px solid black; font-size: 11px">
+                                <thead>
+                                    <tr class="text-center header-custom" style="font-weight: bold; height: 30px; background-color:#C7C1BF">
+                                        <td style="">Código</td>
+                                        <td>Cantidad</td>
+                                        <td>Unidad</td>
+                                        <td>Descripción</td>
+                                        <td>Precio Unit</td>
+                                        <td>Importe</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.invoice_line_ids" t-as="l" class="body-custom">
+                                        <td class="text-center"><span t-field="l.product_id.default_code"/></td>
+                                        <td class="text-center"><span t-field="l.quantity"/></td>
+                                        <td class="text-center"><span t-field="l.product_uom_id"/></td>
+                                        <td><span t-field="l.product_id.name"/></td>
+                                        <td class="text-right"><span t-esc="'{0:,.2f}'.format(l.price_unit)"/></td>
+                                        <td class="text-right"><span t-esc="'{0:,.2f}'.format(l.price_subtotal)"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            
+                            <table class="table-total" width="100%" style="font-size: 11px">
+                                <tr>
+                                    <td style="vertical-align: top;"><strong>Observaciones</strong></td>
+                                    <td rowspan="8" width="10%"/>
+                                    <td width="15%" style="font-weight: bold; border: 1px solid black; background-color:#A49D9C">Oper. Gravadas</td>
+                                    <td class="text-right" width="15%" style="border: 1px solid black;"><span t-esc="'{0:,.2f}'.format(o.amount_untaxed)"/></td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" rowspan="8" style="border: 2px solid black;">
+                                        <t t-if="o.pe_invoice_code not in ['07'] and o.company_id.account_bank">
+                                            <strong>Ley de Bancarización N° 28194</strong><br/>
+                                            <img t-if="o.company_id.account_bank" t-att-src="'data:image/png;base64,%s' %to_text(o.company_id.account_bank)"/><br/>
+                                        </t>
+                                        <span t-field="o.narration"/>
+                                    </td>
+                                    <td style="font-weight: bold; border: 1px solid black; background-color:#A49D9C">Total Inafectas</td>
+                                    <td class="text-right" style="border: 1px solid black;">0.00</td>
+                                    <!-- <td class="text-right" style="border: 1px solid black;"><span t-esc="'{0:,.2f}'.format(o.pe_unaffected_amount)"/></td> -->
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold; border: 1px solid black; background-color:#A49D9C ">Oper. Exoneradas</td>
+                                    <td class="text-right" style="border: 1px solid black;">0.00</td>
+                                    <!-- <td class="text-right" style="border: 1px solid black;"><span t-esc="'{0:,.2f}'.format(o.pe_exonerated_amount)"/></td> -->
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold; border: 1px solid black; background-color:#A49D9C">Oper. Descuentos</td>
+                                    <td class="text-right" style="border: 1px solid black;">0.00</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold; border: 1px solid black; background-color:#A49D9C">IGV 18%</td>
+                                    <td class="text-right" style="border: 1px solid black;"><span t-esc="'{0:,.2f}'.format(o.amount_tax)"/></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold; border: 1px solid black; background-color:#A49D9C">Oper. Gratuitas</td>
+                                    <td class="text-right" style="border: 1px solid black;">0.00</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: bold; border: 1px solid black; background-color:#A49D9C">Importe Total</td>
+                                    <td class="text-right" style="border: 1px solid black;"><span t-esc="'{0:,.2f}'.format(o.amount_total)"/></td>
+                                </tr>
+                            </table>
+                            <!-- <br/> -->
+                            <t t-if="o.pe_invoice_code == '07' or o.pe_invoice_code == '08'">
+                                <table width="100%" style="font-size: 11px">
+                                    <tr>
+                                        <td colspan="3" style=""><strong>Documento(s) de referencia</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" width="30%" style="font-weight: bold; border: 1px solid black">TIPO DE DOCUMENTO</td>
+                                        <td class="text-center" width="30%" style="font-weight: bold; border: 1px solid black">CORRELATIVO(S)</td>
+                                        <td width="40%" style="border: 1px solid white"/>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" width="30%" style="border: 1px solid black">
+                                            <span t-field="o.origin_doc_code"/>
+                                        </td>
+                                        <td class="text-center" width="30%" style="border: 1px solid black">
+                                            <span t-field="o.origin_doc_number"/>
+                                        </td>
+                                        <td width="40%" style="border: 1px solid white"/>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" style="">
+                                            <strong>MOTIVO: </strong>
+                                            <t t-if="o.pe_invoice_code == '07'">
+                                                <span t-field="o.pe_credit_note_code"/>
+                                            </t>
+                                            <t t-if="o.pe_invoice_code == '08'">
+                                                <span t-field="o.pe_debit_note_code"/>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </t>
+                            <br/>
+                            <table t-if="o.pe_is_cpe" >
+                                <tr>
+                                    <td style="width: 80%;">
+                                        <span t-if="o.pe_legend_ids.filtered(lambda legnd: legnd.code =='1000')">
+                                            <strong>SON: </strong> <br />
+                                            <span t-esc="o.pe_legend_ids.filtered(lambda legnd: legnd.code =='1000').name"/><br />
+                                        </span>
+                                        <span t-if="o.pe_is_cpe and o.edi_document_ids" ><strong>Resumen: </strong> <br />
+                                            <span t-field="o.pe_digest"/><br />
+                                        </span>
+                                        <t t-foreach="o.pe_legend_ids.filtered(lambda legnd: legnd.code != '1000')" t-as="p">
+                                        <span t-field="p.name"/><br />
+                                        </t>
+                                    </td>
+
+                                    <td t-if="o.edi_document_ids">
+                                        <img t-if="o.pe_qr_code" t-att-src="'data:image/png;base64,%s' %to_text(o.pe_qr_code)" 
+                                            style="width: 40mm;  height: 40mm;" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- <td t-if="o.edi_document_ids">
+                                <img t-if="o.pe_qr_code" t-att-src="'data:image/png;base64,%s' %to_text(o.pe_qr_code)" 
+                                    style="width: 40mm;  height: 40mm;" />
+                            </td> -->
+
+                            <!-- <img t-if="o.sunat_qr_code" t-att-src="'data:image/png;base64,%s' %to_text(o.sunat_qr_code)" class="img-responsive center-block" style="width: 40mm;  height: 40mm;"/> -->
+                            <!-- <div class="row" t-if="o.is_cpe">
+                                <p class="text-center">
+                                    Representacion impresa de la <span t-field="o.pe_doc_name"/><br/>
+                                    Podrá ser consultada en <span t-field="o.company_id.website"/><br/>
+                                </p>
+                            </div> -->
+                            <p class="text-center" t-if="o.pe_is_cpe and o.edi_document_ids">
+                                Representacion impresa de: 
+                                <span t-esc="o.get_pe_invoice_name()"/>, consulte en
+                                <span t-field="o.company_id.website"/><br />
+                                <t t-if="o.company_id.pe_resolution_type and o.company_id.pe_resolution_number">
+                                    Autorizado mediante 
+                                    <span t-field="o.company_id.pe_resolution_type"/> N°
+                                    <span t-field="o.company_id.pe_resolution_number"/>
+                                </t>
+                            </p>
+                        </div>
+                    <!-- </t> -->
+                </t>
+            </t>
+        </t>
+        </template>
+
+        <report
+            id="cpe_move_reports"
+            model="account.move"
+            string="Comprobante Electrónico"
+            report_type="qweb-pdf"
+            name="l10n_pe_report.cpe_move_reports_template"
+            attachment_use="False"
+            file="l10n_pe_report.cpe_move_reports_template"
+        />
+
+        <record id="cpe_move_reports" model="ir.actions.report">
+            <field name="paperformat_id" ref="l10n_pe_report.paperformat_cpe"/>
+        </record>
+
+
+    </data>
+</odoo>

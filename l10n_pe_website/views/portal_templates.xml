@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="portal_my_details_peruvian" inherit_id="portal.portal_my_details" name="portal_my_details_peruvian">
+      <xpath expr="//div[hasclass('row')]//div[2]"  position="before">
+      	<div t-attf-class="form-group #{error.get('pe_doc_type') and 'o_has_error' or ''} col-xl-6">
+            <label class="col-form-label label-optional" for="pe_doc_type">Document Type</label>
+            <select name="pe_doc_type" t-attf-class="form-control #{error.get('pe_doc_type') and 'is-invalid' or ''} peruvian_doc_type">
+                <option value="">No document...</option>
+                <t t-foreach="[('0','NO DOMICILIADO'),('1','DNI'),('4','CARNET DE EXTRANJERIA'),('6','RUC'),('7','PASAPORTE')]" t-as="type">
+                    <option t-att-value="type[0]" t-att-selected="type[0] == int(pe_doc_type) if pe_doc_type else type[0] == partner.pe_doc_type">
+                        <t t-esc="type[1]" />
+                    </option>
+                </t>
+            </select>
+        </div>
+        <div t-attf-class="form-group #{error.get('pe_doc_number') and 'o_has_error' or ''} col-xl-6">
+            <label class="col-form-label label-optional" for="pe_doc_number">Document Number</label>
+            <input type="text" name="pe_doc_number" t-attf-class="form-control #{error.get('pe_doc_number') and 'is-invalid' or ''} peruvian_doc_number" t-att-value="pe_doc_number or partner.pe_doc_number" t-att-readonly="None if partner.can_edit_vat() else '1'" t-att-title="None if partner.can_edit_vat() else 'Changing VAT number is not allowed once document(s) have been issued for your account. Please contact us directly for this operation.'" />
+        </div>
+      </xpath>
+      <xpath expr="//div[hasclass('row')]//div[8]"  position="attributes">
+      	<attribute name="t-attf-style">display:none</attribute>
+      </xpath>
+    </template>
+</odoo>
