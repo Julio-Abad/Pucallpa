@@ -1,0 +1,47 @@
+<odoo>
+  <data>
+    
+    <!--menuitem name="eDocuments" id="pe_edocuments_menu_root" web_icon="account,static/description/icon.png" sequence="20" />
+    
+    <menuitem name="Configurations" id="pe_edocuments_configuration_menu" parent="pe_edocuments_menu_root" sequence="100" /-->
+    
+    <menuitem id="pe_catalog_configuration_menu" name="Catalogs" parent="account.menu_finance" sequence="20" />
+
+    <menuitem name="Catalog 01" id="pe_catalog_01_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_01" sequence="1" />
+    <menuitem name="Catalog 02" id="pe_catalog_02_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_02" sequence="2" />
+    <menuitem name="Catalog 03" id="pe_catalog_03_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_03" sequence="3" />
+    <menuitem name="Catalog 04" id="pe_catalog_04_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_04" sequence="4" />
+    <menuitem name="Catalog 05" id="pe_catalog_05_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_05" sequence="5" />
+    <menuitem name="Catalog 06" id="pe_catalog_06_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_06" sequence="6" />
+    <menuitem name="Catalog 07" id="pe_catalog_07_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_07" sequence="7" />
+    <menuitem name="Catalog 08" id="pe_catalog_08_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_08" sequence="8" />
+    <menuitem name="Catalog 09" id="pe_catalog_09_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_09" sequence="9" />
+    <menuitem name="Catalog 10" id="pe_catalog_10_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_10" sequence="10" />
+    <menuitem name="Catalog 11" id="pe_catalog_11_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_11" sequence="11" />
+    <menuitem name="Catalog 12" id="pe_catalog_12_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_12" sequence="12" />
+    <menuitem name="Catalog 14" id="pe_catalog_14_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_14" sequence="14" />
+    <menuitem name="Catalog 15" id="pe_catalog_15_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_15" sequence="15" />
+    <menuitem name="Catalog 16" id="pe_catalog_16_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_16" sequence="16" />
+    <menuitem name="Catalog 17" id="pe_catalog_17_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_17" sequence="17" />
+    <menuitem name="Catalog 18" id="pe_catalog_18_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_18" sequence="18" />
+    <menuitem name="Catalog 19" id="pe_catalog_19_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_19" sequence="19" />
+    <menuitem name="Catalog 20" id="pe_catalog_20_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_20" sequence="20" />
+    <menuitem name="Catalog 21" id="pe_catalog_21_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_21" sequence="21" />
+    <menuitem name="Catalog 22" id="pe_catalog_22_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_22" sequence="22" />
+    <menuitem name="Catalog 23" id="pe_catalog_23_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_23" sequence="23" />
+    <menuitem name="Catalog 24" id="pe_catalog_24_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_24" sequence="24" />
+    <menuitem name="Catalog 26" id="pe_catalog_26_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_26" sequence="26" />
+    <menuitem name="Catalog 27" id="pe_catalog_27_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_27" sequence="27" />
+    <menuitem name="Catalog 51" id="pe_catalog_51_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_51" sequence="51" />
+    <menuitem name="Catalog 52" id="pe_catalog_52_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_52" sequence="52" />
+    <menuitem name="Catalog 53" id="pe_catalog_53_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_53" sequence="53" />
+    <menuitem name="Catalog 54" id="pe_catalog_54_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_54" sequence="54" />
+    <menuitem name="Catalog 55" id="pe_catalog_55_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_55" sequence="55" />
+    <menuitem name="Catalog 56" id="pe_catalog_56_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_56" sequence="56" />
+    <menuitem name="Catalog 57" id="pe_catalog_57_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_57" sequence="57" />
+    <menuitem name="Catalog 58" id="pe_catalog_58_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_58" sequence="58" />
+    <menuitem name="Catalog 59" id="pe_catalog_59_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_59" sequence="59" />
+    <menuitem name="Return Code" id="pe_catalog_return_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_catalog_return" sequence="100" />
+    <menuitem name="Catalog CIIU" id="pe_catalog_ciiu_menu" parent="l10n_pe_data.pe_catalog_configuration_menu" action="l10n_pe_data.action_pe_data_ciiu" sequence="101" />
+  </data>
+</odoo>

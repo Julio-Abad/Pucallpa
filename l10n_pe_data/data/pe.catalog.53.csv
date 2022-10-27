@@ -1,0 +1,20 @@
+id,code,name,description
+catalog53_00,00,Descuentos que afectan la base imponible del IGV/IVAP,Item
+catalog53_01,01,Descuentos que no afectan la base imponible del IGV/IVAP,Item
+catalog53_02,02,Descuentos globales que afectan la base imponible del IGV/IVAP,Global
+catalog53_03,03,Descuentos globales que no afectan la base imponible del IGV/IVAP,Global
+catalog53_04,04,Descuentos globales por anticipos gravados que afectan la base imponible del IGV/IVAP ,Global
+catalog53_05,05,Descuentos globales por anticipos exonerados,Global
+catalog53_06,06,Descuentos globales por anticipos inafectos,Global
+catalog53_07,07,Factor de compensación - Decreto de Urgencia N.° 010-2004 ,Item
+catalog53_45,45,FISE,Global
+catalog53_46,46,Recargo al consumo y/o propinas,Global
+catalog53_47,47,Cargos que afectan la base imponible del IGV/IVAP,Item
+catalog53_48,48,Cargos que no afectan la base imponible del IGV/IVAP,Item
+catalog53_49,49,Cargos globales que afectan la base imponible del IGV/IVAP,Global
+catalog53_50,50,Cargos globales que no afectan la base imponible del IGV/IVAP,Global
+catalog53_51,51,Percepción venta interna,Global
+catalog53_52,52,Percepción a la adquisición de combustible,Global
+catalog53_53,53,Percepción realizada al agente de percepción con tasa especial,Global
+catalog53_54,54,Factor de aportación - Decreto de Urgencia N.° 010 -2004,Item
+catalog53_61,61,Retención de renta por anticipos,Global

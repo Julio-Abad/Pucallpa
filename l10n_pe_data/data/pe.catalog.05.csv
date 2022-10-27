@@ -1,0 +1,10 @@
+id,code,name,description,international_code,name_code
+catalog05_1000,1000,IGV Impuesto General a las Ventas,,VAT,IGV
+catalog05_1016,1016,Impuesto a la Venta Arroz Pilado,,VAT,IVAP
+catalog05_2000,2000,ISC Impuesto Selectivo al Consumo,,EXC,ISC
+catalog05_7152,7152,Impuesto al Consumo de las bolsas de plástico,,OTH,ICBPER
+catalog05_9995,9995,Exportación,,FRE,EXP
+catalog05_9996,9996,Gratuito,,FRE,GRA
+catalog05_9997,9997,Exonerado,,VAT,EXO
+catalog05_9998,9998,Inafecto,,FRE,INA
+catalog05_9999,9999,Otros tributos,,OTH,OTROS

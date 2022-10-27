@@ -1,0 +1,11 @@
+id,code,name,description,active
+catalog06_0,0,DOC.TRIB.NO.DOM.SIN.RUC,,True
+catalog06_1,1,Documento Nacional de Identidad,,True
+catalog06_4,4,Carnet de extranjería,,True
+catalog06_6,6,Registro Unico de Contributentes,,True
+catalog06_7,7,Pasaporte,,True
+catalog06_A,A,Cédula Diplomática de identidad,,True
+catalog06_B,B,DOC.IDENT.PAIS.RESIDENCIA-NO.D,,False
+catalog06_C,C,Tax Identification Number - TIN – Doc Trib PP.NN,,False
+catalog06_D,D,Identification Number - IN – Doc Trib PP. JJ,,False
+catalog06_E,E,TAM- Tarjeta Andina de Migración ,,False

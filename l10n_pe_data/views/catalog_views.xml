@@ -1,0 +1,1576 @@
+<odoo>
+  <data>
+    <!-- catalog 01 -->
+    <record id="view_pe_catalog_01_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.01.tree</field>
+      <field name="model">pe.catalog.01</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_01_from" model="ir.ui.view">
+        <field name="name">pe.catalog.01.form</field>
+        <field name="model">pe.catalog.01</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_01" model="ir.actions.act_window">
+        <field name="name">Catalog 01</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.01</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 01.</field>
+    </record>
+
+    <!-- catalog 02 -->
+    <record id="view_pe_catalog_02_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.02.tree</field>
+      <field name="model">pe.catalog.02</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_01_from" model="ir.ui.view">
+        <field name="name">pe.catalog.02.form</field>
+        <field name="model">pe.catalog.02</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="country_name"/>
+                        <field name="number_code"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_02" model="ir.actions.act_window">
+        <field name="name">Catalog 02</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.02</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 02.</field>
+    </record>
+
+    <!-- catalog 03 -->
+    <record id="view_pe_catalog_03_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.03.tree</field>
+      <field name="model">pe.catalog.03</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_03_from" model="ir.ui.view">
+        <field name="name">pe.catalog.03.form</field>
+        <field name="model">pe.catalog.03</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_03" model="ir.actions.act_window">
+        <field name="name">Catalog 03</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.03</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 03.</field>
+    </record>
+
+    <!-- catalog 04 -->
+    <record id="view_pe_catalog_04_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.04.tree</field>
+      <field name="model">pe.catalog.04</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_04_from" model="ir.ui.view">
+        <field name="name">pe.catalog.04.form</field>
+        <field name="model">pe.catalog.04</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="code_a2"/>
+                        <field name="number_code"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_04" model="ir.actions.act_window">
+        <field name="name">Catalog 04</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.04</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 04.</field>
+    </record>
+
+    <!-- catalog 05 -->
+    <record id="view_pe_catalog_05_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.05.tree</field>
+      <field name="model">pe.catalog.05</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_05_from" model="ir.ui.view">
+        <field name="name">pe.catalog.05.form</field>
+        <field name="model">pe.catalog.05</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="international_code"/>
+                        <field name="name_code"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_05" model="ir.actions.act_window">
+        <field name="name">Catalog 05</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.05</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 05.</field>
+    </record>
+
+    <!-- catalog 06 -->
+    <record id="view_pe_catalog_06_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.06.tree</field>
+      <field name="model">pe.catalog.06</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_06_from" model="ir.ui.view">
+        <field name="name">pe.catalog.06.form</field>
+        <field name="model">pe.catalog.06</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_06" model="ir.actions.act_window">
+        <field name="name">Catalog 06</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.06</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 06.</field>
+    </record>
+
+    <!-- catalog 07 -->
+    <record id="view_pe_catalog_07_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.07.tree</field>
+      <field name="model">pe.catalog.07</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_07_from" model="ir.ui.view">
+        <field name="name">pe.catalog.07.form</field>
+        <field name="model">pe.catalog.07</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_07" model="ir.actions.act_window">
+        <field name="name">Catalog 07</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.07</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 07.</field>
+    </record>
+
+
+    <!-- catalog 08 -->
+    <record id="view_pe_catalog_08_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.08.tree</field>
+      <field name="model">pe.catalog.08</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_08_from" model="ir.ui.view">
+        <field name="name">pe.catalog.08.form</field>
+        <field name="model">pe.catalog.08</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="rate"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_08" model="ir.actions.act_window">
+        <field name="name">Catalog 08</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.08</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 08.</field>
+    </record>
+
+    <!-- catalog 09 -->
+    <record id="view_pe_catalog_09_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.09.tree</field>
+      <field name="model">pe.catalog.09</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_09_from" model="ir.ui.view">
+        <field name="name">pe.catalog.09.form</field>
+        <field name="model">pe.catalog.09</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_09" model="ir.actions.act_window">
+        <field name="name">Catalog 09</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.09</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 09.</field>
+    </record>
+    
+    <!-- catalog 10 -->
+    <record id="view_pe_catalog_10_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.10.tree</field>
+      <field name="model">pe.catalog.10</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_10_from" model="ir.ui.view">
+        <field name="name">pe.catalog.10.form</field>
+        <field name="model">pe.catalog.10</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_10" model="ir.actions.act_window">
+        <field name="name">Catalog 10</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.10</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 10.</field>
+    </record>
+    
+
+    <!-- catalog 11 -->
+    <record id="view_pe_catalog_11_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.11.tree</field>
+      <field name="model">pe.catalog.11</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_11_from" model="ir.ui.view">
+        <field name="name">pe.catalog.11.form</field>
+        <field name="model">pe.catalog.11</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_11" model="ir.actions.act_window">
+        <field name="name">Catalog 11</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.11</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 11.</field>
+    </record>
+    
+    <!-- catalog 12 -->
+    <record id="view_pe_catalog_12_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.12.tree</field>
+      <field name="model">pe.catalog.12</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_12_from" model="ir.ui.view">
+        <field name="name">pe.catalog.12.form</field>
+        <field name="model">pe.catalog.12</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_12" model="ir.actions.act_window">
+        <field name="name">Catalog 12</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.12</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 12.</field>
+    </record>
+
+
+    <!-- catalog 14 -->
+    <record id="view_pe_catalog_14_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.14.tree</field>
+      <field name="model">pe.catalog.14</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_14_from" model="ir.ui.view">
+        <field name="name">pe.catalog.14.form</field>
+        <field name="model">pe.catalog.14</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_14" model="ir.actions.act_window">
+        <field name="name">Catalog 14</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.14</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 14.</field>
+    </record>
+
+    <!-- catalog 15 -->
+    <record id="view_pe_catalog_15_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.15.tree</field>
+      <field name="model">pe.catalog.15</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_15_from" model="ir.ui.view">
+        <field name="name">pe.catalog.15.form</field>
+        <field name="model">pe.catalog.15</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_15" model="ir.actions.act_window">
+        <field name="name">Catalog 15</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.15</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 15.</field>
+    </record>
+
+    <!-- catalog 16 -->
+    <record id="view_pe_catalog_16_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.16.tree</field>
+      <field name="model">pe.catalog.16</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_16_from" model="ir.ui.view">
+        <field name="name">pe.catalog.16.form</field>
+        <field name="model">pe.catalog.16</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_16" model="ir.actions.act_window">
+        <field name="name">Catalog 16</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.16</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 16.</field>
+    </record>
+
+
+    <!-- catalog 17 -->
+    <record id="view_pe_catalog_17_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.17.tree</field>
+      <field name="model">pe.catalog.17</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_17_from" model="ir.ui.view">
+        <field name="name">pe.catalog.17.form</field>
+        <field name="model">pe.catalog.17</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_17" model="ir.actions.act_window">
+        <field name="name">Catalog 17</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.17</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 17.</field>
+    </record>
+
+
+    <!-- catalog 18 -->
+    <record id="view_pe_catalog_18_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.18.tree</field>
+      <field name="model">pe.catalog.18</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_18_from" model="ir.ui.view">
+        <field name="name">pe.catalog.18.form</field>
+        <field name="model">pe.catalog.18</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_18" model="ir.actions.act_window">
+        <field name="name">Catalog 18</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.18</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 18.</field>
+    </record>
+
+
+    <!-- catalog 19 -->
+    <record id="view_pe_catalog_19_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.19.tree</field>
+      <field name="model">pe.catalog.19</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_19_from" model="ir.ui.view">
+        <field name="name">pe.catalog.19.form</field>
+        <field name="model">pe.catalog.19</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_19" model="ir.actions.act_window">
+        <field name="name">Catalog 19</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.19</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 19.</field>
+    </record>
+
+
+    <!-- catalog 20 -->
+    <record id="view_pe_catalog_20_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.20.tree</field>
+      <field name="model">pe.catalog.20</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_20_from" model="ir.ui.view">
+        <field name="name">pe.catalog.20.form</field>
+        <field name="model">pe.catalog.20</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_20" model="ir.actions.act_window">
+        <field name="name">Catalog 20</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.20</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 20.</field>
+    </record>
+
+    <!-- catalog 21 -->
+    <record id="view_pe_catalog_21_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.21.tree</field>
+      <field name="model">pe.catalog.21</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_21_from" model="ir.ui.view">
+        <field name="name">pe.catalog.21.form</field>
+        <field name="model">pe.catalog.21</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_21" model="ir.actions.act_window">
+        <field name="name">Catalog 21</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.21</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 21.</field>
+    </record>
+
+
+    <!-- catalog 22 -->
+    <record id="view_pe_catalog_22_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.22.tree</field>
+      <field name="model">pe.catalog.22</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_22_from" model="ir.ui.view">
+        <field name="name">pe.catalog.22.form</field>
+        <field name="model">pe.catalog.22</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="percent"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_22" model="ir.actions.act_window">
+        <field name="name">Catalog 22</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.22</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 22.</field>
+    </record>
+
+    <!-- catalog 23 -->
+    <record id="view_pe_catalog_23_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.23.tree</field>
+      <field name="model">pe.catalog.23</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_23_from" model="ir.ui.view">
+        <field name="name">pe.catalog.23.form</field>
+        <field name="model">pe.catalog.23</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="percent"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_23" model="ir.actions.act_window">
+        <field name="name">Catalog 23</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.23</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 23.</field>
+    </record>
+
+
+    <!-- catalog 24 -->
+    <record id="view_pe_catalog_24_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.24.tree</field>
+      <field name="model">pe.catalog.24</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_24_from" model="ir.ui.view">
+        <field name="name">pe.catalog.24.form</field>
+        <field name="model">pe.catalog.24</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_24" model="ir.actions.act_window">
+        <field name="name">Catalog 24</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.24</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 24.</field>
+    </record>
+
+    <!-- catalog 26 -->
+    <record id="view_pe_catalog_26_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.26.tree</field>
+      <field name="model">pe.catalog.26</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_26_from" model="ir.ui.view">
+        <field name="name">pe.catalog.26.form</field>
+        <field name="model">pe.catalog.26</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_26" model="ir.actions.act_window">
+        <field name="name">Catalog 26</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.26</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 26.</field>
+    </record>
+
+    <!-- catalog 27 -->
+    <record id="view_pe_catalog_27_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.27.tree</field>
+      <field name="model">pe.catalog.27</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_27_from" model="ir.ui.view">
+        <field name="name">pe.catalog.27.form</field>
+        <field name="model">pe.catalog.27</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_27" model="ir.actions.act_window">
+        <field name="name">Catalog 27</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.27</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 27.</field>
+    </record>
+
+
+    <!-- catalog 51 -->
+    <record id="view_pe_catalog_51_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.51.tree</field>
+      <field name="model">pe.catalog.51</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_51_from" model="ir.ui.view">
+        <field name="name">pe.catalog.51.form</field>
+        <field name="model">pe.catalog.51</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_51" model="ir.actions.act_window">
+        <field name="name">Catalog 51</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.51</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 51.</field>
+    </record>
+
+    <!-- catalog 52 -->
+    <record id="view_pe_catalog_52_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.52.tree</field>
+      <field name="model">pe.catalog.52</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_52_from" model="ir.ui.view">
+        <field name="name">pe.catalog.52.form</field>
+        <field name="model">pe.catalog.52</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_52" model="ir.actions.act_window">
+        <field name="name">Catalog 52</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.52</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 52.</field>
+    </record>
+
+    <!-- catalog 53 -->
+    <record id="view_pe_catalog_53_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.53.tree</field>
+      <field name="model">pe.catalog.53</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_53_from" model="ir.ui.view">
+        <field name="name">pe.catalog.53.form</field>
+        <field name="model">pe.catalog.53</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_53" model="ir.actions.act_window">
+        <field name="name">Catalog 53</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.53</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 53.</field>
+    </record>
+
+    <!-- catalog 54 -->
+    <record id="view_pe_catalog_54_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.54.tree</field>
+      <field name="model">pe.catalog.54</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_54_from" model="ir.ui.view">
+        <field name="name">pe.catalog.54.form</field>
+        <field name="model">pe.catalog.54</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                        <field name="rate"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_54" model="ir.actions.act_window">
+        <field name="name">Catalog 54</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.54</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 54.</field>
+    </record>
+
+    <!-- catalog 55 -->
+    <record id="view_pe_catalog_55_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.55.tree</field>
+      <field name="model">pe.catalog.55</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_55_from" model="ir.ui.view">
+        <field name="name">pe.catalog.55.form</field>
+        <field name="model">pe.catalog.55</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_55" model="ir.actions.act_window">
+        <field name="name">Catalog 55</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.55</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 55.</field>
+    </record>
+
+    <!-- catalog 56 -->
+    <record id="view_pe_catalog_56_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.56.tree</field>
+      <field name="model">pe.catalog.56</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_56_from" model="ir.ui.view">
+        <field name="name">pe.catalog.56.form</field>
+        <field name="model">pe.catalog.56</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_56" model="ir.actions.act_window">
+        <field name="name">Catalog 56</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.56</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 56.</field>
+    </record>
+
+    <!-- catalog 57 -->
+    <record id="view_pe_catalog_57_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.57.tree</field>
+      <field name="model">pe.catalog.57</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_57_from" model="ir.ui.view">
+        <field name="name">pe.catalog.57.form</field>
+        <field name="model">pe.catalog.57</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_57" model="ir.actions.act_window">
+        <field name="name">Catalog 57</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.57</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 57.</field>
+    </record>
+
+    <!-- catalog 58 -->
+    <record id="view_pe_catalog_58_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.58.tree</field>
+      <field name="model">pe.catalog.58</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_58_from" model="ir.ui.view">
+        <field name="name">pe.catalog.58.form</field>
+        <field name="model">pe.catalog.58</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_58" model="ir.actions.act_window">
+        <field name="name">Catalog 58</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.58</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 58.</field>
+    </record>
+
+    <!-- catalog 59 -->
+    <record id="view_pe_catalog_59_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.59.tree</field>
+      <field name="model">pe.catalog.59</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_59_from" model="ir.ui.view">
+        <field name="name">pe.catalog.59.form</field>
+        <field name="model">pe.catalog.59</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_59" model="ir.actions.act_window">
+        <field name="name">Catalog 59</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.59</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog 59.</field>
+    </record>
+
+    <!-- catalog return -->
+    <record id="view_pe_catalog_return_tree" model="ir.ui.view" >
+      <field name="name">pe.catalog.return.tree</field>
+      <field name="model">pe.catalog.return</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_catalog_return_from" model="ir.ui.view">
+        <field name="name">pe.catalog.return.form</field>
+        <field name="model">pe.catalog.return</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_catalog_return" model="ir.actions.act_window">
+        <field name="name">Catalog return</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.catalog.return</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog return.</field>
+    </record>
+
+
+
+
+
+    <!-- catalog ciiu -->
+    <record id="view_pe_data_ciiu_tree" model="ir.ui.view" >
+      <field name="name">pe.data.ciiu.tree</field>
+      <field name="model">pe.data.ciiu</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="active"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_data_ciiu_from" model="ir.ui.view">
+        <field name="name">pe.data.ciiu.form</field>
+        <field name="model">pe.data.ciiu</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </group>
+                <label for="description"/>
+                <field name="description" />
+              </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <record id="action_pe_data_ciiu" model="ir.actions.act_window">
+        <field name="name">Catalog CIIU</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.data.ciiu</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the Catalog CIIU.</field>
+    </record>
+
+  </data>
+</odoo>

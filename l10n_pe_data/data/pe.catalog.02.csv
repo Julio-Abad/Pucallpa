@@ -1,0 +1,277 @@
+id,code,name,description,country_name,number_code
+catalog02_AFN,AFN,Afghani,,AFGHANISTAN,971
+catalog02_EUR,EUR,Euro,,ÅLAND ISLANDS,978
+catalog02_ALL,ALL,Lek,,ALBANIA,008
+catalog02_DZD,DZD,Algerian Dinar,,ALGERIA,012
+catalog02_USD,USD,US Dollar,,AMERICAN SAMOA,840
+catalog02_EUR,EUR,Euro,,ANDORRA,978
+catalog02_AOA,AOA,Kwanza,,ANGOLA,973
+catalog02_XCD,XCD,East Caribbean Dollar,,ANGUILLA,951
+catalog02_XCD,XCD,East Caribbean Dollar,,ANTIGUA AND BARBUDA,951
+catalog02_ARS,ARS,Argentine Peso,,ARGENTINA,032
+catalog02_AMD,AMD,Armenian Dram,,ARMENIA,051
+catalog02_AWG,AWG,Aruban Florin,,ARUBA,533
+catalog02_AUD,AUD,Australian Dollar,,AUSTRALIA,036
+catalog02_EUR,EUR,Euro,,AUSTRIA,978
+catalog02_AZN,AZN,Azerbaijan Manat,,AZERBAIJAN,944
+catalog02_BSD,BSD,Bahamian Dollar,,BAHAMAS (THE),044
+catalog02_BHD,BHD,Bahraini Dinar,,BAHRAIN,048
+catalog02_BDT,BDT,Taka,,BANGLADESH,050
+catalog02_BBD,BBD,Barbados Dollar,,BARBADOS,052
+catalog02_BYN,BYN,Belarusian Ruble,,BELARUS,933
+catalog02_EUR,EUR,Euro,,BELGIUM,978
+catalog02_BZD,BZD,Belize Dollar,,BELIZE,084
+catalog02_XOF,XOF,CFA Franc BCEAO,,BENIN,952
+catalog02_BMD,BMD,Bermudian Dollar,,BERMUDA,060
+catalog02_INR,INR,Indian Rupee,,BHUTAN,356
+catalog02_BTN,BTN,Ngultrum,,BHUTAN,064
+catalog02_BOB,BOB,Boliviano,,BOLIVIA (PLURINATIONAL STATE OF),068
+catalog02_BOV,BOV,Mvdol,,BOLIVIA (PLURINATIONAL STATE OF),984
+catalog02_USD,USD,US Dollar,,"BONAIRE, SINT EUSTATIUS AND SABA",840
+catalog02_BAM,BAM,Convertible Mark,,BOSNIA AND HERZEGOVINA,977
+catalog02_BWP,BWP,Pula,,BOTSWANA,072
+catalog02_NOK,NOK,Norwegian Krone,,BOUVET ISLAND,578
+catalog02_BRL,BRL,Brazilian Real,,BRAZIL,986
+catalog02_USD,USD,US Dollar,,BRITISH INDIAN OCEAN TERRITORY (THE),840
+catalog02_BND,BND,Brunei Dollar,,BRUNEI DARUSSALAM,096
+catalog02_BGN,BGN,Bulgarian Lev,,BULGARIA,975
+catalog02_XOF,XOF,CFA Franc BCEAO,,BURKINA FASO,952
+catalog02_BIF,BIF,Burundi Franc,,BURUNDI,108
+catalog02_CVE,CVE,Cabo Verde Escudo,,CABO VERDE,132
+catalog02_KHR,KHR,Riel,,CAMBODIA,116
+catalog02_XAF,XAF,CFA Franc BEAC,,CAMEROON,950
+catalog02_CAD,CAD,Canadian Dollar,,CANADA,124
+catalog02_KYD,KYD,Cayman Islands Dollar,,CAYMAN ISLANDS (THE),136
+catalog02_XAF,XAF,CFA Franc BEAC,,CENTRAL AFRICAN REPUBLIC (THE),950
+catalog02_XAF,XAF,CFA Franc BEAC,,CHAD,950
+catalog02_CLP,CLP,Chilean Peso,,CHILE,152
+catalog02_CLF,CLF,Unidad de Fomento,,CHILE,990
+catalog02_CNY,CNY,Yuan Renminbi,,CHINA,156
+catalog02_AUD,AUD,Australian Dollar,,CHRISTMAS ISLAND,036
+catalog02_AUD,AUD,Australian Dollar,,COCOS (KEELING) ISLANDS (THE),036
+catalog02_COP,COP,Colombian Peso,,COLOMBIA,170
+catalog02_COU,COU,Unidad de Valor Real,,COLOMBIA,970
+catalog02_KMF,KMF,Comorian Franc ,,COMOROS (THE),174
+catalog02_CDF,CDF,Congolese Franc,,CONGO (THE DEMOCRATIC REPUBLIC OF THE),976
+catalog02_XAF,XAF,CFA Franc BEAC,,CONGO (THE),950
+catalog02_NZD,NZD,New Zealand Dollar,,COOK ISLANDS (THE),554
+catalog02_CRC,CRC,Costa Rican Colon,,COSTA RICA,188
+catalog02_XOF,XOF,CFA Franc BCEAO,,CÔTE D'IVOIRE,952
+catalog02_HRK,HRK,Kuna,,CROATIA,191
+catalog02_CUP,CUP,Cuban Peso,,CUBA,192
+catalog02_CUC,CUC,Peso Convertible,,CUBA,931
+catalog02_ANG,ANG,Netherlands Antillean Guilder,,CURAÇAO,532
+catalog02_EUR,EUR,Euro,,CYPRUS,978
+catalog02_CZK,CZK,Czech Koruna,,CZECHIA,203
+catalog02_DKK,DKK,Danish Krone,,DENMARK,208
+catalog02_DJF,DJF,Djibouti Franc,,DJIBOUTI,262
+catalog02_XCD,XCD,East Caribbean Dollar,,DOMINICA,951
+catalog02_DOP,DOP,Dominican Peso,,DOMINICAN REPUBLIC (THE),214
+catalog02_USD,USD,US Dollar,,ECUADOR,840
+catalog02_EGP,EGP,Egyptian Pound,,EGYPT,818
+catalog02_SVC,SVC,El Salvador Colon,,EL SALVADOR,222
+catalog02_USD,USD,US Dollar,,EL SALVADOR,840
+catalog02_XAF,XAF,CFA Franc BEAC,,EQUATORIAL GUINEA,950
+catalog02_ERN,ERN,Nakfa,,ERITREA,232
+catalog02_EUR,EUR,Euro,,ESTONIA,978
+catalog02_ETB,ETB,Ethiopian Birr,,ETHIOPIA,230
+catalog02_EUR,EUR,Euro,,EUROPEAN UNION,978
+catalog02_FKP,FKP,Falkland Islands Pound,,FALKLAND ISLANDS (THE) [MALVINAS],238
+catalog02_DKK,DKK,Danish Krone,,FAROE ISLANDS (THE),208
+catalog02_FJD,FJD,Fiji Dollar,,FIJI,242
+catalog02_EUR,EUR,Euro,,FINLAND,978
+catalog02_EUR,EUR,Euro,,FRANCE,978
+catalog02_EUR,EUR,Euro,,FRENCH GUIANA,978
+catalog02_XPF,XPF,CFP Franc,,FRENCH POLYNESIA,953
+catalog02_EUR,EUR,Euro,,FRENCH SOUTHERN TERRITORIES (THE),978
+catalog02_XAF,XAF,CFA Franc BEAC,,GABON,950
+catalog02_GMD,GMD,Dalasi,,GAMBIA (THE),270
+catalog02_GEL,GEL,Lari,,GEORGIA,981
+catalog02_EUR,EUR,Euro,,GERMANY,978
+catalog02_GHS,GHS,Ghana Cedi,,GHANA,936
+catalog02_GIP,GIP,Gibraltar Pound,,GIBRALTAR,292
+catalog02_EUR,EUR,Euro,,GREECE,978
+catalog02_DKK,DKK,Danish Krone,,GREENLAND,208
+catalog02_XCD,XCD,East Caribbean Dollar,,GRENADA,951
+catalog02_EUR,EUR,Euro,,GUADELOUPE,978
+catalog02_USD,USD,US Dollar,,GUAM,840
+catalog02_GTQ,GTQ,Quetzal,,GUATEMALA,320
+catalog02_GBP,GBP,Pound Sterling,,GUERNSEY,826
+catalog02_GNF,GNF,Guinean Franc,,GUINEA,324
+catalog02_XOF,XOF,CFA Franc BCEAO,,GUINEA-BISSAU,952
+catalog02_GYD,GYD,Guyana Dollar,,GUYANA,328
+catalog02_HTG,HTG,Gourde,,HAITI,332
+catalog02_USD,USD,US Dollar,,HAITI,840
+catalog02_AUD,AUD,Australian Dollar,,HEARD ISLAND AND McDONALD ISLANDS,036
+catalog02_EUR,EUR,Euro,,HOLY SEE (THE),978
+catalog02_HNL,HNL,Lempira,,HONDURAS,340
+catalog02_HKD,HKD,Hong Kong Dollar,,HONG KONG,344
+catalog02_HUF,HUF,Forint,,HUNGARY,348
+catalog02_ISK,ISK,Iceland Krona,,ICELAND,352
+catalog02_INR,INR,Indian Rupee,,INDIA,356
+catalog02_IDR,IDR,Rupiah,,INDONESIA,360
+catalog02_XDR,XDR,SDR (Special Drawing Right),,INTERNATIONAL MONETARY FUND (IMF) ,960
+catalog02_IRR,IRR,Iranian Rial,,IRAN (ISLAMIC REPUBLIC OF),364
+catalog02_IQD,IQD,Iraqi Dinar,,IRAQ,368
+catalog02_EUR,EUR,Euro,,IRELAND,978
+catalog02_GBP,GBP,Pound Sterling,,ISLE OF MAN,826
+catalog02_ILS,ILS,New Israeli Sheqel,,ISRAEL,376
+catalog02_EUR,EUR,Euro,,ITALY,978
+catalog02_JMD,JMD,Jamaican Dollar,,JAMAICA,388
+catalog02_JPY,JPY,Yen,,JAPAN,392
+catalog02_GBP,GBP,Pound Sterling,,JERSEY,826
+catalog02_JOD,JOD,Jordanian Dinar,,JORDAN,400
+catalog02_KZT,KZT,Tenge,,KAZAKHSTAN,398
+catalog02_KES,KES,Kenyan Shilling,,KENYA,404
+catalog02_AUD,AUD,Australian Dollar,,KIRIBATI,036
+catalog02_KPW,KPW,North Korean Won,,KOREA (THE DEMOCRATIC PEOPLE’S REPUBLIC OF),408
+catalog02_KRW,KRW,Won,,KOREA (THE REPUBLIC OF),410
+catalog02_KWD,KWD,Kuwaiti Dinar,,KUWAIT,414
+catalog02_KGS,KGS,Som,,KYRGYZSTAN,417
+catalog02_LAK,LAK,Lao Kip,,LAO PEOPLE’S DEMOCRATIC REPUBLIC (THE),418
+catalog02_EUR,EUR,Euro,,LATVIA,978
+catalog02_LBP,LBP,Lebanese Pound,,LEBANON,422
+catalog02_LSL,LSL,Loti,,LESOTHO,426
+catalog02_ZAR,ZAR,Rand,,LESOTHO,710
+catalog02_LRD,LRD,Liberian Dollar,,LIBERIA,430
+catalog02_LYD,LYD,Libyan Dinar,,LIBYA,434
+catalog02_CHF,CHF,Swiss Franc,,LIECHTENSTEIN,756
+catalog02_EUR,EUR,Euro,,LITHUANIA,978
+catalog02_EUR,EUR,Euro,,LUXEMBOURG,978
+catalog02_MOP,MOP,Pataca,,MACAO,446
+catalog02_MKD,MKD,Denar,,MACEDONIA (THE FORMER YUGOSLAV REPUBLIC OF),807
+catalog02_MGA,MGA,Malagasy Ariary,,MADAGASCAR,969
+catalog02_MWK,MWK,Malawi Kwacha,,MALAWI,454
+catalog02_MYR,MYR,Malaysian Ringgit,,MALAYSIA,458
+catalog02_MVR,MVR,Rufiyaa,,MALDIVES,462
+catalog02_XOF,XOF,CFA Franc BCEAO,,MALI,952
+catalog02_EUR,EUR,Euro,,MALTA,978
+catalog02_USD,USD,US Dollar,,MARSHALL ISLANDS (THE),840
+catalog02_EUR,EUR,Euro,,MARTINIQUE,978
+catalog02_MRU,MRU,Ouguiya,,MAURITANIA,929
+catalog02_MUR,MUR,Mauritius Rupee,,MAURITIUS,480
+catalog02_EUR,EUR,Euro,,MAYOTTE,978
+catalog02_XUA,XUA,ADB Unit of Account,,MEMBER COUNTRIES OF THE AFRICAN DEVELOPMENT BANK GROUP,965
+catalog02_MXN,MXN,Mexican Peso,,MEXICO,484
+catalog02_MXV,MXV,Mexican Unidad de Inversion (UDI),,MEXICO,979
+catalog02_USD,USD,US Dollar,,MICRONESIA (FEDERATED STATES OF),840
+catalog02_MDL,MDL,Moldovan Leu,,MOLDOVA (THE REPUBLIC OF),498
+catalog02_EUR,EUR,Euro,,MONACO,978
+catalog02_MNT,MNT,Tugrik,,MONGOLIA,496
+catalog02_EUR,EUR,Euro,,MONTENEGRO,978
+catalog02_XCD,XCD,East Caribbean Dollar,,MONTSERRAT,951
+catalog02_MAD,MAD,Moroccan Dirham,,MOROCCO,504
+catalog02_MZN,MZN,Mozambique Metical,,MOZAMBIQUE,943
+catalog02_MMK,MMK,Kyat,,MYANMAR,104
+catalog02_NAD,NAD,Namibia Dollar,,NAMIBIA,516
+catalog02_ZAR,ZAR,Rand,,NAMIBIA,710
+catalog02_AUD,AUD,Australian Dollar,,NAURU,036
+catalog02_NPR,NPR,Nepalese Rupee,,NEPAL,524
+catalog02_EUR,EUR,Euro,,NETHERLANDS (THE),978
+catalog02_XPF,XPF,CFP Franc,,NEW CALEDONIA,953
+catalog02_NZD,NZD,New Zealand Dollar,,NEW ZEALAND,554
+catalog02_NIO,NIO,Cordoba Oro,,NICARAGUA,558
+catalog02_XOF,XOF,CFA Franc BCEAO,,NIGER (THE),952
+catalog02_NGN,NGN,Naira,,NIGERIA,566
+catalog02_NZD,NZD,New Zealand Dollar,,NIUE,554
+catalog02_AUD,AUD,Australian Dollar,,NORFOLK ISLAND,036
+catalog02_USD,USD,US Dollar,,NORTHERN MARIANA ISLANDS (THE),840
+catalog02_NOK,NOK,Norwegian Krone,,NORWAY,578
+catalog02_OMR,OMR,Rial Omani,,OMAN,512
+catalog02_PKR,PKR,Pakistan Rupee,,PAKISTAN,586
+catalog02_USD,USD,US Dollar,,PALAU,840
+catalog02_PAB,PAB,Balboa,,PANAMA,590
+catalog02_USD,USD,US Dollar,,PANAMA,840
+catalog02_PGK,PGK,Kina,,PAPUA NEW GUINEA,598
+catalog02_PYG,PYG,Guarani,,PARAGUAY,600
+catalog02_PEN,PEN,Sol,,PERU,604
+catalog02_PHP,PHP,Philippine Peso,,PHILIPPINES (THE),608
+catalog02_NZD,NZD,New Zealand Dollar,,PITCAIRN,554
+catalog02_PLN,PLN,Zloty,,POLAND,985
+catalog02_EUR,EUR,Euro,,PORTUGAL,978
+catalog02_USD,USD,US Dollar,,PUERTO RICO,840
+catalog02_QAR,QAR,Qatari Rial,,QATAR,634
+catalog02_EUR,EUR,Euro,,RÉUNION,978
+catalog02_RON,RON,Romanian Leu,,ROMANIA,946
+catalog02_RUB,RUB,Russian Ruble,,RUSSIAN FEDERATION (THE),643
+catalog02_RWF,RWF,Rwanda Franc,,RWANDA,646
+catalog02_EUR,EUR,Euro,,SAINT BARTHÉLEMY,978
+catalog02_SHP,SHP,Saint Helena Pound,,"SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",654
+catalog02_XCD,XCD,East Caribbean Dollar,,SAINT KITTS AND NEVIS,951
+catalog02_XCD,XCD,East Caribbean Dollar,,SAINT LUCIA,951
+catalog02_EUR,EUR,Euro,,SAINT MARTIN (FRENCH PART),978
+catalog02_EUR,EUR,Euro,,SAINT PIERRE AND MIQUELON,978
+catalog02_XCD,XCD,East Caribbean Dollar,,SAINT VINCENT AND THE GRENADINES,951
+catalog02_WST,WST,Tala,,SAMOA,882
+catalog02_EUR,EUR,Euro,,SAN MARINO,978
+catalog02_STN,STN,Dobra,,SAO TOME AND PRINCIPE,930
+catalog02_SAR,SAR,Saudi Riyal,,SAUDI ARABIA,682
+catalog02_XOF,XOF,CFA Franc BCEAO,,SENEGAL,952
+catalog02_RSD,RSD,Serbian Dinar,,SERBIA,941
+catalog02_SCR,SCR,Seychelles Rupee,,SEYCHELLES,690
+catalog02_SLL,SLL,Leone,,SIERRA LEONE,694
+catalog02_SGD,SGD,Singapore Dollar,,SINGAPORE,702
+catalog02_ANG,ANG,Netherlands Antillean Guilder,,SINT MAARTEN (DUTCH PART),532
+catalog02_XSU,XSU,Sucre,,"SISTEMA UNITARIO DE COMPENSACION REGIONAL DE PAGOS ""SUCRE""",994
+catalog02_EUR,EUR,Euro,,SLOVAKIA,978
+catalog02_EUR,EUR,Euro,,SLOVENIA,978
+catalog02_SBD,SBD,Solomon Islands Dollar,,SOLOMON ISLANDS,090
+catalog02_SOS,SOS,Somali Shilling,,SOMALIA,706
+catalog02_ZAR,ZAR,Rand,,SOUTH AFRICA,710
+catalog02_SSP,SSP,South Sudanese Pound,,SOUTH SUDAN,728
+catalog02_EUR,EUR,Euro,,SPAIN,978
+catalog02_LKR,LKR,Sri Lanka Rupee,,SRI LANKA,144
+catalog02_SDG,SDG,Sudanese Pound,,SUDAN (THE),938
+catalog02_SRD,SRD,Surinam Dollar,,SURINAME,968
+catalog02_NOK,NOK,Norwegian Krone,,SVALBARD AND JAN MAYEN,578
+catalog02_SZL,SZL,Lilangeni,,ESWATINI,748
+catalog02_SEK,SEK,Swedish Krona,,SWEDEN,752
+catalog02_CHF,CHF,Swiss Franc,,SWITZERLAND,756
+catalog02_CHE,CHE,WIR Euro,,SWITZERLAND,947
+catalog02_CHW,CHW,WIR Franc,,SWITZERLAND,948
+catalog02_SYP,SYP,Syrian Pound,,SYRIAN ARAB REPUBLIC,760
+catalog02_TWD,TWD,New Taiwan Dollar,,TAIWAN (PROVINCE OF CHINA),901
+catalog02_TJS,TJS,Somoni,,TAJIKISTAN,972
+catalog02_TZS,TZS,Tanzanian Shilling,,"TANZANIA, UNITED REPUBLIC OF",834
+catalog02_THB,THB,Baht,,THAILAND,764
+catalog02_USD,USD,US Dollar,,TIMOR-LESTE,840
+catalog02_XOF,XOF,CFA Franc BCEAO,,TOGO,952
+catalog02_NZD,NZD,New Zealand Dollar,,TOKELAU,554
+catalog02_TOP,TOP,Pa’anga,,TONGA,776
+catalog02_TTD,TTD,Trinidad and Tobago Dollar,,TRINIDAD AND TOBAGO,780
+catalog02_TND,TND,Tunisian Dinar,,TUNISIA,788
+catalog02_TRY,TRY,Turkish Lira,,TURKEY,949
+catalog02_TMT,TMT,Turkmenistan New Manat,,TURKMENISTAN,934
+catalog02_USD,USD,US Dollar,,TURKS AND CAICOS ISLANDS (THE),840
+catalog02_AUD,AUD,Australian Dollar,,TUVALU,036
+catalog02_UGX,UGX,Uganda Shilling,,UGANDA,800
+catalog02_UAH,UAH,Hryvnia,,UKRAINE,980
+catalog02_AED,AED,UAE Dirham,,UNITED ARAB EMIRATES (THE),784
+catalog02_GBP,GBP,Pound Sterling,,UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND (THE),826
+catalog02_USD,USD,US Dollar,,UNITED STATES MINOR OUTLYING ISLANDS (THE),840
+catalog02_USD,USD,US Dollar,,UNITED STATES OF AMERICA (THE),840
+catalog02_USN,USN,US Dollar (Next day),,UNITED STATES OF AMERICA (THE),997
+catalog02_UYU,UYU,Peso Uruguayo,,URUGUAY,858
+catalog02_UYI,UYI,Uruguay Peso en Unidades Indexadas (UI),,URUGUAY,940
+catalog02_UYW,UYW,Unidad Previsional,,URUGUAY,927
+catalog02_UZS,UZS,Uzbekistan Sum,,UZBEKISTAN,860
+catalog02_VUV,VUV,Vatu,,VANUATU,548
+catalog02_VES,VES,Bolívar Soberano,,VENEZUELA (BOLIVARIAN REPUBLIC OF),928
+catalog02_VND,VND,Dong,,VIET NAM,704
+catalog02_USD,USD,US Dollar,,VIRGIN ISLANDS (BRITISH),840
+catalog02_USD,USD,US Dollar,,VIRGIN ISLANDS (U.S.),840
+catalog02_XPF,XPF,CFP Franc,,WALLIS AND FUTUNA,953
+catalog02_MAD,MAD,Moroccan Dirham,,WESTERN SAHARA,504
+catalog02_YER,YER,Yemeni Rial,,YEMEN,886
+catalog02_ZMW,ZMW,Zambian Kwacha,,ZAMBIA,967
+catalog02_ZWL,ZWL,Zimbabwe Dollar,,ZIMBABWE,932
+catalog02_XBA,XBA,Bond Markets Unit European Composite Unit (EURCO),,ZZ01_Bond Markets Unit European_EURCO,955
+catalog02_XBB,XBB,Bond Markets Unit European Monetary Unit (E.M.U.-6),,ZZ02_Bond Markets Unit European_EMU-6,956
+catalog02_XBC,XBC,Bond Markets Unit European Unit of Account 9 (E.U.A.-9),,ZZ03_Bond Markets Unit European_EUA-9,957
+catalog02_XBD,XBD,Bond Markets Unit European Unit of Account 17 (E.U.A.-17),,ZZ04_Bond Markets Unit European_EUA-17,958
+catalog02_XTS,XTS,Codes specifically reserved for testing purposes,,ZZ06_Testing_Code,963
+catalog02_XXX,XXX,The codes assigned for transactions where no currency is involved,,ZZ07_No_Currency,999
+catalog02_XAU,XAU,Gold,,ZZ08_Gold,959
+catalog02_XPD,XPD,Palladium,,ZZ09_Palladium,964
+catalog02_XPT,XPT,Platinum,,ZZ10_Platinum,962
+catalog02_XAG,XAG,Silver,,ZZ11_Silver,961

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        
+        <record id="eguide_sequence" model="ir.sequence">
+            <field name="name">Guia Electronica</field>
+            <field name="code">pe.eguide.sync</field>
+            <field name="prefix">T001-</field>
+            <field name="implementation">no_gap</field>
+            <field name="padding">5</field>
+        </record>
+        
+        <record id="sync_auto_send_guide" model="ir.cron">
+            <field name="name">Envio Automatico de guias eletronicas</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="state">code</field>
+            <field name="model_id" ref="l10n_pe_eguide.model_pe_eguide" />
+            <field name="code">model.send_async_eguide()</field>
+            <field name="active" eval="True"/>
+        </record>
+        
+    </data>
+</openerp>

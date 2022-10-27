@@ -1,0 +1,46 @@
+id,code,name,description,rent_code
+tabla31_00,00,Bienes,,
+tabla31_01,01,Arrendamiento de predios,Art. 9° a),06
+tabla31_02,02,Enajenación Inmuebles y derechos sobre inmuebles,Art. 9° a),06
+tabla31_03,03,"Rentas de bienes situados en el país o derechos utilizados en el país, incluye enajenación.",Art. 9° b),12
+tabla31_04,04,Regalias: Bienes o derechos por los que pagan son utilizados país.,Art. 9° b),12
+tabla31_05,05,Regalias: Pagador de las regalías es domiciliado.,Art. 9° b),12
+tabla31_06,06,"Por capitales,  intereses, comisiones, primas - operaciones financieras - capital utilizado en el país o el pagador sea un sujeto domiciliado. Originadas por fondos de cualquier tipo de entidad, por cesión a terceros de un capital, por operaciones de capitalización o por contratos de seguro de vida o invalidez que no tengan su origen en el trabajo personal.",Art. 9° c),11
+tabla31_07,07,"Dividendos y cualquier otra forma de distribución de utilidades, cuando la empresa que los distribuye, pague y acredite se encuentre domiciliada en el país, o cuando el fondo de inversión, patrimonio fideicometido o fiduciario banacario, fondo de pensiones, que lo distribuya, pague o acredite, se encuentre constituido o establecido en el país",Art. 9° d),10
+tabla31_08,08,Los rendimientos de los ADR y GDRs que tengan como subyacentes acciones emitidas por empresas no domiciliadas,Art. 9° d),10
+tabla31_09,09,"Originadas en actividades civiles, comerciales, empresariales o de cualquier índole, que se lleven a cabo en territorio nacional.",Art. 9° e),21
+tabla31_10,10,"Originadas en el trabajo personal que lleven a cabo en el territorio nacional No comprende cuando se ingresa al país  temporalmente a efectuar: actos previos a la realización de inversiones extranjeras; actos destinados a supervisar o controlar la inversión o el negocio, tales como los de recolección de datos o información o la realización de entrevistas; actos relacionados con la contratación de personal local; actos relacionados con la firma de convenios o actos similares. ",Art. 9° f),15
+tabla31_11,11,"Rentas vitalicias y las pensiones que tengan su origen en el trabajo personal, pagadas por un sujeto domiciliada ",Art. 9° g),18
+tabla31_12,12,"Las obtenidas por la enajenación de acciones y participaciones representativas del capital,  cuando las empresas, que los hayan emitido estén constituidos o establecidos en el Perú. Fuera de Bolsa",Art. 9° h),13
+tabla31_13,13,"Las obtenidas por la enajenación,  de  certificados, títulos, bonos y papeles comerciales, valores representativos de cédulas hipotecarias, obligaciones al portador u otros valores al portador y otros valores mobiliarios cuando los  Fondos de Inversión, Fondos Mutuos de Inversión en Valores o Patrimonios Fideicometidos que los hayan emitido estén constituidos o establecidos en el Perú.  Fuera de Bolsa",Art. 9° h),13
+tabla31_14,14,"Las obtenidas por la redención o rescate de certificados, títulos, bonos y papeles comerciales, valores representativos de cédulas hipotecarias, obligaciones al portador u otros valores al portador y otros valores mobiliarios cuando los  Fondos de Inversión, Fondos Mutuos de Inversión en Valores o Patrimonios Fideicometidos que los hayan emitido estén constituidos o establecidos en el Perú.  Fuera de Bolsa",Art. 9° h),13
+tabla31_15,15,"Las obtenidas por la enajenación de acciones y participaciones representativas del capital, acciones de inversión, certificados, títulos, bonos y papeles comerciales, valores representativos de cédulas hipotecarias, obligaciones al portador u otros valores al portador y otros valores mobiliarios cuando las empresas, sociedades, Fondos de Inversión, Fondos Mutuos de Inversión en Valores o Patrimonios Fideicometidos que los hayan emitido estén constituidos o establecidos en el Perú.  Dentro de Bolsa",Art. 9° h),13
+tabla31_16,16,"Las obtenidas por la redención o rescate de  acciones de inversión, certificados, títulos, bonos y papeles comerciales, valores representativos de cédulas hipotecarias, obligaciones al portador u otros valores al portador y otros valores mobiliarios cuando las empresas, sociedades, Fondos de Inversión, Fondos Mutuos de Inversión en Valores o Patrimonios Fideicometidos que los hayan emitido estén constituidos o establecidos en el Perú. Dentro de Bolsa",Art. 9° h),13
+tabla31_17,17,Enajenación de los ADR’s  y GDR’s  que tengan como subyacente acciones emitidas por empresas domiciliadas en el país. ,Art. 9° h),13
+tabla31_18,18,"Las obtenidas por servicios digitales prestados a través del Internet o de cualquier adaptación o aplicación de los protocolos, plataformas o de la tecnología utilizada por Internet o cualquier otra red a través de la que se presten servicios equivalentes, cuando el servicio se utilice económicamente, use o consuma en el país",Art. 9° i),21
+tabla31_19,19,"La obtenida por asistencia técnica, cuando ésta se utilice económicamente en el país",Art. 9° j),7
+tabla31_20,20,"Los intereses de obligaciones, cuando la entidad emisora ha sido constituida en el país",10 a),11
+tabla31_21,21,Remuneracion pagada por Domiciliados; Sujeto miembro de un consejo directivo o adm.; Actuación en el Extranjero,10 b),16
+tabla31_22,22,Honorarios o remuneraciones del Sector Público Nacional por trabajos realizados en el exterior.,10 c),19
+tabla31_23,23,Resultados Proveniente de la contratación de IFD,10 d),7
+tabla31_24,24,Resultados  de IFD con cobertura destinados a la generación de RFP,10 d),7
+tabla31_25,25,Proveniente de la contratación de IFD sin cobertura destinados a la generación de RFP,10 d),7
+tabla31_26,26,"IFD donde Activo subyacente sea referido al Tipo de Cambio Moneda extranjera. 180 dias. (La Dom es la prestadora del IFD, la No Dom es la que obtiene el resultado) ",10 d),7
+tabla31_27,27,"Las obtenidas por la enajenación indirecta de acciones y participaciones representativas del capital de personas jurídicas domiciliadas en el país, cuando la operación cumple las condiciones para ser gravadas en el Perú",Art. 10° e),13
+tabla31_28,28,Se incluye dentro de la enajenación de de empresas no domiciliadas en el país la enajenación de ADR´s (American Depositary Receipts) que tengan como subyacente a tales acciones.,Art. 10° e),13
+tabla31_29,29,"Sujeto es el No Dom que distribuye  por la reducción de capital dentro de los 12 meses anteriores cuando hubiera aumentado su capital como consecuencia de nuevos aportes, de capitalización de créditos o de una reorganización",Art. 10 f),10
+tabla31_30,30,"Actividades de Seguros 7% sobre las primas. 
+Comisiones por  Reaseguros sobre personas y/o bienes radicados en el país",Art. 12 y 48°a),07 - 21
+tabla31_31,31,"Alquiler de Naves, 8% sobre Ingresos Brutos que perciban por dicha actividad",Art. 12 y 48°b) ,8
+tabla31_32,32,"Alquiler de Aeronaves, 60% sobre Ingresos Brutos que perciban por dicha actividad",Art. 12 y 48° c),8
+tabla31_33,33,1% por el ingresos brutos por el transporte aéreo.,Art. 12 y 48° d),8
+tabla31_34,34,Excepto Otros transportes no aereos o maritimos que van por los ingresos de la parte prestada en el país,Art. 12 y 48° d),8
+tabla31_35,35,2% por el ingresos brutos por fletamiento o transporte marítimo. ,Art. 12 y 48° d),8
+tabla31_36,36,Empresas por reciprocidad en lineas extranjeras con sedes en esos países,Art. 12 y 48° d),24
+tabla31_37,37,"Servicio portadores, teleservcios o finales, difusión y de valor añadido. Con excepcion de los Servicios Digitales según 4-A",Art 12  y 48°e),07 - 21
+tabla31_38,38,"10%. sobre las remuneraciones brutas que obtengan por el suministro de noticias y, en general material informativo o gráfico, a personas o entidades domiciliadas o que utilicen dicho material en el país.",Art 12  y 48° f),07 - 21
+tabla31_39,39,"para su utilización por personas naturales o jurídicas domiciliadas: 20% sobre los ingresos brutos que perciban por el uso de películas cinematográficas o para televisión, ""video tape"", radionovelas, discos fonográficos, historietas gráficas y cualquier otro medio similar de proyección, reproducción, transmisión o difusión de imágenes o sonidos.",Art 12  y 48° g),07 - 21
+tabla31_40,40,en el país o desde el país al exterior y no presten el servicio de transporte 15% de los ingresos brutos que obtengan por dicho suministro.,Art 12  y 48° h),8
+tabla31_41,41,80% de los ingresos brutos que obtengan por el exceso de estadía de contenedores.,Art 12  y 48° i),07 - 21
+tabla31_42,42,20% de los ingresos brutos que obtengan los contribuyentes no domiciliados por la cesión de derechos para la retransmisión por televisión en el país de eventos en vivo realizados en el extranjero. ,Art 12  y 48° j),07 - 21
+tabla31_43,43,Extranjeros que ingresan al país y cuentas con las siguientes calidades especificas a prestar servicios,Art. 13°,15

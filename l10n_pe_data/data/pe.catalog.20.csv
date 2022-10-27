@@ -1,0 +1,10 @@
+id,code,name,description
+catalog20_01,01,Venta,
+catalog20_02,02,Compra,
+catalog20_04,04,Traslado entre establecimientos de la misma empresa,
+catalog20_08,08,Importación,
+catalog20_09,09,Exportación,
+catalog20_13,13,Otros,
+catalog20_14,14,Venta sujeta a confirmación del comprador   ,
+catalog20_18,18,Traslado emisor itinerante CP,
+catalog20_19,19,Traslado a zona primaria,
