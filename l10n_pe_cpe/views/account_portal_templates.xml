@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+  	<template id="portal_cpe_page" name="CPE Portal Template" inherit_id="account.portal_invoice_page" >
+  		<xpath expr="//div[hasclass('o_download_pdf')]" position="after">
+  			<li class="list-group-item flex-grow-1" t-if="invoice.pe_cpe_id and invoice.pe_cpe_id.attachment_id">
+	  			<div class="btn-group  flex-grow-1 mr-1 mb-1">
+	                <a class="btn btn-secondary btn-block o_download_btn" t-att-href="invoice.get_portal_url(report_type='xml', download=True)" title="Download"><i class="fa fa-download"/> Download XML</a>
+	            </div>
+	        </li>
+	        <li class="list-group-item flex-grow-1" t-if="invoice.pe_cpe_id and invoice.pe_cpe_id.pe_response_id">
+	            <div class="btn-group flex-grow-1 mb-1" >
+	                <a class="btn btn-secondary btn-block o_download_btn" t-att-href="invoice.get_portal_url(report_type='zip', download=True)" title="Download"><i class="fa fa-download"/> Download Response</a>
+	            </div>
+            </li>
+  		</xpath>
+  	</template>
+  </data>
+</odoo>

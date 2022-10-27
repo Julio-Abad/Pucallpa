@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+
+    <record id="view_pe_server_from" model="ir.ui.view">
+        <field name="name">pe.server.form.cpe</field>
+        <field name="model">pe.server</field>
+        <field name="inherit_id" ref="l10n_pe_server.view_pe_server_from"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//field[@name='name']" position="before">
+        		<field name="server_type"/>
+        	</xpath>
+        </field>
+    </record>
+    
+  </data>
+</odoo>

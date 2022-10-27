@@ -1,0 +1,258 @@
+<odoo>
+  <data>
+    <record id="view_tree_account_edi_document" model="ir.ui.view">
+        <field name="name">Account.edi.document.tree</field>
+        <field name="model">account.edi.document</field>
+        <field name="inherit_id" ref="account_edi.view_tree_account_edi_document"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='edi_format_name']" position="after">
+              <field name="pe_date" groups="l10n_pe_cpe.group_pe_cpe_user" />
+              <field name="pe_return_code" />
+              <field name="state" />
+            </xpath>
+            <xpath expr="//field[@name='edi_format_name']" position="before">
+              <field name="move_id" />
+            </xpath>
+            
+        </field>
+    </record>
+
+    <record id="view_form_account_edi_document" model="ir.ui.view">
+        <field name="name">Account.edi.document.form</field>
+        <field name="model">account.edi.document</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_sent" string="Sent" states="to_send" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_document_status" string="Document Status" 
+                    attrs="{'invisible': [('state','not in', ('to_send','sent'))]}" 
+                    type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                  <field name="state" widget="statusbar" statusbar_visible="to_send,sent"/>
+                </header>
+                <sheet string="CPE">
+                    <h1 class="mt0">
+                        <field name="name" readonly="1" class="oe_inline" />
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="pe_date" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                            <field name="pe_ticket" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                            <field name="pe_return_code" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                            <field name="pe_response" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                        </group>
+                        <group>
+                            <field name="pe_send_date" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                            <field name="pe_date_end" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="CPE details">
+                            <group>
+                                <group>
+                                    <field name="attachment_id" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                                </group>
+                                <group>
+                                    <field name="pe_response_id" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                                </group>
+                            </group>
+                            <div>
+                              <label for="pe_note" string="Additional notes..." groups="l10n_pe_cpe.group_pe_cpe_user" />
+                              <field name="pe_note" groups="l10n_pe_cpe.group_pe_cpe_user"/>
+                            </div>
+                        </page>
+                    </notebook>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+
+    <record id="action_pe_cpe_document" model="ir.actions.act_window">
+        <field name="name">Document</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.edi.document</field>
+        <field name="domain">[('edi_format_id.code','=','pe_cpe')]</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the CPE.</field>
+    </record>
+
+
+    <record model="ir.ui.view" id="view_pe_cpe_rc_tree">
+      <field name="name">pe.cpe.rc.tree</field>
+      <field name="model">pe.cpe.rc</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="state"/>
+		    <field name="pe_date"/>
+		    <field name="pe_return_code"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_cpe_rc_from" model="ir.ui.view">
+        <field name="name">pe.cpe.rc.form</field>
+        <field name="model">pe.cpe.rc</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                 	<button name="action_generate" string="Generate" states="to_send" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                 	<button name="action_to_send" string="To Sent" states="generate,cancelled" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_sent" string="Sent" states="generate" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                 	<button name="action_done" string="Done" states="to_check" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                 	<button name="action_document_status" string="Document Status" 
+                 	attrs="{'invisible': [('state','not in', ('to_send','generate','to_check', 'sent'))]}" 
+                    type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_cancelled" string="Cancel" states="to_send,generate,to_check" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                  <field name="state" widget="statusbar" statusbar_visible="to_send,generate,sent"/>
+                </header>
+                <sheet string="Daily Summary">
+                	<h1 class="mt0">
+                		<field name="name" readonly="1" class="oe_inline" />
+                	</h1>
+                	<group>
+                		<group>
+                            <field name="pe_date" />
+                            <field name="pe_ticket" />
+                            <field name="pe_return_code" />
+                			<field name="pe_response" />
+                		</group>
+                		<group>
+                			<field name="pe_send_date"  />
+                			<field name="pe_date_end"/>
+                			<field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" />
+                		</group>
+                	</group>
+                	<notebook colspan="4">
+                		<page string="Daily Summary details">
+                			<group>
+                				<group>
+                                    <field name="attachment_id" />
+                				</group>
+                				<group>
+                                    <field name="pe_response_id" />
+                				</group>
+                			</group>
+                            <div>
+        	                  <label for="pe_note" string="Additional notes..." />
+        	                  <field name="pe_note"/>
+        	                </div>
+                		</page>
+                		<page string="Summary Invoices">
+                			<field name="summary_ids" attrs="{'readonly': [('state','not in',('to_send'))]}" >
+                				
+                			</field>
+                		</page>
+                		
+                	</notebook>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+
+    <record id="action_pe_cpe_rc" model="ir.actions.act_window">
+        <field name="name">Daily Summary</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.cpe.rc</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the CPE.</field>
+    </record>
+
+    <record model="ir.ui.view" id="view_pe_cpe_ra_tree">
+      <field name="name">pe.cpe.ra.tree</field>
+      <field name="model">pe.cpe.ra</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="state"/>
+            <field name="pe_date"/>
+            <field name="pe_return_code"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_cpe_ra_from" model="ir.ui.view">
+        <field name="name">pe.cpe.ra.form</field>
+        <field name="model">pe.cpe.ra</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_generate" string="Generate" states="to_send" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_to_send" string="To Sent" states="generate,to_cancel" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_sent" string="Sent" states="generate" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_done" string="Done" states="to_check" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_document_status" string="Document Status" 
+                    attrs="{'invisible': [('state','not in', ('to_send','generate','to_check', 'sent'))]}" 
+                    type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <!--button name="action_to_cancel" string="To Cancel" states="to_send,generate,to_check" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" />
+                    <button name="action_cancelled" string="Cancel" states="to_cancel" type="object" groups="l10n_pe_cpe.group_pe_cpe_user" /-->
+                  <field name="state" widget="statusbar" statusbar_visible="to_send,generate,sent"/>
+                </header>
+                <sheet string="Low communication">
+                    <h1 class="mt0">
+                        <field name="name" readonly="1" class="oe_inline" />
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="pe_date" />
+                            <field name="pe_ticket" />
+                            <field name="pe_return_code" />
+                            <field name="pe_response" />
+                        </group>
+                        <group>
+                            <field name="pe_send_date"  />
+                            <field name="pe_date_end"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" />
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Low communication details">
+                            <group>
+                                <group>
+                                    <field name="attachment_id" />
+                                </group>
+                                <group>
+                                    <field name="pe_response_id" />
+                                </group>
+                            </group>
+                            <div>
+                              <label for="pe_note" string="Additional notes..." />
+                              <field name="pe_note"/>
+                            </div>
+                        </page>
+                        <page string="Voided Invoices">
+                            <field name="voided_ids" attrs="{'readonly': [('state','not in',('to_send'))]}" >
+                                
+                            </field>
+                        </page>
+                        
+                    </notebook>
+                </sheet>
+                
+            </form>
+        </field>
+    </record>
+
+    <record id="action_pe_cpe_ra" model="ir.actions.act_window">
+        <field name="name">Low communication</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pe.cpe.ra</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Display and manage the CPE.</field>
+    </record>
+
+    <menuitem id="pe_cpe_root" name="CPEs" parent="account.menu_finance" sequence="20" />
+    
+    <menuitem name="CPE" id="pe_cpe_document_menu" parent="pe_cpe_root"
+      action="action_pe_cpe_document" sequence="1" />
+
+
+    <menuitem name="Daily Summary" id="pe_cpe_rc_menu" parent="pe_cpe_root"
+      action="action_pe_cpe_rc" sequence="1" />
+
+    <menuitem name="Low communication" id="pe_cpe_ra_menu" parent="pe_cpe_root"
+      action="action_pe_cpe_ra" sequence="1" />
+
+  </data>
+</odoo>

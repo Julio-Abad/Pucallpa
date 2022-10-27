@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_form_pe_cpe_wizard">
+        <field name="name">pe.cpe.wizard.form</field>
+        <field name="model">pe.cpe.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                     <group>
+                        <div class="oe_grey" colspan="4" attrs="{'invisible':[('pe_ws_type','not in',['development'])]}">
+                            <b>DESARROLLO:</b><br />
+                            https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService?wsdl<br />
+                            https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService?wsdl<br />
+                        </div> 
+                        <div class="oe_grey" colspan="4" attrs="{'invisible':[('pe_ws_type','not in',['production'])]}">
+                            <b>PRODUCTION:</b><br />
+                            https://e-factura.sunat.gob.pe/ol-ti-itcpfegem/billService?wsdl<br />
+                            https://e-factura.sunat.gob.pe/ol-it-wsconscpegem/billConsultService?wsdl<br />
+                        </div>
+                     </group>
+                </group>
+                <group>
+                    <group>
+                        <field name="pe_ws_server"/>
+                        <field name="pe_ws_type"/>
+                        <field name="pe_ws_user" attrs="{'required':[('pe_ws_server','in',['sunat'])],'invisible':[('pe_ws_server','not in',['sunat'])]}"/>
+                        <field name="pe_ws_password" password="password" attrs="{'required':[('pe_ws_server','in',['sunat','nubefact_pse'])],'invisible':[('pe_ws_server','not in',['sunat','nubefact_pse'])]}" />
+                        
+                    </group>
+                    <group>
+                        <field name="pe_ws_url"/>
+                        <field name="pe_ws_status_url" attrs="{'required':[('pe_ws_server','in',['sunat'])],'invisible':[('pe_ws_server','not in',['sunat'])]}"/>
+                        <field name="company_id"/>
+                    </group>
+                </group>
+                <label for="pe_private_key" attrs="{'required':[('pe_ws_server','in',['sunat'])],'invisible':[('pe_ws_server','not in',['sunat'])]}"/>
+                <field name="pe_private_key" attrs="{'required':[('pe_ws_server','in',['sunat'])],'invisible':[('pe_ws_server','not in',['sunat'])]}" />
+                <label for="pe_public_key" attrs="{'required':[('pe_ws_server','in',['sunat'])],'invisible':[('pe_ws_server','not in',['sunat'])]}" />
+                <field name="pe_public_key" attrs="{'required':[('pe_ws_server','in',['sunat'])],'invisible':[('pe_ws_server','not in',['sunat'])]}" />
+                <footer>
+                    <button
+                        name="appy_configuration"
+                        string="Confirm"
+                        type="object"
+                        class="oe_highlight"
+                    />
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

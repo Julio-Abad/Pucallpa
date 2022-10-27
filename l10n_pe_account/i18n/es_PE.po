@@ -1,0 +1,432 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pe_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e-20211201\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-29 23:39+0000\n"
+"PO-Revision-Date: 2022-06-29 18:42-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_PE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Revocación de movimiento en cuenta"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_account_debit_note
+msgid "Add Debit Note wizard"
+msgstr "Asistente para agregar nota débito"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__amount
+msgid "Amount"
+msgstr "Monto"
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_move_form
+msgid "Annul Entry"
+msgstr "Anular"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_annul
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_annul
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_annul
+msgid "Annulled"
+msgstr "Anulado"
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_move_form
+msgid "Are you sure you want to cancel this document?"
+msgstr "¿Está seguro de que desea cancelar este documento?"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_tax__pe_is_charge
+#: model:ir.model.fields.selection,name:l10n_pe_account.selection__product_template__pe_product_type__charge
+msgid "Charge"
+msgstr "Cargo"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,help:l10n_pe_account.field_account_bank_statement_import_journal_creation__pe_debit_sequence
+#: model:ir.model.fields,help:l10n_pe_account.field_account_journal__pe_debit_sequence
+msgid ""
+"Check this box if you don't want to share the same sequence for invoices "
+"and debit notes made from this journal"
+msgstr ""
+"Marque esta casilla si no desea compartir la misma secuencia para facturas "
+"y notas de débito realizadas desde este diario"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_import_journal_creation__pe_credit_invoice_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__pe_credit_invoice_code
+msgid "Credit Invoice Type Code"
+msgstr "Tipo de Nota de Crédito"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_import_journal_creation__pe_credit_note_id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__pe_credit_note_id
+msgid "Credit Note"
+msgstr "Nota de Crédito"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_credit_note_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_credit_note_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_reversal__pe_credit_note_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_credit_note_code
+msgid "Credit Note Code"
+msgstr "Código Nota de Crédito"
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_move_form
+msgid "Cuotas"
+msgstr ""
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_res_currency
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_currency__pe_currency_code
+msgid "Currrency Code"
+msgstr "Código de Moneda"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_import_journal_creation__pe_debit_invoice_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__pe_debit_invoice_code
+msgid "Debit Invoice Type Code"
+msgstr "Tipo de Nota de Débito"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_import_journal_creation__pe_debit_note_id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__pe_debit_note_id
+msgid "Debit Note"
+msgstr "Nota de Débito"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_import_journal_creation__pe_debit_sequence
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__pe_debit_sequence
+msgid "Dedicated Debit Note Sequence"
+msgstr "Secuencia de nota de débito dedicada"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_debit_note_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_debit_note__pe_debit_note_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_debit_note_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_debit_note_code
+msgid "Dedit Note Code"
+msgstr "Código de Nota de Débito"
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_move_form
+msgid "Detraction"
+msgstr "Detracción"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_detraction_amount
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_detraction_amount
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_detraction_amount
+msgid "Detraction Amount"
+msgstr "Monto de Detracción"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_detraction_percentage
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_detraction_percentage
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_detraction_percentage
+msgid "Detraction Percentage"
+msgstr "Porcentaje de Detracción"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields.selection,name:l10n_pe_account.selection__product_template__pe_product_type__discount
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_debit_note__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_reversal__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_tax__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_category__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_template__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_currency__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_users__display_name
+#: model:ir.model.fields,field_description:l10n_pe_account.field_uom_uom__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_tax__l10n_pe_edi_tax_code
+msgid "EDI peruvian code"
+msgstr "Código de Tributo"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_qty_fees
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_qty_fees
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_qty_fees
+msgid "Fees"
+msgstr "Cuotas"
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_move_form
+msgid "Generate Quotas"
+msgstr "Generar Cuotas"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_debit_note__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_line__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_reversal__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_tax__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_category__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_template__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_currency__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_users__id
+#: model:ir.model.fields,field_description:l10n_pe_account.field_uom_uom__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__move_id
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_users__pe_journal_ids
+msgid "Invoice Journals"
+msgstr "Diarios de Facturas"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_import_journal_creation__pe_invoice_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_invoice_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal__pe_invoice_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_invoice_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_invoice_code
+msgid "Invoice Type Code"
+msgstr "Tipo de Comprobante"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento Contable"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_debit_note____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_journal____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_reversal____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_tax____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_category____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_template____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_currency____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_res_users____last_update
+#: model:ir.model.fields,field_description:l10n_pe_account.field_uom_uom____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_pe_payment_date__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_license_plate
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_license_plate
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_line__pe_license_plate
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_license_plate
+msgid "License Plate"
+msgstr "Placa"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields.selection,name:l10n_pe_account.selection__account_tax__l10n_pe_edi_tax_code__7152
+msgid "OTH - Impuesto al Consumo de las bolsas de plástico"
+msgstr ""
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_pe_payment_date_from
+msgid "Payment Fees"
+msgstr "Tarifas de Pago"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_payment_lines
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_payment_lines
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_payment_lines
+msgid "Payment Lines"
+msgstr "Líneas de Pago"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_pe_payment_date
+msgid "Peruvian Payment Date"
+msgstr "Fecha de Pago Peruana"
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_account_journal_form
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_cpe_users_form
+msgid "Peruvian Settings"
+msgstr "Configuraciones Peruanas"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields.selection,name:l10n_pe_account.selection__product_template__pe_product_type__prepayment
+msgid "Prepayment"
+msgstr "Pago por Adelantado"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_product__pe_product_type
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_template__pe_product_type
+msgid "Product"
+msgstr "Producto"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_product_category
+msgid "Product Category"
+msgstr "Categoría de Producto"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de Producto"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "Unidad de Medida del Producto"
+
+#. module: l10n_pe_account
+#: model_terms:ir.ui.view,arch_db:l10n_pe_account.view_move_form
+msgid "Retention"
+msgstr "Retencion"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_retention_amount
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_retention_amount
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_retention_amount
+msgid "Retention Amount"
+msgstr "Monto de retención"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_retention_percentage
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_retention_percentage
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_retention_percentage
+msgid "Retention Percentage"
+msgstr "Porcentaje de Retención"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_subject_detraction
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_subject_detraction
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_subject_detraction
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_product__pe_subject_detraction
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_template__pe_subject_detraction
+msgid "Subject to Detraction"
+msgstr "Sujeto a Detracción"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_bank_statement_line__pe_subject_retention
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move__pe_subject_retention
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_payment__pe_subject_retention
+msgid "Subject to Retention"
+msgstr "Sujeto a Retención"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_tax__pe_tax_type
+msgid "Tax Type"
+msgstr "Tipo de Impuesto"
+
+#. module: l10n_pe_account
+#: code:addons/l10n_pe_account/models/account_move.py:0
+#, python-format
+msgid "The invoice date must be different from the due date"
+msgstr "La fecha de la factura debe ser diferente a la fecha de vencimiento"
+
+#. module: l10n_pe_account
+#: code:addons/l10n_pe_account/models/account_move.py:0
+#, python-format
+msgid "The quotas must be greater than zero?"
+msgstr "¿Las cuotas deben ser mayores que cero?"
+
+#. module: l10n_pe_account
+#: code:addons/l10n_pe_account/models/account_move.py:0
+#, python-format
+msgid "The total must be greater than zero "
+msgstr "El total debe ser mayor que cero"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_tax__pe_tier_range
+msgid "Type of System"
+msgstr "Tipo de Sistema"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_account_move_line__pe_type_affectation
+msgid "Type of affectation"
+msgstr "Tipo de Afectación"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,help:l10n_pe_account.field_account_tax__pe_tier_range
+msgid "Type of system to the ISC"
+msgstr "Tipo de sistema al ISC"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_category__pe_unspsc_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_product__pe_unspsc_code
+#: model:ir.model.fields,field_description:l10n_pe_account.field_product_template__pe_unspsc_code
+msgid "UNSPSC Code"
+msgstr "Código UNSPSC"
+
+#. module: l10n_pe_account
+#: model:ir.model.fields,field_description:l10n_pe_account.field_uom_uom__pe_unit_code
+msgid "Unit Code"
+msgstr "Unidad de Medida"
+
+#. module: l10n_pe_account
+#: model:ir.model,name:l10n_pe_account.model_res_users
+msgid "Users"
+msgstr "Usuarios"

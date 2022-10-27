@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_move_form">
+        <field name="name">account.move.inherit.l10n.pe.invoice</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field eval="100" name="priority"/>
+        <field name="arch" type="xml">
+            <!--xpath expr="//button[@name='action_reverse']" position="after" >
+              <button name="action_reverse_pe_debit" string="Add Debit Note" type="object" groups="account.group_account_invoice" attrs="{'invisible': ['|', ('type', 'not in', ('out_invoice', 'in_invoice')), ('state', '!=', 'posted')]}"/>
+            </xpath-->
+            <xpath expr="//field[@name='id']" position="after">
+              <field name="pe_annul" invisible="1"/>
+            </xpath>
+            
+             <xpath expr="//button[@name='button_cancel']" position="after">
+              <button name="button_pe_annul" type="object" attrs="{'invisible' : ['|', ('payment_state', '=', 'paid'),('state', 'not in', ('posted'))]}" 
+                string="Annul Entry" confirm="Are you sure you want to cancel this document?" groups="account.group_account_invoice" />
+            </xpath>
+
+            <xpath expr="//widget[last()]" position="after">
+              <widget name="web_ribbon" text="Annul" attrs="{'invisible': [('pe_annul', '=', False)]}"/>
+            </xpath>
+
+            <xpath expr="//label[@for='journal_id']" position="before">
+              <field name="pe_invoice_code" attrs="{'required': [('move_type', 'in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))]}" />
+              <field name="pe_credit_note_code" attrs="{'invisible':[('pe_invoice_code','!=','07')],'required':[('pe_invoice_code','=','07')]}" />
+              <field name="pe_debit_note_code" attrs="{'invisible':[('pe_invoice_code','!=','08')],'required':[('pe_invoice_code','=','08')]}" />
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="after">
+              <field name="pe_license_plate" invisible="True" />
+              <field name="pe_type_affectation" attrs="{'required': ['|',('parent.move_type', 'not in', ('in_invoice', 'in_refund','in_receipt')),('parent.pe_invoice_code','in',('01','03','07','08'))]}" optional="show" />
+            </xpath>
+            <xpath expr="//field[@name='invoice_line_ids']/form/sheet/group/field[@name='discount']" position="after">
+              <field name="pe_license_plate" invisible="True" />
+              <field name="pe_type_affectation" attrs="{'required': [('parent.move_type', 'not in', ('in_invoice', 'in_refund','in_receipt'))]}"  />
+            </xpath>
+
+            <xpath expr="//field[@name='line_ids']/tree/field[@name='discount']" position="after">
+              <field name="pe_license_plate" invisible="True" />
+              <field name="pe_type_affectation" invisible="True" />
+            </xpath>
+            
+            <xpath expr="//page[@name='other_info']" position="inside">
+                <group string="Detraction" attrs="{'invisible':[('move_type','not in',['out_invoice','out_refund'])]}">
+                  <group>
+                    <field name="pe_subject_detraction" />
+                  </group>
+
+                    <group>
+                    <field name="pe_detraction_amount" />
+                  </group>
+
+                </group>
+              <group string="Retention" attrs="{'invisible':[('move_type','not in',['out_invoice','out_refund'])]}">
+                  <group>
+                    <field name="pe_subject_retention"  />
+                  </group>
+
+                    <group>
+                    <field name="pe_retention_amount" />
+                  </group>
+
+                </group>
+
+                <group string="Cuotas" attrs="{'invisible':[('move_type','not in',['out_invoice','out_refund'])]}">
+                  <group>
+                    <field name="pe_qty_fees" required="True" />
+                  </group>
+                  <group>
+                    <button name="generate_pe_fees" states="draft" nolabel="1" type="object" class="btn-primary" string="Generate Quotas"/>
+                  </group>
+                  <field name="pe_payment_lines" nolabel="1" />
+                </group>
+                
+            </xpath>
+            
+
+        </field>
+    </record>
+
+</odoo>

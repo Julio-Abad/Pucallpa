@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+	<record model="ir.ui.view" id="view_company_form">
+        <field name="name">res.company.form.inherit.l10n.pe.cpe</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//sheet/notebook/page" position="inside">
+            <group string="Peruvian Customization">
+              <group>
+                <field name="pe_max_amount" />
+                <field name="pe_is_sync" />
+                <field name="pe_branch_code" />
+              </group>
+              <group>
+                  <field name="pe_detraction_account_number" />
+                <field name="pe_resolution_type" readonly="True" />
+                <field name="pe_resolution_number" readonly="True" />
+              </group>
+            </group>
+          </xpath>
+
+        </field>
+    </record>
+
+  </data>
+</odoo>

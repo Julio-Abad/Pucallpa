@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="0">
+        <!--Email template -->
+        <record id="email_template_edi_invoice" model="mail.template">
+            <field name="name">Invoice: Send by email</field>
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="email_from">${(object.invoice_user_id.email_formatted or user.email_formatted) |safe}</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="subject">${object.company_id.name} Invoice (Ref ${object.name or 'n/a'})</field>
+            <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px;">
+    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+        Estimado
+        % if object.partner_id.parent_id:
+            ${object.partner_id.name} (${object.partner_id.parent_id.name}),
+        % else:
+            ${object.partner_id.name},
+        % endif
+        <br /><br />
+        Aquí está su comprobante
+        % if object.name:
+         <strong>${object.name}</strong>
+        % else:
+            invoice
+        %endif
+        % if object.invoice_origin:
+            (con referencia: ${object.invoice_origin})
+        % endif
+        por el monto de <strong>${format_amount(object.amount_total, object.currency_id)}</strong>
+        de ${object.company_id.name}.
+        % if object.payment_state in ('paid', 'in_payment'):
+            This invoice is already paid.
+        % else:
+        Por favor remita el pago a su más pronta conveniencia.
+            % if object.payment_reference:
+                <br /><br />
+                Utilice la siguiente referencia para su pago: <strong>${object.payment_reference}</strong>.
+            % endif
+        % endif
+        <br /><br />
+        No dude en contactarnos si tiene alguna pregunta.
+        % if object.invoice_user_id.signature:
+            <br />
+            ${object.invoice_user_id.signature | safe}
+        % endif
+    </p>
+</div>
+            </field>
+            <field name="report_template" ref="account.account_invoices"/>
+            <field name="report_name">${(object.name or '').replace('/','_')}${object.state == 'draft' and '_draft' or ''}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
+</odoo>
