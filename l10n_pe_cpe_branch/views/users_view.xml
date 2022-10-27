@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_cpe_users_form">
+        <field name="name">res.users.view.form.inherit.l10n.pe.cpe</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="l10n_pe_account.view_cpe_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='pe_journal_ids']" position="after">
+				<field name="pe_branch_id" options="{'no_create': True}" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

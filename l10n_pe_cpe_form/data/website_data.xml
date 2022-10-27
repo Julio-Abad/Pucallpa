@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="querycpe" model="ir.ui.view">
+            <field name="name">Query CPE</field>
+            <field name="type">qweb</field>
+            <field name="key">l10n_pe_cpe_form.querycpe</field>
+            <field name="arch" type="xml">
+                <t name="Query CPE" t-name="l10n_pe_cpe_form.querycpe">
+                    <t t-call="website.layout">
+                        <div id="wrap">
+                            <div class="oe_structure">
+                                <section class="pt8 pb8">
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-lg-12 s_title pt16 pb16">
+                                                <h1>Query CPE</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="container mt-2">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="oe_structure">
+                                            <section class="s_text_block">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <p>
+                                                                Check your electronic payment documents
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        
+
+							            <form id="querycpe_form" t-ignore="true" action="/website_form/" method="post" data-model_name="pe.query.cpe.form" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-success_page="/no-exist" >
+							            	<!--input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/-->
+							                <!--div class="form-group row form-field o_website_form_custom o_website_form_required_custom">
+							                    <div class="col-lg-3 col-md-4">
+							                        <label class="col-form-label" for="company_vat">Company</label>
+							                    </div>
+							                    <div class="col-lg-7 col-md-8">
+							                        <select class="form-control" name="company_vat" required="" >
+														<option></option>
+													</select>
+							                    </div>
+							                </div-->
+							                <div class="form-group row form-field o_website_form_custom">
+							                    <div class="col-lg-3 col-md-4">
+							                        <label class="col-form-label" for="vat">N° Client Document</label>
+							                    </div>
+							                    <div class="col-lg-7 col-md-8">
+							                        <input type="text" class="form-control o_website_form_input" name="vat" t-attf-placeholder="Numero de Documento" />
+							                    </div>
+							                </div>
+							                <div class="form-group row form-field o_website_form_required_custom">
+							                    <div class="col-lg-3 col-md-4">
+							                        <label class="col-form-label" for="number">Number</label>
+							                    </div>
+							                    <div class="col-lg-7 col-md-8">
+							                        <input type="text" class="form-control o_website_form_input" name="number" required="" pattern="(B|F){1}[A-Z0-9]{3}-[0-9]{1,8}"  t-attf-placeholder="Numero del Comprobante ejemplo F001-0005, F001-6"/>
+							                    </div>
+							                </div>
+							                <div class="form-group row form-field o_website_form_required_custom">
+							                    <div class="col-lg-3 col-md-4">
+							                        <label class="col-form-label" for="invoice_date">Date Invoice</label>
+							                    </div>
+							                    <div class="col-lg-7 col-md-8">
+							                        <input type="text" class="form-control s_website_form_datetime o_website_form_datetime" name="invoice_date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" required="" t-attf-placeholder="ejemplo 2020-08-12" />
+							                    </div>
+							                </div>
+							                <div class="form-group row form-field o_website_form_required_custom">
+							                    <div class="col-lg-3 col-md-4">
+							                        <label class="col-form-label" for="amount">Amount</label>
+							                    </div>
+							                    <div class="col-lg-7 col-md-8">
+							                        <input type="number" step="0.01" class="form-control o_website_form_input" name="amount" required=""/>
+							                    </div>
+							                </div>
+							                <div class="form-group row form-field o_website_form_required_custom">
+							                    <!--label
+							                        class="col-lg-3 col-md-4 col-form-label"
+							                        for="g-recaptcha-response"
+							                    >Human?</label>
+							                    <div class="col-lg-7 col-md-8">
+							                        <span class="o_website_form_recaptcha" required="" />
+							                    </div-->
+
+							                    <div data-js="recaptchaSubscribe" t-att-data-selector="selector">
+										            <t t-set="recaptcha_public_key" t-value="request.env['ir.config_parameter'].sudo().get_param('recaptcha_public_key')"/>
+										            <we-checkbox t-if="recaptcha_public_key" string="Show reCaptcha Policy" data-toggle-recaptcha-legal="" data-no-preview="true"/>
+										        </div>
+							                </div>
+							                <div class="form-group row">
+							                    <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+							                        <a href="#" class="btn btn-primary btn-lg o_website_form_send o_website_form_cpe_send">Send</a>
+							                        <!--input class="btn btn-primary" type="submit" value="Send" /-->
+							                        <span id="o_website_form_result"></span>
+							                    </div>
+							                </div>
+							            </form>
+
+
+							            <!--div class="oe_structure">
+							            	<section class="s_text_block">
+							            		<div class="container">
+                                                    <div class="row">
+                                                    	<div class="col-lg-12" t-if="invoice">
+											              <a id="cpe_response" class="btn btn-info" t-att-download="'%s.xml'% invoice.get('name')" t-att-href="'data:application/xhtml+xml;base64,%s' % invoice.get('datas_sign')" t-if="invoice.get('datas_sign')">Descargar XML</a>
+											              <br/>
+											              <br/>
+											              <embed t-att-src=" 'data:application/pdf;base64,%s' % invoice.get('datas_invoice')" t-attf-height="600px" t-attf-width="100%" t-if="invoice.get('datas_invoice')"/>
+											              <p t-if="invoice.get('error') or not invoice">El documento solicitado no ha sido encontrado</p>
+											            </div>
+                                                    </div>
+                                                </div>
+							            	</section>
+							            </div-->
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <t t-call="website.company_description"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oe_structure mt-2"/>
+                        </div>
+                        <script>
+                        	<!--$.datepicker.regional['es'] = {
+							closeText: 'Cerrar',
+							prevText: '&lt; Ant',
+							nextText: 'Sig &gt;',
+							currentText: 'Hoy',
+							monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+							monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+							dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+							dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+							dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+							weekHeader: 'Sm',
+							dateFormat: 'dd/mm/yy',
+							firstDay: 1,
+							isRTL: false,
+							showMonthAfterYear: false,
+							yearSuffix: ''
+							};
+							$.datepicker.setDefaults($.datepicker.regional['es']);
+							  $( function() {
+							    $(".o_website_form_date").datepicker({dateFormat: "yy-mm-dd"});
+							  } );-->
+						</script>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+        <record id="querycpe_noexist" model="website.page">
+	        <field name="name">CPE Response</field>
+	        <field name="type">qweb</field>
+	        <field name="url">/no-exist</field>
+	        <field name="website_indexed" eval="False"/>
+	        <field name="is_published">True</field>
+	        <field name="key">l10n_pe_cpe_form.querycpe_noexist</field>
+	        <field name="arch" type="xml">
+	            <t name="Thanks (Contact us)" t-name="website_form.contactus_thanks">
+	                <t t-call="website.layout">
+	                  <div id="wrap">
+	                    <div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_1"/>
+	                    <div class="container pt-3">
+	                        <div class="row">
+	                            <div class="col-lg-8">
+	                                <p>El documento solicitado no ha sido encontrado</p>
+	                            </div>
+	                            <div class="col-lg-4">
+	                                <t t-call="website.company_description"/>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="oe_structure" id="oe_structure_website_form_contact_us_thanks_2"/>
+	                  </div>
+	                </t>
+	            </t>
+	        </field>
+	    </record>
+
+		<record id="l10n_pe_cpe_form.model_pe_query_cpe_form" model="ir.model">
+			<field name="website_form_key">query_cpe</field>
+			<!--field name="website_form_default_field_id" ref="mail.field_mail_mail__body_html" /-->
+			<field name="website_form_access">True</field>
+			<field name="website_form_label">Query CPE</field>
+			<!--field name="website_form_recaptcha">True</field-->
+		</record>
+    </data>
+
+    <data noupdate="0">
+    	<record id="querycpe_page" model="website.page">
+            <field name="url">/cpe</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="querycpe"/>
+            <field name="track">True</field>
+        </record>
+
+        <record id="menu_querycpe" model="website.menu">
+            <field name="name">CPE</field>
+            <field name="url">/cpe</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">50</field>
+        </record>
+    </data>
+</odoo>
