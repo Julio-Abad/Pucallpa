@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="OrderReceipt">
+        <!--t t-jquery='.order-document-name' t-operation="append"> 
+            <div style="text-align:center; font-size: 120%;">
+                <b>
+                    <span t-if="order.get_cpe_type()">
+                        <t t-if="order.get_cpe_type()=='01'">Factura </t>
+                        <t t-if="order.get_cpe_type()=='03'">Boleta de Venta </t>
+                        <t t-if="order.get_cpe_type()=='07'">Nota de Credito </t>Electronica 
+                    </span>
+                </b>
+            </div>
+        </t-->
+        <t t-jquery='t[t-esc="order.get_number()"]' t-operation="before"> 
+            <span t-if="order.get_cpe_type()">
+                <t t-if="order.get_cpe_type()=='01'">Factura </t>
+                <t t-if="order.get_cpe_type()=='03'">Boleta de Venta </t>
+                <t t-if="order.get_cpe_type()=='07'">Nota de Credito </t>Electronica <br />
+            </span>
+        </t>
+        <t t-jquery='.before-footer' t-operation="after">
+            <div style="text-align:center; font-size: 75%;">
+                <t t-if="order.get_cpe_type()">
+                    <br />
+                    <div class="qr-code" id="qr-code" style="display: flex; justify-content: center;"></div>
+                    <br />
+                    <b class="doc-sunat">Representación impresa de,
+                    <t t-if="order.get_cpe_type()=='01'">Factura </t>
+                    <t t-if="order.get_cpe_type()=='03'">Boleta de Venta </t>
+                    <t t-if="order.get_cpe_type()=='07'">Nota de Credito </t>Electronica consulte en <t t-esc="widget.pos.company.website || ''+'cpe'"/> </b>
+                </t>
+            </div>
+        </t>
+    </t>
+
+</templates>

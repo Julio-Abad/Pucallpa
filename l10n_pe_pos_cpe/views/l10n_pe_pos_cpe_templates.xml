@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="l10n_pe_pos_cpe_assets_backend" inherit_id="point_of_sale.assets" name="l10n_pe_pos_cpe_assets_backend">
+      <xpath expr="." position="inside">
+      		<script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/lib/Blob.js"></script>
+      		<script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/lib/FileSaver.js"></script>
+            <script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/lib/qrcode.js"></script>
+            <script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/lib/String.js"></script>
+          	<script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/js/models.js"></script>
+            <script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/js/db.js"></script>
+            <script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/js/Screens/PaymentScreen.js"></script>
+            <script type="text/javascript" src="/l10n_pe_pos_cpe/static/src/js/Screens/OrderReceipt.js"></script>
+      </xpath>
+    </template>
+</odoo>

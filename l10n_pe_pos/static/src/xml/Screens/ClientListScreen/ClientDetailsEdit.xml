@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<t t-name="ClientDetailsEdit" t-inherit="point_of_sale.ClientDetailsEdit" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('client-details-left')]" position="inside">
+			<div class='client-detail'>
+                <span class='label'>Document Type</span>
+                <select class='detail client-address-type needsclick' name='pe_doc_type' t-on-change="captureChange">
+                    <option value=''>None</option>
+                    <t t-foreach='env.pos.pe_doc_types' t-as='pe_doc_type'>
+                        <option t-att-value='pe_doc_type.code' t-att-selected="props.partner.pe_doc_type ? ((pe_doc_type.code === props.partner.pe_doc_type) ? true : undefined) : undefined">
+                            <t t-esc='pe_doc_type.name'/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+
+            <div class='client-detail'>
+                <input type="hidden" class='detail pe_commercial_name' name='pe_commercial_name' t-att-value='props.partner.pe_commercial_name || ""' t-on-change="captureChange"></input>
+                <input type="hidden" class='detail pe_legal_name' name='pe_legal_name' t-att-value='props.partner.pe_legal_name || ""' t-on-change="captureChange"></input>
+                <input type="hidden" class='detail pe_last_update' name='pe_last_update' t-att-value='props.partner.pe_last_update || ""' t-on-change="captureChange"></input>
+                <input type="hidden" class='detail pe_is_validate' name='pe_is_validate' t-att-value='props.partner.pe_is_validate || ""' t-on-change="captureChange"></input>
+                <input type="hidden" class='detail l10n_pe_district' name='l10n_pe_district' t-att-value='props.partner.l10n_pe_district || ""' t-on-change="captureChange"></input>
+                <input type="hidden" class='detail city_id' name='city_id' t-att-value='props.partner.city_id || ""' t-on-change="captureChange"></input>
+            </div>
+		</xpath>
+
+        <xpath expr="//div[hasclass('client-details-right')]" position="inside">
+            <div class='client-detail partner-pe-state'>
+                <span class='label'>Status</span>
+                <select class='detail client-address-state needsclick' name='pe_state' t-on-change="captureChange">
+                    <option value=''>None</option>
+                    <t t-foreach='env.pos.pe_states' t-as='pe_state'>
+                        <option t-att-value='pe_state.code' t-att-selected="props.partner.pe_state ? ((pe_state.code === props.partner.pe_state) ? true : undefined) : undefined"> 
+                            <t t-esc='pe_state.name'/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+            <div class='client-detail partner-pe-condition'>
+                <span class='label'>Condition</span>
+                <select class='detail client-address-condition needsclick' name='pe_condition' t-on-change="captureChange">
+                    <option value=''>None</option>
+                    <t t-foreach='env.pos.pe_conditions' t-as='pe_condition'>
+                        <option t-att-value='pe_condition.code' t-att-selected="props.partner.pe_condition ? ((pe_condition.code === props.partner.pe_condition) ? true : undefined) : undefined"> 
+                            <t t-esc='pe_condition.name'/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+        </xpath>
+	</t>
+
+</templates>

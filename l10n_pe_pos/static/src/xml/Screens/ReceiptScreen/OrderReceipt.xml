@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        <xpath expr="//t[@t-if='receipt.company.contact_address']" position="after">
+            <t t-if='env.pos.company.street'>
+                <div><t t-esc='env.pos.company.street' /></div>
+            </t>
+            <t t-if="env.pos.company.l10n_pe_district">
+                <div>
+                    <t t-esc="env.pos.company.l10n_pe_district[1] || ''" />
+                    <t t-esc="env.pos.company.city_id[1] || ''" />
+                    <t t-esc="env.pos.company.state_id[1] || ''" />
+                    <t t-esc="env.pos.company.zip || ''" />
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('pos-receipt-contact')]" position="after">
+            <div class="pos-move-name" style="text-align: center; font-size: 100%;">
+
+            </div>
+            <br />
+            <div class="pos-receipt-partner">
+                <div style="text-align: center; font-size: 75%;">Date: <t t-esc='receipt.date.localestring' /></div>
+                
+                <div  style="text-align: center; font-size: 75%;" t-if="props.order.get('client')">
+                    <t t-if="props.order.get('client').name">
+                        <div><t t-esc="props.order.get('client').name" /></div>
+                    </t>
+                    <t t-if="props.order.get('client').vat">
+                        <div>RUC/DNI: <t t-esc="props.order.get('client').vat"/></div>
+                    </t>
+                    <t t-if="props.order.get('client').street">
+                        <div>Street: <t t-esc="props.order.get('client').street || ''"/></div>
+                    </t>
+                    
+                </div>
+                <div style="text-align: center; font-size: 75%;">Currency: <t t-esc="env.pos.company.currency_id ? env.pos.company.currency_id[1]: ''"/></div>  
+            </div>
+        </xpath>
+        
+        <!-- <xpath expr="//t[@t-if='!isTaxIncluded']" position="replace">
+            <t t-if='!isTaxIncluded'>
+                <div class="pos-receipt-right-align"></div>
+                <br/>
+                <t t-foreach='props.order.pe_get_tax_details()' t-as='tax'>
+                    <div>
+                        <t t-esc='tax.name' />
+                        <span t-esc='env.pos.format_currency(tax.amount)' class="pos-receipt-right-align"/>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+        
+        <xpath expr="//t[@t-if='isTaxIncluded']" position="replace">
+            <t t-if='isTaxIncluded'>
+                <div class="pos-receipt-right-align"></div>
+                <br/>
+                <t t-foreach='props.order.pe_get_tax_details()' t-as='tax'>
+                    <div>
+                        <t t-esc='tax.name' />
+                        <span t-esc='env.pos.format_currency(tax.amount)' class="pos-receipt-right-align"/>
+                    </div>
+                </t>
+            </t>
+        </xpath> -->
+
+        <xpath expr="//div[hasclass('before-footer')]" position="before">
+            <div style="font-size: 75%;">
+                SON: <t t-esc="props.order.get_amount_text().toUpperCase()" />
+            </div>
+        </xpath>
+        
+        
+    </t>
+
+</templates>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_pos_pos_form">
+        <field name="name">pos.order.form.inherit.l10n.pe.pos</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+        <field eval="100" name="priority"/>
+        <field name="arch" type="xml">
+            
+            <xpath expr="//button[@name='refund']" position="after" >
+              <button name="action_annul" string="Annul" type="object" attrs="{'invisible':[('state','=','draft')]}"/>
+            </xpath>
+            <xpath expr="//field[@name='fiscal_position_id']" position="after" >
+              <field name="reversed_entry_id" invisible="True" />
+              <field name="pe_credit_note_code" attrs="{'required':[('reversed_entry_id','!=',False)]}" />
+            </xpath>
+            
+        </field>
+    </record>
+
+</odoo>

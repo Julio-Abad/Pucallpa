@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<t t-extend="ClientDetailsEdit">
+		<t t-jquery='div[class="client-details-left"]' t-operation="append">
+			<div class='client-detail'>
+                <span class='label'>Document Type</span>
+                <select class='detail client-address-type needsclick' name='pe_doc_type'>
+                    <option value=''>None</option>
+                    <t t-foreach='widget.pos.pe_doc_types' t-as='pe_doc_type'>
+                        <option t-att-value='pe_doc_type.code' t-att-selected="partner.pe_doc_type ? ((pe_doc_type.code === partner.pe_doc_type) ? true : undefined) : undefined">
+                            <t t-esc='pe_doc_type.name'/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+
+            <!--div class='client-detail'>
+                <span class='label'>Document Number</span>
+                <input class='detail doc_number' name='doc_number' t-att-value='partner.doc_number || ""'></input>
+            </div-->
+            <div class='client-detail'>
+                <input type="hidden" class='detail pe_commercial_name' name='pe_commercial_name' t-att-value='partner.pe_commercial_name || ""'></input>
+                <input type="hidden" class='detail pe_legal_name' name='pe_legal_name' t-att-value='partner.pe_legal_name || ""'></input>
+                <input type="hidden" class='detail pe_last_update' name='pe_last_update' t-att-value='partner.pe_last_update || ""'></input>
+                <input type="hidden" class='detail pe_is_validate' name='pe_is_validate' t-att-value='partner.pe_is_validate || ""'></input>
+                <input type="hidden" class='detail l10n_pe_district' name='l10n_pe_district' t-att-value='partner.l10n_pe_district || ""'></input>
+                <input type="hidden" class='detail city_id' name='city_id' t-att-value='partner.city_id || ""'></input>
+            </div>
+		</t>
+
+        <t t-jquery='div[class="client-details-right"]' t-operation="append">
+            <div class='client-detail partner-pe-state'>
+                <span class='label'>Status</span>
+                <select class='detail client-address-state needsclick' name='pe_state'>
+                    <option value=''>None</option>
+                    <t t-foreach='widget.pos.pe_states' t-as='pe_state'>
+                        <option t-att-value='pe_state.code' t-att-selected="partner.pe_state ? ((pe_state.code === partner.pe_state) ? true : undefined) : undefined"> 
+                            <t t-esc='pe_state.name'/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+            <div class='client-detail partner-pe-condition'>
+                <span class='label'>Condition</span>
+                <select class='detail client-address-condition needsclick' name='pe_condition'>
+                    <option value=''>None</option>
+                    <t t-foreach='widget.pos.pe_conditions' t-as='pe_condition'>
+                        <option t-att-value='pe_condition.code' t-att-selected="partner.pe_condition ? ((pe_condition.code === partner.pe_condition) ? true : undefined) : undefined"> 
+                            <t t-esc='pe_condition.name'/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+        </t>
+	</t>
+
+    <t t-extend="OrderReceipt">
+        <t t-jquery='t[t-if="receipt.company.contact_address"]' t-operation="after">
+            <t t-if='order.pos.company.street'>
+                <div><t t-esc='order.pos.company.street' /></div>
+            </t>
+            <t t-if="order.pos.company.l10n_pe_district">
+                <div>
+                    <t t-esc="order.pos.company.l10n_pe_district[1] || ''" />
+                    <t t-esc="order.pos.company.city_id[1] || ''" />
+                    <t t-esc="order.pos.company.state_id[1] || ''" />
+                    <t t-esc="order.pos.company.zip || ''" />
+                </div>
+            </t>
+        </t>
+        <t t-jquery="t[t-esc='receipt.date.localestring']" t-operation="replace">
+        </t>
+        <t t-jquery=".pos-move-name" t-operation="after">
+            <div style="text-align: center; font-size: 75%;">Fecha: <t t-esc='receipt.date.localestring' /></div>
+            <t t-if="order.get('client')">
+                <div  style="text-align: center; font-size: 75%;">
+                    <t t-if="order.get('client').name">
+                        <div><t t-esc="order.get('client').name" /></div>
+                    </t>
+                    <t t-if="order.get('client').vat">
+                        <div>RUC/DNI:<t t-esc="order.get('client').vat"/></div>
+                    </t>
+                    <t t-if="order.get('client').street">
+                        <div>Street:<t t-esc="order.get('client').street || ''"/></div>
+                    </t>
+                    
+                </div>
+            </t>
+                
+        </t>
+
+        <t t-jquery="t[t-if='!taxincluded']" t-operation="replace">
+            <t t-if='!taxincluded'>
+                <div class="pos-receipt-right-align">--------</div>
+                <br/>
+                <t t-foreach='order.pe_get_tax_details()' t-as='tax'>
+                    <div>
+                        <t t-esc='tax.name' />
+                        <span t-esc='widget.format_currency_no_symbol(tax.amount)' class="pos-receipt-right-align"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+
+        <t t-jquery="t[t-if='taxincluded']" t-operation="replace">
+            <t t-if='taxincluded'>
+                <div class="pos-receipt-right-align">--------</div>
+                <br/>
+                <t t-foreach='order.pe_get_tax_details()' t-as='tax'>
+                    <div>
+                        <t t-esc='tax.name' />
+                        <span t-esc='widget.format_currency_no_symbol(tax.amount)' class="pos-receipt-right-align"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+
+        <t t-jquery='.before-footer' t-operation="before">
+            <div style="font-size: 75%;">
+             SON: <t t-esc="order.get_amount_text().toUpperCase()" />
+            </div>
+            
+        </t>
+        
+    </t>
+
+</templates>

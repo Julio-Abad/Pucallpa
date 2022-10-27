@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="cpe_picking_report_template">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <!-- <t t-call="web.external_layout"> -->
+                        <div class="header">
+                            <table width="100%" style="font-size: 10px">
+                                <tr>
+                                    <td colspan="2">
+                                        <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' % to_text(o.company_id.logo)" style="max-height: 90px;position:relative;"/>
+                                        <h6><strong><span t-esc="o.company_id.name"/></strong></h6>
+                                    </td>
+                                    <td width="40%" style="border: 2px solid black; vertical-align: middle;">
+                                        <h4 class="text-center"><strong>R.U.C.: <span t-esc="o.company_id.partner_id.pe_doc_number"/></strong></h4>
+                                        <h4 class="text-center"><strong>GUIA DE REMISIÓN ELECTRÓNICA</strong></h4>
+                                        <h4 class="text-center"><strong>N° <span t-esc="o.pe_number"/></strong></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="10%"><strong>Dirección</strong></td>
+                                    <td width="50%">: <span t-field="o.company_id.partner_id.street"/></td>
+                                    <td width="40%"></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sucursales</strong></td>
+                                    <td colspan="2">: Mz. A, Lote 04 Prog. Viv. Resd. Nueva Esperanza - San Martin de Porres-Lima-Lima</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Email</strong></td>
+                                    <td colspan="2">: <span t-field="o.company_id.partner_id.email"/></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Teléfono</strong></td>
+                                    <td colspan="2">: <span t-field="o.company_id.partner_id.phone"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="page">
+                            <table width="100%" style="border: 1px solid black; font-size: 12px">
+                            <!-- <table> -->
+                                <tr>
+                                    <td width="11%">
+                                        <strong>Vendedor</strong>
+                                    </td>
+                                    <td width="45%">
+                                        : <span t-field="o.salesman_id"/>
+                                    </td>
+                                    <td width="14%">
+                                    </td>
+                                    <td width="30%">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="11%">
+                                        <strong>Fecha</strong>
+                                    </td>
+                                    <td width="45%">
+                                        : <span t-field="o.scheduled_date"/>
+                                    </td>
+                                    <td width="14%">
+                                        <strong>Motivo de Traslado</strong>
+                                    </td>
+                                    <td width="30%">
+                                        : <span t-field="o.einvoice_12"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Señor(es)</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.partner_id"/>
+                                    </td>
+                                    <td>
+                                        <strong>Transportista</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.company_id.partner_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Dirección</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.partner_id.street"/>
+                                    </td>
+                                    <td>
+                                        <strong>RUC</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.company_id.partner_id.pe_doc_number"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>RUC</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.partner_id.pe_doc_number"/>
+                                    </td>
+                                    <td>
+                                        <strong>Vehiculo Placa N°</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.placa"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Pto. de partida</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.punto_partida"/>
+                                    </td>
+                                    <td>
+                                        <strong>Marca</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.marca_id"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Pto. de llegada</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.punto_llegada"/>
+                                    </td>
+                                    <td>
+                                        <strong>Certificado M.T.C.</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.certificado_mtc"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Cliente</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.customer_id.name"/>
+                                    </td>
+                                    <td>
+                                        <strong>Plazos de pago</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.payment_term_id.name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>R.U.C.:</strong>
+                                    </td>
+                                    <td>
+                                        : <span t-field="o.customer_id.vat"/>
+                                    </td>
+                                    <td>
+                                        <strong></strong>
+                                    </td>
+                                    <td>
+                                        <span/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- <strong>
+                                            <t t-if="o.owner_id.pe_doc_type == '1'">
+                                                DNI
+                                            </t>
+                                            <t t-if="o.owner_id.pe_doc_type == '6'">
+                                                R.U.C.
+                                            </t>
+                                        </strong> -->
+                                    </td>
+                                    <td>
+                                        <!-- : <span t-field="o.owner_id.pe_doc_number"/> -->
+                                    </td>
+                                    <td>
+                                        <strong></strong>
+                                    </td>
+                                    <td>
+                                        <span/>
+                                    </td>
+                                </tr>
+                            </table>   
+                            <br/>
+                            <span></span>
+
+                            <table width="100%" style="border: 1px solid black; font-size: 12px">
+                                <thead>
+                                    <tr>
+                                        <th t-if="o.origin"><strong>Pedido</strong></th>
+                                        <th t-if="o.pe_number"><strong>Numero de Guia</strong></th>
+                                        <th t-if="o.fecha_traslado"><strong>F. Inicio Traslado</strong></th>
+                                        <th t-if="o.invoice_id"><strong>Comprobante</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td t-if="o.origin">
+                                            <span t-field="o.origin"/>
+                                        </td>
+                                        <td t-if="o.pe_number">
+                                            <span t-field="o.pe_number"/>
+                                        </td>
+                                        <td t-if="o.fecha_traslado">
+                                            <span t-field="o.fecha_traslado"/>
+                                        </td>
+                                        <td t-if="o.invoice_id">
+                                            <span t-field="o.invoice_id.name"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+
+                            <style>
+                                .header-custom td{
+                                    vertical-align: middle;
+                                    border: 1px solid black;
+                                }
+                                .body-custom td{
+                                    border-left: 1px solid black;
+                                }
+                                .table-total tr, td{
+                                    padding: 3px;
+                                }
+                            </style>
+
+                            <table width="100%" style="border: 1px solid black; font-size: 11px">
+                                <thead>
+                                    <tr class="text-center header-custom" style="font-weight: bold; height: 30px; background-color:#C7C1BF">
+                                        <td>Cantidad</td>
+                                        <td style="">Unidad</td>
+                                        <td>Codigo</td>
+                                        <td>Descripción</td>
+                                        <td>Peso</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.move_lines" t-as="l" class="body-custom">
+                                        <td class="text-center"><span t-field="l.quantity_done"/></td>
+                                        <td class="text-center"><span t-field="l.product_uom"/></td>
+                                        <td class="text-center"><span t-field="l.product_id.default_code"/></td>
+                                        <td class="text-center"><span t-field="l.product_id.name"/></td>
+                                        <td class="text-right"><span t-esc="'{0:,.2f}'.format(l.peso_total)"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table width="24%" class="table-total" style="font-size: 11px">
+                                <tr class="col-xs-5">
+                                    <td width="13%" style="font-weight: bold; border: 1px solid black; background-color:#C7C1BF">Peso Total</td>
+                                    <td class="text-right" width="11%" style="border: 1px solid black;"><span t-esc="'{0:,.2f}'.format(o.suma_peso_total)"/></td>
+                                    <!-- <td width="75%"></td> -->
+                                </tr>
+                            </table>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <table width="100%" style="font-size: 13px">
+                                <tr>
+                                    <td width="5%"></td>
+                                    <td width="40%" style="border-top: 1px solid black">
+                                        <strong>D.N.I. N°:</strong><br/>
+                                        <strong>Chofer: </strong><span t-field="o.nombre"/><br/>
+                                        <strong>Brevete: </strong><span t-field="o.licencia"/><br/>
+                                        <strong>Almacen: </strong><span t-field="o.location_id"/><br/>
+                                        <!-- <strong>Boveda: </strong> -->
+                                        
+                                    </td>
+                                    <td width="10%"></td>
+                                    <td width="40%" style="border-top: 1px solid black">
+                                        <strong>D.N.I. N°:</strong><br/>
+                                        <strong>Registrado por: </strong><br/>
+                                        <span t-field="o.sale_id.partner_id"/>
+                                    </td>
+                                    <td width="5%"></td>
+                                </tr>
+                            </table>
+
+                            <!-- <table width="100%" >
+                                <tr class="body-custom">
+                                    <td width="10%"><strong>Chofer:</strong></td>
+                                    <td width="23%"></td>
+                                    <td width="10%"><strong>Brevete:</strong></td>
+                                    <td width="23%"></td>
+                                    <td width="10%"><strong>Almacen:</strong></td>
+                                    <td width="24%"></td>
+                                </tr>
+                            </table> -->
+                            <!-- <xpath expr="//p[@t-if='o.backorder_id']" position="before">
+                                <p t-field="o.note"/>
+                                <t>
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <t t-if="o.pe_transport_mode=='01'">
+                                                <strong>Conformidad Transportista</strong><br />
+                                                <table width="100%" style="border: 1px solid black; font-size: 12px">
+                                                    <tr>
+                                                        <td>
+                                                            <b><span>Nombre:</span></b>
+                                                        </td>
+                                                        <td>
+                                                            <span t-field="o.nombre"/>
+                                                        </td>
+                                                        <td>
+                                                            <b><span>Brevete:</span></b>
+                                                        </td>
+                                                        <td>
+                                                            <span t-field="o.licencia"/>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                
+                                            </t>
+                                            <t t-if="o.pe_transport_mode=='02'">
+                                                <span>Transporte Privado</span><br />
+                                                <table width="100%" style="border: 1px solid black; font-size: 12px">
+                                                    <tr t-foreach="o.pe_fleet_ids" t-as="fleet_id">
+                                                        <td>
+                                                            <span>Nombre:</span>
+                                                        </td>
+                                                        <td>
+                                                            <span t-field="fleet_id.driver_id"/>
+                                                        </td>
+                                                        <td>
+                                                            <span>DNI:</span>
+                                                        </td>
+                                                        <td>
+                                                            <span t-field="fleet_id.driver_id.pe_doc_number"/>
+                                                        </td>
+                                                        <td>
+                                                            <span>Brevete:</span>
+                                                        </td>
+                                                        <td>
+                                                            <span t-field="fleet_id.name"/>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </t>
+                                            <br/>
+                                            <p t-if="o.pe_is_eguide" ><strong>Resumen: </strong> <br />
+                                                <span t-field="o.pe_digest"/>
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="col-xs-5" t-if="o.pe_is_eguide and o.pe_guide_number!='/'" >
+                                            <img t-if="o.sunat_pdf417_code" t-att-src="'data:image/png;base64,%s' % to_text(o.sunat_pdf417_code)" 
+                                            class="img-responsive center-block" style="width: 315px;  height: 58px;" />
+                                        </div> 
+                                    </div>
+                                </t>
+                            </xpath> -->
+                        
+                        </div>
+                    <!-- </t> -->
+                </t>
+            </t>
+        </template>
+
+        <report
+            id="cpe_picking_report"
+            model="stock.picking"
+            string="Guia de Remisión"
+            report_type="qweb-pdf"
+            name="l10n_pe_parameters.cpe_picking_report_template"
+            attachment_use="False"
+            file="l10n_pe_parameters.cpe_picking_report_template"
+        />
+
+        <record id="cpe_picking_report" model="ir.actions.report">
+            <field name="paperformat_id" ref="l10n_pe_parameters.paperformat_cpe"/>
+        </record>
+
+    </data>
+</odoo>
