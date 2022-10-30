@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_form_pe_cpe_wizard">
+        <field name="name">pe.cpe.wizard.form</field>
+        <field name="model">pe.cpe.wizard</field>
+        <field name="inherit_id" ref="l10n_pe_cpe.view_form_pe_cpe_wizard"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='pe_ws_status_url']" position="after">
+                <field name="pe_guide_ws_url"/>
+            </xpath>
+            
+        </field>
+    </record>
+</odoo>

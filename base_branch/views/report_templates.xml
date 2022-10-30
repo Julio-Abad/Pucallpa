@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="external_layout" inherit_id="web.external_layout">
+        <xpath expr="//t[@t-set='o']" position="after">
+        	<t t-set="branch" t-value="False"/>
+	        <t t-if="not branch and o._name=='account.move'">
+	            <!-- Multibranch -->
+	            <t t-if="branch_id">
+	                <t t-set="branch" t-value="branch_id"/>
+	            </t>
+	            <t t-elif="o and 'branch_id' in o and o.branch_id.sudo()">
+	                <t t-set="branch" t-value="o.branch_id.sudo()"/>
+	            </t>
+	            <t t-else="else">
+	                <t t-set="branch" t-value="res_branch"/>
+	            </t>
+	        </t>
+	        <t t-else="else">
+                <t t-set="branch" t-value="False"/>
+            </t>
+		</xpath>
+    </template>
+
+    <template id="internal_layout" inherit_id="web.internal_layout">
+        <xpath expr="//t[@t-set='o']" position="after">
+        	<t t-set="branch" t-value="False"/>
+	        <t t-if="not branch and o._name=='account.move'">
+	            <!-- Multibranch -->
+	            <t t-if="branch_id">
+	                <t t-set="branch" t-value="branch_id"/>
+	            </t>
+	            <t t-elif="o and 'branch_id' in o and o.branch_id.sudo()">
+	                <t t-set="branch" t-value="o.branch_id.sudo()"/>
+	            </t>
+	            <t t-else="else">
+	                <t t-set="branch" t-value="res_branch"/>
+	            </t>
+	        </t>
+	        <t t-else="else">
+                <t t-set="branch" t-value="False"/>
+            </t>
+		</xpath>
+    </template>
+
+
+
+
+
+
+
+	<template id="external_layout_background" inherit_id="web.external_layout_background">
+		<xpath expr="//span[@t-field='company.partner_id']" position="attributes">
+			<attribute name="style">display: none;</attribute>
+		</xpath>
+
+		<xpath expr="//span[@t-field='company.partner_id']" position="after">
+			<t t-if="not branch">
+				<span t-field="branch.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+			<t t-else="else">
+				<span t-field="company.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+		</xpath>
+
+	</template>
+
+	<template id="external_layout_boxed" inherit_id="web.external_layout_boxed">
+		<xpath expr="//span[@t-field='company.partner_id']" position="attributes">
+			<attribute name="style">display: none;</attribute>
+		</xpath>
+
+		<xpath expr="//span[@t-field='company.partner_id']" position="after">
+			<t t-if="not branch">
+				<span class="company_address" t-field="branch.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+			<t t-else="else">
+				<span class="company_address" t-field="company.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+		</xpath>
+
+	</template>
+
+	<template id="external_layout_clean" inherit_id="web.external_layout_clean">
+		<xpath expr="//span[@t-field='company.partner_id']" position="attributes">
+			<attribute name="style">display: none;</attribute>
+		</xpath>
+
+		<xpath expr="//span[@t-field='company.partner_id']" position="after">
+			<t t-if="not branch">
+				<span class="company_address" t-field="branch.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+			<t t-else="else">
+				<span class="company_address" t-field="company.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+		</xpath>
+
+	</template>
+
+	<template id="external_layout_standard" inherit_id="web.external_layout_standard">
+		<xpath expr="//div[@t-field='company.partner_id']" position="attributes">
+			<attribute name="style">display: none;</attribute>
+		</xpath>
+
+		<xpath expr="//div[@t-field='company.partner_id']" position="after">
+			<t t-if="not branch">
+				<div t-field="branch.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+			<t t-else="else">
+				<div t-field="company.partner_id"
+                    t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+			</t>
+		</xpath>
+
+	</template>
+</odoo>

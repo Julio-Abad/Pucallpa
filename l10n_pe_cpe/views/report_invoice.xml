@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="report_invoice_document" inherit_id="account.report_invoice_document">
+		<xpath expr="//tr[hasclass('o_subtotal')]" position="after">
+			<tr t-if="o.pe_detraction_amount" style="">
+				<td>Detraction</td>
+				<td class="text-right">
+					<span t-field="o.pe_detraction_amount"/>
+				</td>
+			</tr>
+			<tr t-if="o.pe_retention_amount" style="">
+				<td>Retention</td>
+				<td class="text-right">
+					<span t-field="o.pe_retention_amount"/>
+				</td>
+			</tr>
+		</xpath>
+
+		<xpath expr="//h2" position="replace">
+			<h2>
+				<span t-if="o.move_type in ['out_refund','out_invoice'] and o.state in ['draft','cancel','posted'] and o.pe_invoice_code">
+					<t t-esc="o.get_pe_invoice_name()" />
+					<t t-if="o.state == 'draft'">
+						Draft
+					</t>
+					<t t-if="o.state == 'cancel'">
+						Cancelled
+					</t>
+					<t t-if="o.pe_annul">
+						Annulled
+					</t>
+					<t t-if="o.pe_is_cpe and o.move_type == 'out_invoice' and o.name and o.name != '/'">
+						Electronics
+					</t>
+				</span>
+				<span t-if="o.move_type == 'out_invoice' and o.state == 'posted' and not o.pe_invoice_code">Invoice</span>
+                <span t-if="o.move_type == 'out_invoice' and o.state == 'draft' and not o.pe_invoice_code">Draft Invoice</span>
+                <span t-if="o.move_type == 'out_invoice' and o.state == 'cancel' and not o.pe_invoice_code">Cancelled Invoice</span>
+                <span t-if="o.move_type == 'out_refund' and not o.pe_invoice_code">Credit Note</span>
+                <span t-if="o.move_type == 'in_refund' and not o.pe_invoice_code">Vendor Credit Note</span>
+                <span t-if="o.move_type == 'in_invoice' and not o.pe_invoice_code">Vendor Bill</span>
+                <span t-if="o.name != '/'" t-field="o.name"/>
+
+            </h2>
+		</xpath>
+		<xpath expr="//td[@name='account_invoice_line_name']/span[@t-field='line.name']" position="after">
+			<t t-if="line.pe_license_plate or o.pe_license_plate">
+                <br />Placa <span t-esc="line.pe_license_plate or o.pe_license_plate or ''"/>
+            </t>
+		</xpath>
+		<xpath expr="//p[@t-if='o.fiscal_position_id.note']" position="after">
+			<table t-if="o.pe_is_cpe" >
+				<tr>
+					<td  style="width: 35%; padding: 0px 6px 0px 2px;">
+		            	<strong>Method of payment:</strong>
+	            		<t t-if="o.pe_payment_lines and o.invoice_date != o.invoice_date_due">
+	            			<span>Credit</span><br />
+	            			<strong>Number of Quotas:</strong>
+	            			<span t-esc="'%02d'%len(o.pe_payment_lines)"/>
+	            		</t>
+	            		<t t-else="">
+	            			<span>Cash</span>
+	            		</t>
+		            	<br />
+		            	<t t-if="o.pe_payment_lines and o.invoice_date != o.invoice_date_due">
+	            			<table class="table table-sm o_main_table">
+	            				<tr>
+	            					<td>
+	            						<strong>Date</strong>
+	            					</td>
+	            					<td class="text-right">
+	            						<strong>Amount</strong>
+	            					</td>
+
+	            				</tr>
+	            				<tr t-foreach="o.pe_payment_lines" t-as="payment">
+	            					<td>
+	            						<span t-field="payment.date"/>
+	            					</td>
+	            					<td class="text-right"	>
+	            						<span t-field="payment.amount" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+	            					</td>
+	            				</tr>
+	            				<tr>
+	            					<td>
+	            						<strong>Total</strong>
+	            					</td>
+	            					<td class="text-right">
+	            						<strong t-esc="sum(o.pe_payment_lines.mapped('amount'))" t-options='{"widget": "monetary", "display_currency": o.currency_id}' />
+	            					</td>
+
+	            				</tr>
+
+	            			</table>
+	            		</t>
+
+		            </td>
+			        <td style="width: 55%;">
+		                <span t-if="o.pe_legend_ids.filtered(lambda legnd: legnd.code =='1000')">
+		                	<strong>Amount in letters: </strong> <br />
+			                <span t-esc="o.pe_legend_ids.filtered(lambda legnd: legnd.code =='1000').name"/><br />
+			            </span>
+			            <span t-if="o.pe_is_cpe and o.edi_document_ids" ><strong>Summary: </strong> <br />
+			                <span t-field="o.pe_digest"/><br />
+			            </span>
+			            <t t-foreach="o.pe_legend_ids.filtered(lambda legnd: legnd.code != '1000')" t-as="p">
+		                  <span t-field="p.name"/><br />
+		                </t>
+
+		            </td>
+
+		            <td t-if="o.edi_document_ids">
+			        	<img t-if="o.pe_qr_code" t-att-src="'data:image/png;base64,%s' %to_text(o.pe_qr_code)" 
+							style="width: 40mm;  height: 40mm;" />
+		            </td>
+	        	</tr>
+	        </table>
+			
+			<p class="text-center" t-if="o.pe_is_cpe and o.edi_document_ids">
+				Representacion impresa de: 
+            	<span t-esc="o.get_pe_invoice_name()"/>, consulte en
+            	<span t-field="o.company_id.website"/><br />
+            	<t t-if="o.company_id.pe_resolution_type and o.company_id.pe_resolution_number">
+            		Autorizado mediante 
+            		<span t-field="o.company_id.pe_resolution_type"/> N°
+            		<span t-field="o.company_id.pe_resolution_number"/>
+            	</t>
+        	</p>		
+    	</xpath>
+    	
+	</template>
+
+</odoo>

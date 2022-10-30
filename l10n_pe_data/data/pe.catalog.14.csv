@@ -1,0 +1,13 @@
+id,code,name,description
+catalog14_1000,1000,Total valor de venta - operaciones exportadas,
+catalog14_1001,1001,Total valor de venta - operaciones gravadas,
+catalog14_1002,1002,Total valor de venta - operaciones inafectas,
+catalog14_1003,1003,Total valor de venta - operaciones exoneradas,
+catalog14_1004,1004,Total valor de venta – Operaciones gratuitas,
+catalog14_1005,1005,Sub total de venta,
+catalog14_2001,2001,Percepciones,
+catalog14_2002,2002,Retenciones,
+catalog14_2003,2003,Detracciones,
+catalog14_2004,2004,Bonificaciones,
+catalog14_2005,2005,Total descuentos,
+catalog14_3001,3001,FISE (Ley 29852) Fondo Inclusión Social Energético,

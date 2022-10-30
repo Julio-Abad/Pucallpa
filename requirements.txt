@@ -1,0 +1,5 @@
+qrcode
+pdf417gen
+xmlsec
+git+https://github.com/GrupoYACCK/pysimplesoap.git@sunat
+git+http://git.grupoyacck.com/grupoyacck/librecpe.git@0.23

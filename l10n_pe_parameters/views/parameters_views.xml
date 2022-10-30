@@ -1,0 +1,168 @@
+<odoo>
+    <data>
+
+        <!-- CONDUCTOR -->
+        <record id="fleet_vehicle_chofer_tree_view" model="ir.ui.view">
+            <field name="name">fleet.vehicle.chofer.tree</field>
+            <field name="model">fleet.vehicle.chofer</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="licencia" />
+                    <field name="categoria" />
+                    <field name="nro_dni" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="fleet_vehicle_chofer_form_view" model="ir.ui.view">
+            <field name="name">fleet.vehicle.chofer.form</field>
+            <field name="model">fleet.vehicle.chofer</field>
+            <field name="arch" type="xml">
+                <form string="Chofer">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                                <field name="licencia" />
+                            </group>
+                            <group>
+                                <field name="categoria" />
+                                <field name="nro_dni" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="fleet_vehicle_chofer_action" model="ir.actions.act_window">
+            <field name="name">Choferes</field>
+            <field name="res_model">fleet.vehicle.chofer</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click para crear un nuevo Registro.
+                </p>
+            </field>
+        </record>
+
+        <menuitem action="fleet_vehicle_chofer_action" parent="fleet.fleet_configuration" id="fleet_vehicle_model_menu1" sequence="2" />
+
+        <!-- FLOTA -->
+        <record id="view_fleet_vehicle" model="ir.ui.view">
+            <field name="name">fleet.vehicle.form</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//form[1]/sheet[1]/group[1]/group[2]/label[1]" position="before">
+                    <field name="registro_mtc" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- COMPANY -->
+        <record model="ir.ui.view" id="res_company_parameters_form">
+            <field name="name">res.company.parameters.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='currency_id']" position="after">
+                    <field name="account_bank" widget="image" />
+                </xpath>
+                <xpath expr="//field[@name='pe_resolution_number']" position="after">
+                    <field name="type_report" string="Cabecera Formato electrónico" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- SALE ORDER -->
+        <record id="view_sale_order" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="client_order_ref" />
+                    <field name="proyect" />
+                </xpath>
+                <xpath expr="//field[@name='client_order_ref']" position="attributes">
+                    <attribute name="string">OC</attribute>
+                </xpath>
+                <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='other_information']/group[1]/group[@name='sales_person']/field[@name='client_order_ref']" position="attributes">
+                    <attribute name="attrs">{}</attribute>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- STOCK PICKING -->
+        <record id="view_picking_form" model="ir.ui.view">
+            <field name="name">stock.picking.form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form" />
+            <field name="arch" type="xml">
+
+                <field name="partner_id" position="after">
+                    <field name="pe_number" readonly="False" />
+                    <field name="einvoice_12" />
+                    <field name="fecha_kardex" />
+                    <field name="purchase_id" invisible="1"/>
+                    <field name="invoice_id" attrs="{'required': [('purchase_id', '!=', False)]}"  context="{'picking_invoice': True, 'picking_id': id}" options="{'no_create': True, 'no_create_edit':True}" />
+                    <field name="state_invoice" invisible="1" />
+                    <field name="es_fecha_kardex" />
+                </field>
+
+                <xpath expr="//field[@name='origin']" position="after">
+                    <field name="customer_id" />
+                    <field name="salesman_id" />
+                    <field name="payment_term_id" />
+                    <field name="motive_id" />
+                    <field name="suma_peso_total" invisible="True" />
+                </xpath>
+                <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='operations']/field[@name='move_ids_without_package']/tree[1]/field[@name='product_uom']" position="after">
+                    <field name="peso_total" sum="Total" />
+                </xpath>
+
+                <xpath expr="//form/sheet/notebook" position="inside">
+                    <page string="Transportista">
+                        <group>
+                            <group>
+                                <field name="vehiculo_id" />
+                                <field name="marca_id" readonly="False" />
+                                <field name="placa" readonly="False" />
+                                <field name="certificado_mtc" readonly="False" />
+
+                                <field name="chofer_id" />
+                                <field name="nombre" readonly="False" />
+                                <field name="ruc" readonly="False" />
+                                <field name="licencia" readonly="False" />
+                                <field name="nro_const" />
+                            </group>
+                            <group>
+                                <field name="tipo" />
+                                <field name="nro_comp" />
+                                <field name="nro_guia" />
+                                <field name="fecha_traslado" />
+                                <field name="punto_partida" />
+                                <field name="punto_llegada" />
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="vpicktree" model="ir.ui.view">
+            <field name="name">stock.picking.tree</field>
+            <field name="inherit_id" ref="stock.vpicktree" />
+            <field name="model">stock.picking</field>
+            <field name="arch" type="xml">
+                <field name="origin" position="before">
+                    <field name="state_invoice" />
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>

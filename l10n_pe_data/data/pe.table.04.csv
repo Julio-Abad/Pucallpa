@@ -1,0 +1,179 @@
+id,code,name,description
+tabla4_AED,AED,UAE Dirham,Emiratos Árabes Unidos
+tabla4_AFN,AFN,Afghani,Afganistán
+tabla4_ALL,ALL,Lek,Albania
+tabla4_AMD,AMD,Armenian Dram,Armenia
+tabla4_ANG,ANG,Netherlands Antillian Guilder,Antillas Holandesas
+tabla4_AOA,AOA,Kwanza,Angola
+tabla4_ARS,ARS,Argentine Peso,Argentina
+tabla4_AUD,AUD,Australian Dollar,Australia
+tabla4_AWG,AWG,Aruban Guilder,Aruba
+tabla4_AZN,AZN,Azerbaijanian Manat,Azerbaiyán
+tabla4_BAM,BAM,Convertible Marks,Bosnia y Herzegovina
+tabla4_BBD,BBD,Barbados Dollar,Barbados
+tabla4_BDT,BDT,Taka,Bangladesh
+tabla4_BGN,BGN,Bulgarian Lev,Bulgaria
+tabla4_BHD,BHD,Bahraini Dinar,Bahréin
+tabla4_BIF,BIF,Burundi Franc,Burundi
+tabla4_BMD,BMD,Bermudian Dollar (customarily known as Bermuda Dollar),Bermudas
+tabla4_BND,BND,Brunei Dollar,Brunéi Darussalam
+tabla4_BOB,BOB,Boliviano,Bolivia
+tabla4_BOV,BOV,Mvdol,Bolivia
+tabla4_BRL,BRL,Brazilian Real,Brasil
+tabla4_BSD,BSD,Bahamian Dollar,Bahamas
+tabla4_BTN,BTN,Ngultrum,Bután
+tabla4_BWP,BWP,Pula,Botsuana
+tabla4_BYR,BYR,Belarussian Ruble,Bielorrusia
+tabla4_BZD,BZD,Belize Dollar,Belice
+tabla4_CAD,CAD,Canadian Dollar,Canadá
+tabla4_CDF,CDF,Congolese Franc,República Democrática del Congo
+tabla4_CHE,CHE,WIR Euro,Suiza
+tabla4_CHF,CHF,Swiss Franc,Suiza
+tabla4_CHW,CHW,WIR Franc,Suiza
+tabla4_CLF,CLF,Unidades de fomento,Chile
+tabla4_CLP,CLP,Chilean Peso,Chile
+tabla4_CNY,CNY,Yuan Renminbi,China (República Popular)
+tabla4_COP,COP,Colombian Peso,Colombia
+tabla4_COU,COU,Unidad de Valor Real,Colombia
+tabla4_CRC,CRC,Costa Rican Colon,Costa Rica
+tabla4_CUC,CUC,Peso Convertible,Cuba
+tabla4_CUP,CUP,Cuban Peso,Cuba
+tabla4_CVE,CVE,Cape Verde Escudo,Cabo Verde
+tabla4_CZK,CZK,Czech Koruna,República Checa
+tabla4_DJF,DJF,Djibouti Franc,Yibuti
+tabla4_DKK,DKK,Danish Krone,Dinamarca
+tabla4_DOP,DOP,Dominican Peso,República Dominicana
+tabla4_DZD,DZD,Algerian Dinar,Argelia
+tabla4_EEK,EEK,Kroon,Estonia
+tabla4_EGP,EGP,Egyptian Pound,Egipto
+tabla4_ERN,ERN,Nakfa,Eritrea
+tabla4_ETB,ETB,Ethiopian Birr,Etiopía
+tabla4_EUR,EUR,Euro,Unión Europea
+tabla4_FJD,FJD,Fiji Dollar,Fiyi
+tabla4_FKP,FKP,Falkland Islands Pound,Islas Malvinas
+tabla4_GBP,GBP,Pound Sterling,Reino Unido
+tabla4_GEL,GEL,Lari,Georgia
+tabla4_GHS,GHS,Cedi,Ghana
+tabla4_GIP,GIP,Gibraltar Pound,Gibraltar
+tabla4_GMD,GMD,Dalasi,Gambia
+tabla4_GNF,GNF,Guinea Franc,Guinea
+tabla4_GTQ,GTQ,Quetzal,Guatemala
+tabla4_GYD,GYD,Guyana Dollar,Guyana
+tabla4_HKD,HKD,Hong Kong Dollar,Hong Kong
+tabla4_HNL,HNL,Lempira,Honduras
+tabla4_HRK,HRK,Croatian Kuna,Croacia
+tabla4_HTG,HTG,Gourde,Haití
+tabla4_HUF,HUF,Forint,Hungría
+tabla4_IDR,IDR,Rupiah,Indonesia
+tabla4_ILS,ILS,New Israeli Sheqel,Israel
+tabla4_INR,INR,Indian Rupee,India
+tabla4_IQD,IQD,Iraqi Dinar,Iraq
+tabla4_IRR,IRR,Iranian Rial,Irán
+tabla4_ISK,ISK,Iceland Krona,Islandia
+tabla4_JMD,JMD,Jamaican Dollar,Jamaica
+tabla4_JOD,JOD,Jordanian Dinar,Jordania
+tabla4_JPY,JPY,Yen,Japón
+tabla4_KES,KES,Kenyan Shilling,Kenia
+tabla4_KGS,KGS,Som,Kirguistán
+tabla4_KHR,KHR,Riel,Camboya
+tabla4_KMF,KMF,Comoro Franc,Comoras
+tabla4_KPW,KPW,North Korean Won,Corea (del Norte)
+tabla4_KRW,KRW,Won,Corea (del Sur)
+tabla4_KWD,KWD,Kuwaiti Dinar,Kuwait
+tabla4_KYD,KYD,Cayman Islands Dollar,Islas Caimán
+tabla4_KZT,KZT,Tenge,Kazajistán
+tabla4_LAK,LAK,Kip,Laos
+tabla4_LBP,LBP,Lebanese Pound,Líbano
+tabla4_LKR,LKR,Sri Lanka Rupee,Sri Lanka
+tabla4_LRD,LRD,Liberian Dollar,Liberia
+tabla4_LSL,LSL,Loti,Lesoto
+tabla4_LTL,LTL,Lithuanian Litas,Lituania
+tabla4_LVL,LVL,Latvian Lats,Letonia
+tabla4_LYD,LYD,Libyan Dinar,Libia
+tabla4_MAD,MAD,Moroccan Dirham,Marruecos
+tabla4_MDL,MDL,Moldovan Leu,Moldavia
+tabla4_MGA,MGA,Malagasy Ariary,Madagascar
+tabla4_MKD,MKD,Denar,Macedonia
+tabla4_MMK,MMK,Kyat,Myanmar (Birmania)
+tabla4_MNT,MNT,Tugrik,Mongolia
+tabla4_MOP,MOP,Pataca,Macao
+tabla4_MRO,MRO,Ouguiya,Mauritania
+tabla4_MUR,MUR,Mauritius Rupee,Mauricio
+tabla4_MVR,MVR,Rufiyaa,Maldivas
+tabla4_MWK,MWK,Kwacha,Malaui
+tabla4_MXN,MXN,Mexican Peso,México
+tabla4_MXV,MXV,Mexican Unidad de Inversion (UDI),México
+tabla4_MYR,MYR,Malaysian Ringgit,Malasia
+tabla4_MZN,MZN,Metical,Mozambique
+tabla4_NAD,NAD,Namibia Dollar,Namibia
+tabla4_NGN,NGN,Naira,Nigeria
+tabla4_NIO,NIO,Cordoba Oro,Nicaragua
+tabla4_NOK,NOK,Norwegian Krone,Noruega
+tabla4_NPR,NPR,Nepalese Rupee,Nepal
+tabla4_NZD,NZD,New Zealand Dollar,Nueva Zelanda
+tabla4_OMR,OMR,Rial Omani,Omán
+tabla4_PAB,PAB,Balboa,Panamá
+tabla4_PEN,PEN,Nuevo Sol o Sol,Perú
+tabla4_PGK,PGK,Kina,Papúa Nueva Guinea
+tabla4_PHP,PHP,Philippine Peso,Filipinas
+tabla4_PKR,PKR,Pakistan Rupee,Pakistán
+tabla4_PLN,PLN,Zloty,Polonia
+tabla4_PYG,PYG,Guarani,Paraguay
+tabla4_QAR,QAR,Qatari Rial,Qatar
+tabla4_RON,RON,New Leu,Rumania
+tabla4_RSD,RSD,Serbian Dinar,Serbia
+tabla4_RUB,RUB,Russian Ruble,Rusia
+tabla4_RWF,RWF,Rwanda Franc,Ruanda
+tabla4_SAR,SAR,Saudi Riyal,Arabia Saudita
+tabla4_SBD,SBD,Solomon Islands Dollar,Islas Salomón
+tabla4_SCR,SCR,Seychelles Rupee,Seychelles
+tabla4_SDG,SDG,Sudanese Pound,Sudán
+tabla4_SEK,SEK,Swedish Krona,Suecia
+tabla4_SGD,SGD,Singapore Dollar,Singapur
+tabla4_SHP,SHP,Saint Helena Pound,Santa Helena
+tabla4_SLL,SLL,Leone,Sierra Leona
+tabla4_SOS,SOS,Somali Shilling,Somalia
+tabla4_SRD,SRD,Surinam Dollar,Surinam
+tabla4_STD,STD,Dobra,Santo Tomé y Príncipe
+tabla4_SVC,SVC,El Salvador Colon,El Salvador
+tabla4_SYP,SYP,Syrian Pound,Siria
+tabla4_SZL,SZL,Lilangeni,Suazilandia
+tabla4_THB,THB,Baht,Tailandia
+tabla4_TJS,TJS,Somoni,Tayikistán
+tabla4_TMT,TMT,Manat,Turkmenistán
+tabla4_TND,TND,Tunisian Dinar,Túnez
+tabla4_TOP,TOP,Pa'anga,Tonga
+tabla4_TRY,TRY,Turkish Lira,Turquía
+tabla4_TTD,TTD,Trinidad and Tobago Dollar,Trinidad y Tobago
+tabla4_TWD,TWD,New Taiwan Dollar,Taiwán
+tabla4_TZS,TZS,Tanzanian Shilling,Tanzania
+tabla4_UAH,UAH,Hryvnia,Ucrania
+tabla4_UGX,UGX,Uganda Shilling,Uganda
+tabla4_USD,USD,US Dollar,Estados Unidos (EEUU)
+tabla4_USN,USN,US Dollar (Next day),Estados Unidos (EEUU)
+tabla4_USS,USS,US Dollar (Same day),Estados Unidos (EEUU)
+tabla4_UYI,UYI,Uruguay Peso en Unidades Indexadas,Uruguay
+tabla4_UYU,UYU,Peso Uruguayo,Uruguay
+tabla4_UZS,UZS,Uzbekistan Sum,Uzbekistán
+tabla4_VEF,VEF,Bolivar Fuerte,Venezuela
+tabla4_VND,VND,Dong,Vietnam
+tabla4_VUV,VUV,Vatu,Vanuatu
+tabla4_WST,WST,Tala,Samoa del Oeste
+tabla4_XAF,XAF,CFA Franc BEAC ‡,-
+tabla4_XAG,XAG,Silver,-
+tabla4_XAU,XAU,Gold,-
+tabla4_XBA,XBA,Bond Markets Units European Composite Unit (EURCO),-
+tabla4_XBB,XBB,European Monetary Unit (E.M.U.-6),-
+tabla4_XBC,XBC,European Unit of Account 9(E.U.A.-9),-
+tabla4_XBD,XBD,European Unit of Account 17(E.U.A.-17),-
+tabla4_XCD,XCD,East Caribbean Dollar,-
+tabla4_XDR,XDR,SDR,-
+tabla4_XFU,XFU,UIC-Franc,-
+tabla4_XOF,XOF,CFA Franc BCEAO †,-
+tabla4_XPD,XPD,Palladium,-
+tabla4_XPF,XPF,CFP Franc,-
+tabla4_XPT,XPT,Platinum,-
+tabla4_YER,YER,Yemeni Rial,Yemen
+tabla4_ZAR,ZAR,Rand,Sudáfrica
+tabla4_ZMK,ZMK,Zambian Kwacha,Zambia
+tabla4_ZWL,ZWL,Zimbabwe Dollar,Zimbabue

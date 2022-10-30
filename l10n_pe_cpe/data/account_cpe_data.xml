@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="edi_pe_cpe" model="account.edi.format">
+			<field name="name">CPE (PE)</field>
+			<field name="code">pe_cpe</field>
+		</record>
+	</data>
+</odoo>

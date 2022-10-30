@@ -1,0 +1,4 @@
+id,code,name,description,active
+catalog16_01,01,Precio unitario (incluye el IGV),,True
+catalog16_02,02,Valor referencial unitario en operaciones no onerosas (Gratuitas),,True
+catalog16_03,03,Tarifas reguladas,,False

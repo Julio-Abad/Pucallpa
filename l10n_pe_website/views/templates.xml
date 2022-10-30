@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+      <template  id="address_peruvian" inherit_id="website_sale.address" name="address_peruvian">
+        <xpath expr="//div[hasclass('form-row')]//div[1]"  position="before">
+          <div t-attf-class="form-group #{error.get('pe_doc_type') and 'o_has_error' or ''} col-lg-6 div_pe_doc_type">
+              <label class="col-form-label" for="pe_doc_type">Document Type</label>
+              <select id="pe_doc_type" name="pe_doc_type" t-attf-class="form-control #{error.get('pe_doc_type') and 'is-invalid' or ''} peruvian_doc_type">
+                  <option value="">No document...</option>
+                  <t t-foreach="[('0','NO DOMICILIADO'),('1','DNI'),('4','CARNET DE EXTRANJERIA'),('6','RUC'),('7','PASAPORTE')]" t-as="type">
+                    <option t-att-value="type[0]" t-att-selected="type[0] == ('pe_doc_type' in checkout and checkout['pe_doc_type'] or '')">
+                        <t t-esc="type[1]" />
+                    </option>
+                  </t>
+              </select>
+          </div>
+          <div t-attf-class="form-group #{error.get('pe_doc_number') and 'o_has_error' or ''} col-lg-6 div_pe_doc_number">
+              <label class="col-form-label" for="pe_doc_number">Document Number</label>
+              <input type="text" name="pe_doc_number" t-attf-class="form-control #{error.get('pe_doc_number') and 'is-invalid' or ''} peruvian_doc_number" t-att-value="'pe_doc_number' in checkout and checkout['pe_doc_number']" />
+          </div>
+          <div class="w-100"/>
+        </xpath>
+        <!--xpath expr="." position="inside">
+            <script src="/l10n_pe_website/static/src/js/pe_website.js" />
+        </xpath-->
+      </template>
+
+      <!--template id="address_b2b_peruvian" inherit_id="website_sale.address_b2b" name="address_b2b_peruvian">
+        <xpath expr="//t//div[1]" position="attributes">
+          <attribute name="t-attf-style">display:none</attribute>
+        </xpath>
+      </template-->
+      <template id="assets_frontend" name="website_form_recaptcha Assets" inherit_id="website.assets_frontend" >
+        <xpath expr="." position="inside">
+            <script src="/l10n_pe_website/static/src/js/pe_website.js" />
+        </xpath>
+    </template>
+    </data>
+</odoo>

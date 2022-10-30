@@ -1,0 +1,7 @@
+id,code,name,description
+catalog21_01,01,Numeración DAM,
+catalog21_02,02,Número de orden de entrega,
+catalog21_03,03,Número SCOP,
+catalog21_04,04,Número de manifiesto de carga,
+catalog21_05,05,Número de constancia de detracción,
+catalog21_06,06,Otros,

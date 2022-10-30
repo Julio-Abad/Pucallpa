@@ -1,0 +1,46 @@
+id,code,name,description
+catalog15_1000,1000,Monto en Letras,Monto en Letras
+catalog15_1002,1002,TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE,"Leyenda ""TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE"""
+catalog15_2000,2000,COMPROBANTE DE PERCEPCIÓN,Leyenda “COMPROBANTE DE PERCEPCIÓN”
+catalog15_2001,2001,BIENES TRANSFERIDOS EN LA AMAZONÍA REGIÓN SELVAPARA SER CONSUMIDOS EN LA MISMA,"Leyenda “BIENES TRANSFERIDOS EN LA AMAZONÍA REGIÓN SELVAPARA SER CONSUMIDOS EN LA MISMA"""
+catalog15_2002,2002,SERVICIOS PRESTADOS EN LA AMAZONÍA  REGIÓN SELVA PARA SER CONSUMIDOS EN LA MISMA,Leyenda “SERVICIOS PRESTADOS EN LA AMAZONÍA  REGIÓN SELVA PARA SER CONSUMIDOS EN LA MISMA”
+catalog15_2003,2003,CONTRATOS DE CONSTRUCCIÓN EJECUTADOS  EN LA AMAZONÍA REGIÓN SELVA,Leyenda “CONTRATOS DE CONSTRUCCIÓN EJECUTADOS  EN LA AMAZONÍA REGIÓN SELVA”
+catalog15_2004,2004,Agencia de Viaje - Paquete turístico”,Leyenda “Agencia de Viaje - Paquete turístico” 
+catalog15_2005,2005,Venta realizada por emisor itinerante,Leyenda “Venta realizada por emisor itinerante” 
+catalog15_2006,2006,Operación sujeta a detracción,Leyenda: Operación sujeta a detracción
+catalog15_2007,2007,Operación sujeta a IVAP,Leyenda: Operación sujeta a IVAP
+catalog15_2010,2010,Restitución Simplificado de Derechos Arancelarios,Restitución Simplificado de Derechos Arancelarios
+catalog15_3000,3000,Detracciones: CODIGO DE BB Y SS SUJETOS A DETRACCION,Detracciones: CODIGO DE BB Y SS SUJETOS A DETRACCION
+catalog15_3001,3001,Detracciones: NUMERO DE CTA EN EL BN,Detracciones: NUMERO DE CTA EN EL BN
+catalog15_3002,3002,Detracciones: Recursos Hidrobiológicos-Nombre y matrícula de la embarcación,Detracciones: Recursos Hidrobiológicos-Nombre y matrícula de la embarcación
+catalog15_3003,3003,Detracciones: Recursos Hidrobiológicos-Tipo y cantidad de especie vendida,Detracciones: Recursos Hidrobiológicos-Tipo y cantidad de especie vendida
+catalog15_3004,3004,Detracciones: Recursos Hidrobiológicos -Lugar de descarga,Detracciones: Recursos Hidrobiológicos -Lugar de descarga
+catalog15_3005,3005,Detracciones: Recursos Hidrobiológicos -Fecha de descarga,Detracciones: Recursos Hidrobiológicos -Fecha de descarga
+catalog15_3006,3006,Detracciones: Transporte Bienes vía terrestre – Numero Registro MTC,Detracciones: Transporte Bienes vía terrestre – Numero Registro MTC
+catalog15_3007,3007,Detracciones: Transporte Bienes vía terrestre – configuración vehicular,Detracciones: Transporte Bienes vía terrestre – configuración vehicular
+catalog15_3008,3008,Detracciones: Transporte Bienes vía terrestre – punto de origen,Detracciones: Transporte Bienes vía terrestre – punto de origen
+catalog15_3009,3009,Detracciones: Transporte Bienes vía terrestre – punto destino,Detracciones: Transporte Bienes vía terrestre – punto destino
+catalog15_3010,3010,Detracciones: Transporte Bienes vía terrestre – valor referencial preliminar,Detracciones: Transporte Bienes vía terrestre – valor referencial preliminar
+catalog15_4000,4000,Beneficio hospedajes: Código País de emisión del pasaporte,Beneficio hospedajes: Código País de emisión del pasaporte
+catalog15_4001,4001,Beneficio hospedajes: Código País de residencia del sujeto no domiciliado,Beneficio hospedajes: Código País de residencia del sujeto no domiciliado
+catalog15_4002,4002,Beneficio Hospedajes: Fecha de ingreso al país ,Beneficio Hospedajes: Fecha de ingreso al país 
+catalog15_4003,4003,Beneficio Hospedajes: Fecha de ingreso al establecimiento,Beneficio Hospedajes: Fecha de ingreso al establecimiento
+catalog15_4004,4004,Beneficio Hospedajes: Fecha de salida del establecimiento,Beneficio Hospedajes: Fecha de salida del establecimiento
+catalog15_4005,4005,Beneficio Hospedajes: Número de días de permanencia,Beneficio Hospedajes: Número de días de permanencia
+catalog15_4006,4006,Beneficio Hospedajes: Fecha de consumo ,Beneficio Hospedajes: Fecha de consumo 
+catalog15_4007,4007,Beneficio Hospedajes: Paquete turístico - Nombres y Apellidos del Huésped ,Beneficio Hospedajes: Paquete turístico - Nombres y Apellidos del Huésped 
+catalog15_4008,4008,Beneficio Hospedajes: Paquete turístico – Tipo documento identidad del huésped  ,Beneficio Hospedajes: Paquete turístico – Tipo documento identidad del huésped  
+catalog15_4009,4009,Beneficio Hospedajes: Paquete turístico – Numero de documento identidad de huésped ,Beneficio Hospedajes: Paquete turístico – Numero de documento identidad de huésped 
+catalog15_5000,5000,Proveedores Estado: Número de Expediente,Proveedores Estado: Número de Expediente
+catalog15_5001,5001,Proveedores Estado : Código de unidad ejecutora,Proveedores Estado : Código de unidad ejecutora
+catalog15_5002,5002,Proveedores Estado : N° de proceso de selección,Proveedores Estado : N° de proceso de selección
+catalog15_5003,5003,Proveedores Estado : N° de contrato,Proveedores Estado : N° de contrato
+catalog15_6000,6000,Comercialización de Oro :  Código Unico Concesión Minera,Comercialización de Oro :  Código Unico Concesión Minera
+catalog15_6001,6001,Comercialización de Oro :  N° declaración compromiso,Comercialización de Oro :  N° declaración compromiso
+catalog15_6002,6002,Comercialización de Oro :  N° Reg. Especial .Comerci. Oro,Comercialización de Oro :  N° Reg. Especial .Comerci. Oro
+catalog15_6003,6003,Comercialización de Oro :  N° Resolución que autoriza Planta de Beneficio,Comercialización de Oro :  N° Resolución que autoriza Planta de Beneficio
+catalog15_6004,6004,Comercialización de Oro : Ley Mineral (% concent. oro),Comercialización de Oro : Ley Mineral (% concent. oro)
+catalog15_6005,6005,Comercialización de Oro : Naturaleza del mineral,Comercialización de Oro : Naturaleza del mineral
+catalog15_6006,6006,Comercialización de Oro : Nombre del derecho minero,Comercialización de Oro : Nombre del derecho minero
+catalog15_7000,7000,Primera venta de mercancia identificable entre usuarios de la zona comercial,Primera venta de mercancia identificable entre usuarios de la zona comercial
+catalog15_7001,7001,Venta exonerada del IGV-ISC-IPM. Prohibida la venta fuera de la zona comercial de Tacna,Venta exonerada del IGV-ISC-IPM. Prohibida la venta fuera de la zona comercial de Tacna

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pe_legend,access_pe_legend,model_pe_legend,base.group_user,1,1,1,1
+access_pe_cpe_wizard,access_pe_cpe_wizard,model_pe_cpe_wizard,base.group_user,1,1,1,1
+access_pe_cpe_rc,access_pe_cpe_rc,model_pe_cpe_rc,base.group_user,1,0,0,0
+access_pe_cpe_rc_user,access_pe_cpe_rc_user,model_pe_cpe_rc,group_pe_cpe_user,1,1,1,0
+access_pe_cpe_rc_manager,access_pe_cpe_rc_manager,model_pe_cpe_rc,group_pe_cpe_manager,1,1,1,1
+access_pe_cpe_ra,access_pe_cpe_ra,model_pe_cpe_ra,base.group_user,1,0,0,0
+access_pe_cpe_ra_user,access_pe_cpe_ra_user,model_pe_cpe_ra,base.group_user,1,1,1,0
+access_pe_cpe_ra_manager,access_pe_cpe_ra_manager,model_pe_cpe_ra,base.group_user,1,1,1,1
+access_cpe_xml_bk_wizard,access_cpe_xml_bk_wizard,model_cpe_xml_bk_wizard,group_pe_cpe_user,1,1,1,1

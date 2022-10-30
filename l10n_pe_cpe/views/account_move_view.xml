@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_move_form">
+        <field name="name">account.move.inherit.l10n.pe.cpe</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='ref']" position="after">
+              <field name="pe_is_cpe" invisible="True"  />
+              <field name="pe_response" attrs="{'invisible':[('move_type','not in',['out_invoice','out_refund'])]}" />
+            </xpath>
+            <xpath expr="//label[@for='journal_id']" position="before">
+              <field name="pe_operation_type" required="True" attrs="{'invisible':[('move_type','not in',['out_invoice','out_refund'])]}" />
+            </xpath>
+
+            <xpath expr="//page[@name='other_info']" position="after">
+              <page string="Peruvian Customization" name="peruvian_customization" attrs="{'invisible':[('move_type','not in',['out_invoice','out_refund'])]}" >
+                <group>
+                  <group>
+                    <field name="pe_cpe_id" readonly="True" />
+                    <field name="pe_summary_id" attrs="{'invisible':[('pe_invoice_code','not in',('03','07','08'))]}" readonly="True" />
+                    <field name="pe_voided_id" readonly="True" attrs="{'invisible':[('pe_annul','=',False)]}"  />
+                    
+                  </group>
+                  <group>
+                    <field name="pe_return_code" />
+                  </group>
+                </group>
+                <div>
+                  <label for="pe_digest" string="Digest value:" />
+                  <field name="pe_digest"/>
+                </div>
+                <!--div>
+                  <label for="pe_signature" string="Signature value:" />
+                  <field name="pe_signature"/>
+                </div-->
+                <field name="pe_legend_ids" attrs="{'readonly':[('state', 'not in', ['draft'])]}" >
+                    <tree editable="bottom" string="Sunat Legend">
+                        <field name="code" required="True"/>
+                        <field name="name" invisible="True"/>
+                    </tree>
+                </field>
+              </page>
+           </xpath>
+        </field>
+    </record>
+
+</odoo>

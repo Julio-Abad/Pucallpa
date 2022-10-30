@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_cpe_xml_bk_wizard" model="ir.ui.view">
+            <field name="name">cpe.xml.bk.wizard.form</field>
+            <field name="model">cpe.xml.bk.wizard</field>
+            <field name="arch" type="xml">
+                <form string="CPE Backup">
+                    <group>
+                         <group>
+                            <field name="start_date" />
+                         </group>
+                         <group>
+                            <field name="end_date" />
+                         </group>
+                    </group>
+                    <footer>
+                        <button string='Download' name="download_bk" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+               </form>
+            </field>
+        </record>
+
+        <record id="action_view_cpe_xml_bk_wizard" model="ir.actions.act_window">
+            <field name="name">CPE Backup</field>
+            <field name="res_model">cpe.xml.bk.wizard</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_cpe_xml_bk_wizard"/>
+            <field name="target">new</field>
+            <!--field name="binding_model_id" ref="account.model_account_move" />
+            <field name="binding_view_types">list</field-->
+        </record>
+
+        <menuitem name="CPE Backup" id="cpe_xml_bk_wizard_menu" parent="pe_cpe_root" action="action_view_cpe_xml_bk_wizard" sequence="3" />
+    
+    </data>
+</odoo>

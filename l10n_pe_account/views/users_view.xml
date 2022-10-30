@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_cpe_users_form">
+        <field name="name">res.users.view.form.inherit.l10n.pe.account</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='messaging']" position="before">
+                <group>
+                    <group string="Peruvian Settings" name="peruvian_settings">
+                        <field name="pe_journal_ids" options="{'no_create': True}" widget="many2many_tags" />
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

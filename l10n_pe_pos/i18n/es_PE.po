@@ -1,0 +1,116 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pe_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e-20201218\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-15 17:31+0000\n"
+"PO-Revision-Date: 2021-03-15 16:39-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_PE\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "Condition"
+msgstr "Condición "
+
+#. module: l10n_pe_pos
+#: model:ir.model,name:l10n_pe_pos.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/js/models.js:0
+#, python-format
+msgid "GRAVADA"
+msgstr "OP. GRAVADAS"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/js/l10n_pe_pos.js:0
+#: code:addons/l10n_pe_pos/static/src/js/screens.js:0
+#, python-format
+msgid "It is required to Select a Journal"
+msgstr "Es necesario seleccionar un Diario"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "None"
+msgstr "Ninguno"
+
+#. module: l10n_pe_pos
+#: model:ir.model,name:l10n_pe_pos.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Pedidos de Punto de Venta"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "RUC/DNI:"
+msgstr ""
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "SON:"
+msgstr ""
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/xml/pos.xml:0
+#, python-format
+msgid "Street:"
+msgstr "Dirección:"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/js/l10n_pe_pos.js:0
+#: code:addons/l10n_pe_pos/static/src/js/screens.js:0
+#, python-format
+msgid "The document number is required"
+msgstr "El número de documento es obligatorio."
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/js/l10n_pe_pos.js:0
+#: code:addons/l10n_pe_pos/static/src/js/screens.js:0
+#, python-format
+msgid "The document type is required"
+msgstr "El tipo de documento es obligatorio"
+
+#. module: l10n_pe_pos
+#. openerp-web
+#: code:addons/l10n_pe_pos/static/src/js/l10n_pe_pos.js:0
+#: code:addons/l10n_pe_pos/static/src/js/screens.js:0
+#, python-format
+msgid "The type of document or document number is incorrect"
+msgstr "El tipo de documento o el número de documento es incorrecto"

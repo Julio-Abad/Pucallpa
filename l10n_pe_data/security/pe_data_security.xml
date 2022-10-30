@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record model="ir.module.category" id="module_category_pe_data">
+            <field name="name">Data</field>
+            <field name="description">Set up electronic payment vouchers</field>
+            <field name="sequence">50</field>
+        </record>
+
+        <record id="group_pe_data" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="module_category_pe_data"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <record id="group_pe_data_manager" model="res.groups">
+            <field name="name">Administrator</field>
+            <field name="category_id" ref="module_category_pe_data"/>
+            <field name="implied_ids" eval="[(4, ref('group_pe_data'))]"/>
+        </record>
+
+        <record id="base.user_admin" model="res.users">
+            <field name="groups_id" eval="[(4, ref('l10n_pe_data.group_pe_data'))]"/>
+        </record>
+
+        <record id="base.group_system" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('l10n_pe_data.group_pe_data_manager'))]"/>
+        </record>
+
+    </data>
+
+</odoo>

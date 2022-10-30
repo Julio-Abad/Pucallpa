@@ -1,0 +1,12 @@
+id,code,name,description
+catalog12_01,01,Factura – emitida para corregir error en el RUC,
+catalog12_02,02,Factura – emitida por anticipos,
+catalog12_03,03,Boleta de Venta – emitida por anticipos,
+catalog12_04,04,Ticket de Salida - ENAPU ,
+catalog12_05,05,Código SCOP,
+catalog12_06,06,Factura electrónica remitente,
+catalog12_07,07,Guia de remisión remitente,
+catalog12_08,08,Declaración de salida del depósito franco ,
+catalog12_09,09,Declaración simplificada de importación ,
+catalog12_10,10,Liquidación de compra - emitida por anticipos,
+catalog12_99,99,Otros,

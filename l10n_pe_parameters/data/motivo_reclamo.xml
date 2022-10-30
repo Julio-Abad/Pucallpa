@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- MOTIVO RECLAMO -->
+        <record id="motive_001" model="stock.picking.motive">
+            <field name="name">Consignacion</field>
+        </record>
+        <record id="motive_002" model="stock.picking.motive">
+            <field name="name">Devolucion</field>
+        </record>
+        <record id="motive_003" model="stock.picking.motive">
+            <field name="name">Traslado para Transformacion</field>
+        </record>
+        <record id="motive_004" model="stock.picking.motive">
+            <field name="name">Recojo de bienes transformados</field>
+        </record>
+        <record id="motive_005" model="stock.picking.motive">
+            <field name="name">Traslado por emisor itinerante de comprobantes de pago</field>
+        </record>
+        <record id="motive_006" model="stock.picking.motive">
+            <field name="name">Tralado zona primaria</field>
+        </record>
+        <record id="motive_007" model="stock.picking.motive">
+            <field name="name">Importacion</field>
+        </record>
+    
+    </data>
+</odoo>

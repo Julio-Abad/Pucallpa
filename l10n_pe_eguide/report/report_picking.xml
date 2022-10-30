@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="report_delivery_document" inherit_id="stock.report_delivery_document">
+		<xpath expr="//t[@t-set='address']" position="inside">
+			<t t-if="o.sudo().partner_id.parent_id.vat">
+				<div class="address row">
+					<div class="col-md-5 ml-auto">
+						RUC: <span t-field="o.sudo().partner_id.parent_id.pe_doc_number"/><br />
+					</div>
+				</div>
+			</t>
+			<t t-if="not o.sudo().partner_id.parent_id">
+				<div class="address row">
+					<div class="col-md-5 ml-auto">
+						RUC: <span t-field="o.sudo().partner_id.pe_doc_number"/>
+					</div>
+				</div>
+				</t>
+		</xpath>
+		<xpath expr="//t[@t-set='partner']" position="replace">
+			<t t-if="o.pe_transfer_code in ['02', '04']">
+				<t t-set="partner" t-value="o.picking_type_id.warehouse_id.partner_id or False"/>
+			</t>
+			<t t-if="o.pe_transfer_code not in ['02', '04']">
+				<t t-set="partner" t-value="o.partner_id or (o.move_lines and o.move_lines[0].partner_id) or False"/>
+			</t>
+		</xpath>
+		<xpath expr="//h2" position="replace">
+			<h2 style="font-size: 1.5em" class="text-center">
+				<t t-if="o.pe_is_eguide">
+					<span>Electronic Remission Guide Sender </span><span t-field="o.pe_guide_number" />
+				</t>
+				<t t-if="not o.pe_is_eguide">
+					<span t-field="o.name"/>
+				</t>
+            </h2>
+            <div class="row">
+            	<table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>
+                            	<strong>Departure address</strong>
+                            </th>
+                            <th>
+                                <strong>Reason for transfer</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                            	<t t-if="o.pe_transfer_code in ['02', '04']">
+                                	<span t-field="o.partner_id.street"/>
+                            	</t>
+                            	<t t-if="o.pe_transfer_code not in ['02', '04']">
+                                	<span t-field="o.picking_type_id.warehouse_id.partner_id.street"/>
+                            	</t>
+                            </td>
+                            <td>
+                               <span t-field="o.pe_transfer_code"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+	        </div>
+		</xpath>
+		
+		<xpath expr="//table[2]" position="after">
+			<p t-field="o.note"/>
+			<t t-if="o.pe_is_eguide">
+				<div class="row">
+					<div class="col-7">
+						<t t-if="o.pe_transport_mode=='01'">
+							<span>Transport Company</span><br />
+							<table class="table table-condensed">
+								<tr>
+									<td>
+										<span>Name:</span>
+									</td>
+									<td>
+										<span t-field="o.pe_carrier_id"/>
+									</td>
+									<td>
+										<span>RUC:</span>
+									</td>
+									<td>
+										<span t-field="o.pe_carrier_id.pe_doc_number"/>
+									</td>
+								</tr>
+							</table>
+							
+						</t>
+						<t t-if="o.pe_transport_mode=='02'">
+							<span>Private Transport</span><br />
+							<table class="table table-condensed">
+								<thead>
+									<tr>
+										<th>
+											Name
+										</th>
+										<th>
+											License Plate
+										</th>
+									</tr>
+								</thead>
+								<tr>
+									<td>
+										<t t-foreach="o.pe_carrier_ids" t-as="carrier_id">
+											<span t-field="carrier_id.pe_doc_number"/>
+											<span t-field="carrier_id.name"/>
+											<br />
+										</t>
+									</td>
+									<td>
+										<t t-foreach="o.pe_fleet_ids" t-as="fleet_id">
+										<span t-field="fleet_id.name"/>
+									</t>
+									</td>
+								</tr>
+							</table>
+						</t>
+		                <p t-if="o.pe_is_eguide" ><strong>Summary: </strong> <br />
+			                <span t-field="o.pe_digest"/>
+			            </p>
+		            </div>
+			        
+					<div class="col-5" t-if="o.pe_is_eguide and o.pe_guide_number!='/'" >
+						<img t-if="o.pe_qr_code" t-att-src="'data:image/png;base64,%s' % to_text(o.pe_qr_code)" 
+						class="img-responsive center-block" style="width: 40mm;  height: 40mm;" />
+					</div>
+		        </div>
+			</t>
+    	</xpath>
+	</template>
+
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+
+        <record model="res.groups" id="group_multi_branch">
+            <field name="name">Multi Branches</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Actualizar reporte existente agregando Reporte personalizado -->
+    <data>
+        <function model="ir.model.data" name="write">
+            <function model="ir.model.data" name="search">
+                <value eval="[('module', '=', 'account'), ('name', '=', 'email_template_edi_invoice')]" />
+            </function>
+            <value eval="{'noupdate': False}" />
+        </function>
+
+        <record id="account.email_template_edi_invoice" model="mail.template">
+            <field name="report_template" ref="cpe_move_reports" />
+        </record>
+
+        <function model="ir.model.data" name="write">
+            <function model="ir.model.data" name="search">
+                <value eval="[('module', '=', 'account'), ('name', '=', 'email_template_edi_invoice')]" />
+            </function>
+            <value eval="{'noupdate': True}" />
+        </function>
+
+    </data>
+</odoo>

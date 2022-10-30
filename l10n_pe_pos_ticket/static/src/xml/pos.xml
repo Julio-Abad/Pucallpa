@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="PosTicketPeruvianModel01">
+        <div class="pos-sale-ticket-model1">
+            <div class="pos-company-logo" style="text-align:center;">
+                <img t-if="widget.pos.company.logo"  t-attf-src="data:image/jpeg;base64,#{widget.pos.company.logo}" 
+                style="width: 70%; margin-left: auto;margin-right: auto;"/>
+            </div>
+            
+            <div class="pos-center-align">
+            	<b style="text-transform: uppercase;">
+	            	<span style="font-size: 15px;"><t t-esc="widget.pos.company.name"/></span><br />
+	            </b>
+	            <span style="font-size: 13px;">
+	            	<t t-esc="widget.pos.company.street || ''"/><br />
+	            	<t t-esc="widget.pos.company.district_id ?  widget.pos.company.district_id[1]: ''"/> -
+	            	<t t-esc="widget.pos.company.province_id ? widget.pos.company.province_id[1]: ''"/> -
+	            	<t t-esc="widget.pos.company.state_id ? widget.pos.company.state_id[1]: ''"/><br />
+	            	<t t-esc="widget.pos.company.vat ? 'RUC '+widget.pos.company.vat.substring(3,widget.pos.company.vat.length): ''"/>
+	            	<t t-if="widget.pos.company.phone">
+	            		<t t-esc="'Tel. '+ widget.pos.company.phone"/><br />
+	            	</t>
+	            	
+	            </span>
+                <t t-if="receipt.header">
+                    <t t-esc="receipt.header" />
+                    <br />
+                </t>
+                
+            </div>
+            <t t-if="order.get_number()">
+                <hr />
+                <div style='text-align:center'>
+                	<t t-if="order.get_cpe_type()">
+                		<b style="font-size: 14px;">
+    		                <t t-if="order.get_cpe_type()=='01'">FACTURA </t>
+    		                <t t-if="order.get_cpe_type()=='03'">BOLETA DE VENTA </t>ELECTRONICA 
+    		                <br />
+    		            </b>
+    	            </t>
+    	            <b style="font-size: 14px;"><t t-esc="order.get_number()" /></b>
+                </div>
+                <hr />
+            </t>
+            <div>
+            	FECHA DE EMISION: <t t-esc="order.pe_invoice_date || ''"/><br />
+                <t t-if="order.get('client')">
+                	CLIENTE: <t t-esc="order.get('client').name || '-'"/><br />
+                	NRO.DOC.: <t t-esc="order.get_doc_number() || '-'"/><br />
+                	DIRECCION: <t t-esc="order.get('client').street || ''"/><br />
+                </t>
+            	MONEDA: <t t-esc="widget.pos.company.currency_id ? widget.pos.company.currency_id[1]: ''"/><br />
+            </div>
+            <br />
+
+            <table class='receipt-orderlines'>
+                <colgroup>
+                    <col width='43%' />
+                    <col width='15%' />
+                    <col width='20%' />
+                    <col width='22%' />
+                </colgroup>
+                <thead>
+                	<tr style="border-bottom: 1px solid #000;">
+						<th>DESCRIPCION</th>
+						<th class="pos-right-align">CANT.</th>
+						<th class="pos-right-align">P.UNIT.</th>
+						<th class="pos-right-align">IMPORTE</th>
+				    </tr>
+                </thead>
+                <tbody >
+                	<t t-foreach="orderlines" t-as="orderline">
+		                <tr>
+		                    <td colspan="4">
+		                    	<t t-if="orderline.get_product().default_code">
+		                    		[<t t-esc="orderline.get_product().default_code || ''"/>] 
+		                    	</t>
+		                        <t t-esc="orderline.get_product().display_name"/>
+		                        <t t-if="orderline.note">
+                                    <t t-esc="orderline.note"/>
+                                </t>
+                                <t t-if="orderline.description">
+                                    <t t-esc="orderline.description"/>
+                                </t>
+                                <t t-if="orderline.pe_license_plate"><br />(<t t-esc="orderline.pe_license_plate"/>)</t>
+		                        <t t-if="orderline.get_discount() > 0">
+		                            <div class="pos-disc-font">
+		                                Con <t t-esc="orderline.get_discount()"/>% de descuento
+		                            </div>
+		                        </t>
+
+		                    </td>
+		                </tr>
+		                <tr>
+		                	<td>
+		                	</td>
+		                    <td class="pos-right-align">
+		                        <t t-esc="orderline.get_quantity_str()"/>
+		                    </td>
+		                    <td class="pos-right-align">
+		                        <t t-esc="widget.format_currency(orderline.get_unit_display_price())"/>
+		                    </td>
+		                    <td class="pos-right-align">
+		                        <t t-esc="widget.format_currency(orderline.get_display_price())"/>
+		                    </td>
+		                </tr>
+		            </t>
+	            </tbody>
+            </table>
+            <br />
+            <table class='receipt-total'>
+                <t t-foreach="order.pe_get_tax_details()" t-as="taxdetail">
+                    <tr>
+                        <td><t t-esc="taxdetail.name" /></td>
+                        <td class="pos-right-align">
+                            <t t-esc="widget.format_currency(taxdetail.amount)" />
+                        </td>
+                    </tr>
+                </t>
+                <tr>
+                    <t t-if="order.get_total_discount() > 0">
+                        <td>DESCUENTO:</td>
+                        <td class="pos-right-align">
+                            <t t-esc="widget.format_currency(order.get_total_discount())"/>
+                        </td>
+                    </t>
+                </tr>
+                <tr class="emph">
+                    <td>TOTAL IMPORTE:</td>
+                    <td class="pos-right-align">
+                        <t t-esc="widget.format_currency(order.get_total_with_tax())"/>
+                    </td>
+                </tr>
+                <td colspan="2" >
+                	SON <t t-esc="order.get_amount_text()" />
+                </td>
+            </table>
+            <br />
+            <table class='receipt-paymentlines'>
+                <t t-foreach="paymentlines" t-as="line">
+                  <tr>
+                      <td>
+                          <t t-esc="line.name"/>
+                      </td>
+                      <td class="pos-right-align">
+                          <t t-esc="widget.format_currency(line.get_amount())"/>
+                      </td>
+                  </tr>
+                </t>
+            </table>
+            <br />
+            <table class='receipt-change'>
+                <tr><td>CAMBIO:</td><td class="pos-right-align">
+                    <t t-esc="widget.format_currency(order.get_change())"/>
+                    </td></tr>
+            </table>
+            <br />
+            <div style="text-align:center">
+                <t t-if="order.get_cpe_type()">
+                    <br />
+                    <div class="qr-code" id="qr-code" style="display: flex; justify-content: center;"></div>
+                    <br />
+                    <b class="doc-sunat">Representación impresa de,
+                    <t t-if="order.get_cpe_type()=='01'">FACTURA </t>
+                    <t t-if="order.get_cpe_type()=='03'">BOLETA DE VENTA </t>ELECTRONICA consulte en <t t-esc="widget.pos.company.website || ''"/> </b>
+                </t>
+            </div>
+            <div class="receipt-user">
+                USUARIO: <t t-esc="widget.pos.get_cashier().name"/><br />
+            </div>
+            <br />
+            <t t-if="receipt.footer">
+                <br />
+                <div style='text-align:center'>
+                    <t t-esc="receipt.footer" />
+                </div>
+            </t>
+        </div>
+    </t>
+
+</templates>

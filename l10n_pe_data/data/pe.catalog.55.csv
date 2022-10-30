@@ -1,0 +1,109 @@
+id,code,name,description,active
+catalog55_3001,3001,Detracciones: Recursos Hidrobiológicos-Matrícula de la embarcación,,1
+catalog55_3002,3002,Detracciones: Recursos Hidrobiológicos-Nombre de la embarcación,,1
+catalog55_3003,3003,Detracciones: Recursos Hidrobiológicos-Tipo de especie vendida,,1
+catalog55_3004,3004,Detracciones: Recursos Hidrobiológicos-Lugar de descarga,,1
+catalog55_3005,3005,Detracciones: Recursos Hidrobiológicos-Fecha de descarga,,1
+catalog55_3006,3006,Detracciones: Recursos Hidrobiológicos-Cantidad de especie vendida,,1
+catalog55_3050,3050,Transportre Terreste - Número de asiento,,1
+catalog55_3051,3051,Transporte Terrestre - Información de manifiesto de pasajeros,,1
+catalog55_3052,3052,Transporte Terrestre - Número de documento de identidad del pasajero,,1
+catalog55_3053,3053,Transporte Terrestre - Tipo de documento de identidad del pasajero,,1
+catalog55_3054,3054,Transporte Terrestre - Nombres y apellidos del pasajero,,1
+catalog55_3055,3055,Transporte Terrestre - Ciudad o lugar de destino - Ubigeo,,1
+catalog55_3056,3056,Transporte Terrestre - Ciudad o lugar de destino - Dirección detallada,,1
+catalog55_3057,3057,Transporte Terrestre - Ciudad o lugar de origen - Ubigeo,,1
+catalog55_3058,3058,Transporte Terrestre - Ciudad o lugar de origen - Dirección detallada,,1
+catalog55_3059,3059,Transporte Terrestre - Fecha de inicio programado,,1
+catalog55_3060,3060,Transporte Terrestre - Hora de inicio programado,,1
+catalog55_4000,4000,Beneficio Hospedajes-Paquete turístico: Código de país de emisión del pasaporte,,1
+catalog55_4001,4001,Beneficio Hospedajes: Código de país de residencia del sujeto no domiciliado,,1
+catalog55_4002,4002,Beneficio Hospedajes: Fecha de ingreso al país,,1
+catalog55_4003,4003,Beneficio Hospedajes: Fecha de Ingreso al Establecimiento,,1
+catalog55_4004,4004,Beneficio Hospedajes: Fecha de Salida del Establecimiento,,1
+catalog55_4005,4005,Beneficio Hospedajes: Número de Días de Permanencia,,1
+catalog55_4006,4006,Beneficio Hospedajes: Fecha de Consumo ,,1
+catalog55_4007,4007,Beneficio Hospedajes-Paquete turístico: Nombres y apellidos del huesped ,,1
+catalog55_4008,4008,Beneficio Hospedajes-Paquete turístico: Tipo de documento de identidad del huesped ,,1
+catalog55_4009,4009,Beneficio Hospedajes-Paquete turístico: Número de documento de identidad del huesped ,,1
+catalog55_4030,4030,Carta Porte Aéreo:  Lugar de origen - Código de ubigeo,,1
+catalog55_4031,4031,Carta Porte Aéreo:  Lugar de origen - Dirección detallada,,1
+catalog55_4032,4032,Carta Porte Aéreo:  Lugar de destino - Código de ubigeo,,1
+catalog55_4033,4033,Carta Porte Aéreo:  Lugar de destino - Dirección detallada,,1
+catalog55_4040,4040,BVME transporte ferroviario: Pasajero - Apellidos y Nombres,,1
+catalog55_4041,4041,BVME transporte ferroviario: Pasajero - Tipo de documento de identidad,,1
+catalog55_4042,4042,BVME transporte ferroviario: Servicio transporte: Ciudad o lugar de origen - Código de ubigeo,,1
+catalog55_4043,4043,BVME transporte ferroviario: Servicio transporte: Ciudad o lugar de origen - Dirección detallada,,1
+catalog55_4044,4044,BVME transporte ferroviario: Servicio transporte: Ciudad o lugar de destino - Código de ubigeo,,1
+catalog55_4045,4045,BVME transporte ferroviario: Servicio transporte: Ciudad o lugar de destino - Dirección detallada,,1
+catalog55_4046,4046,BVME transporte ferroviario: Servicio transporte:Número de asiento,,1
+catalog55_4047,4047,BVME transporte ferroviario: Servicio transporte: Hora programada de inicio de viaje,,1
+catalog55_4048,4048,BVME transporte ferroviario: Servicio transporte: Fecha programada de inicio de viaje,,1
+catalog55_4049,4049,BVME transporte ferroviario: Pasajero - Número de documento de identidad,,1
+catalog55_4060,4060,Regalía Petrolera: Decreto Supremo de aprobación del contrato,,0
+catalog55_4061,4061,Regalía Petrolera: Area de contrato (Lote),,0
+catalog55_4062,4062,Regalía Petrolera: Periodo de pago - Fecha de inicio,,0
+catalog55_4063,4063,Regalía Petrolera: Periodo de pago - Fecha de fin,,0
+catalog55_4064,4064,Regalía Petrolera: Fecha de Pago,,0
+catalog55_5000,5000,Proveedores Estado: Número de Expediente,,1
+catalog55_5001,5001,Proveedores Estado: Código de Unidad Ejecutora,,1
+catalog55_5002,5002,Proveedores Estado: N° de Proceso de Selección,,1
+catalog55_5003,5003,Proveedores Estado: N° de Contrato,,1
+catalog55_5010,5010,Número de Placa,,1
+catalog55_5011,5011,Categoría,,1
+catalog55_5012,5012,Marca,,1
+catalog55_5013,5013,Modelo,,1
+catalog55_5014,5014,Color,,1
+catalog55_5015,5015,Motor,,1
+catalog55_5016,5016,Combustible,,1
+catalog55_5017,5017,Form. Rodante,,1
+catalog55_5018,5018,VIN,,1
+catalog55_5019,5019,Serie/Chasis,,1
+catalog55_5020,5020,Año fabricación,,1
+catalog55_5021,5021,Año modelo,,1
+catalog55_5022,5022,Versión,,1
+catalog55_5023,5023,Ejes,,1
+catalog55_5024,5024,Asientos,,1
+catalog55_5025,5025,Pasajeros,,1
+catalog55_5026,5026,Ruedas,,1
+catalog55_5027,5027,Carrocería,,1
+catalog55_5028,5028,Potencia,,1
+catalog55_5029,5029,Cilindros,,1
+catalog55_5030,5030,Cilindrada,,1
+catalog55_5031,5031,Peso Bruto,,1
+catalog55_5032,5032,Peso Neto,,1
+catalog55_5033,5033,Carga Útil,,1
+catalog55_5034,5034,Longitud,,1
+catalog55_5035,5035,Altura,,1
+catalog55_5036,5036,Ancho,,1
+catalog55_5060,5060,Gas Natural - Lectura Anterior,,1
+catalog55_5061,5061,Gas Natural - Lectura Actual,,1
+catalog55_5062,5062,Gas Natural - Volumen consumido a Condiciones de lectura,,1
+catalog55_5063,5063,Gas Natural - Factor de corrección del volumen,,1
+catalog55_5064,5064,Gas Natural - Volumen a condiciones Estándares,,1
+catalog55_5065,5065,Gas Natural - Volumen facturado,,1
+catalog55_5066,5066,Gas Natural - Poder Calorífico Superior Promedio del Gas,,1
+catalog55_6000,6000,Comercialización de Oro:  Código Unico Concesión Minera,,1
+catalog55_6001,6001,Comercialización de Oro:  N° declaración compromiso,,1
+catalog55_6002,6002,Comercialización de Oro:  N° Reg. Especial .Comerci. Oro,,1
+catalog55_6003,6003,Comercialización de Oro:  N° Resolución que autoriza Planta de Beneficio,,1
+catalog55_6004,6004,Comercialización de Oro: Ley Mineral (% concent. oro),,1
+catalog55_7000,7000,Gastos Art. 37 Renta:  Número de Placa,,1
+catalog55_7001,7001,Créditos Hipotecarios: Tipo de préstamo,,1
+catalog55_7002,7002,Créditos Hipotecarios: Indicador de Primera Vivienda,,1
+catalog55_7003,7003,Créditos Hipotecarios: Partida Registral,,1
+catalog55_7004,7004,Créditos Hipotecarios: Número de contrato,,1
+catalog55_7005,7005,Créditos Hipotecarios: Fecha de otorgamiento del crédito,,1
+catalog55_7006,7006,Créditos Hipotecarios: Dirección del predio - Código de ubigeo,,1
+catalog55_7007,7007,Créditos Hipotecarios: Dirección del predio - Dirección completa,,1
+catalog55_7008,7008,Créditos Hipotecarios: Dirección del predio - Urbanización,,1
+catalog55_7009,7009,Créditos Hipotecarios: Dirección del predio - Provincia,,1
+catalog55_7010,7010,Créditos Hipotecarios: Dirección del predio - Distrito,,1
+catalog55_7011,7011,Créditos Hipotecarios: Dirección del predio - Departamento,,1
+catalog55_7012,7012,Créditos Hipotecarios: Monto del principal,,1
+catalog55_7013,7013,Empresas del sistema de seguro: Número de póliza,,1
+catalog55_7014,7014,Empresas del sistema de seguro: Fecha de inicio/término de vigencia de cobertura,,1
+catalog55_7015,7015,Empresas del sistema de seguro: Tipo de seguro,,1
+catalog55_7016,7016,Empresas del sistema de seguro: Suma asegurada / alcance de cobertura o monto,,1
+catalog55_7020,7020,Subpartida nacional,,1
+catalog55_7021,7021,Numero de declaracion aduanera (DAM),,1

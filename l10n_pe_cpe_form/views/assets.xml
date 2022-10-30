@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="assets_cpe_frontend" name="CPE Form Assets Frontend" inherit_id="website.assets_frontend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/l10n_pe_cpe_form/static/src/js/website_form.js"/>
+                <!--script type="text/javascript" src="/web/static/lib/daterangepicker/daterangepicker.js"/-->
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

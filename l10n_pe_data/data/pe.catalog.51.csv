@@ -1,0 +1,35 @@
+id,code,name,description,active
+catalog51_0101,0101,Venta interna,"Factura, Boletas",1
+catalog51_0102,0102,Venta Interna – Anticipos,"Factura, Boletas",0
+catalog51_0103,0103,Venta interna – Itinerante,"Factura, Boletas",0
+catalog51_0110,0110,Venta Interna - Sustenta Traslado de Mercadería – Remitente,"Factura, Boletas",0
+catalog51_0111,0111,Venta Interna - Sustenta Traslado de Mercadería – Transportista,"Factura, Boletas",1
+catalog51_0112,0112,Venta Interna - Sustenta Gastos Deducibles Persona Natural,Factura ,0
+catalog51_0113,0113,Venta Interna-NRUS,Boleta,1
+catalog51_0120,0120,Venta Interna - Sujeta al IVAP,"Factura, Boletas",0
+catalog51_0121,0121,Venta Interna - Sujeta al FISE,Todos,0
+catalog51_0122,0122,Venta Interna - Sujeta a otros impuestos ,Todos,0
+catalog51_0130,0130,Venta Interna - Realizadas al Estado,"Factura, Boletas",0
+catalog51_0200,0200,Exportación de Bienes,"Factura, Boletas",1
+catalog51_0201,0201,Exportación de Servicios – Prestación servicios realizados íntegramente en el país,"Factura, Boletas",1
+catalog51_0202,0202,Exportación de Servicios – Prestación de servicios de hospedaje No Domiciliado,"Factura, Boletas",1
+catalog51_0203,0203,Exportación de Servicios – Transporte de navieras,"Factura, Boletas",1
+catalog51_0204,0204,Exportación de Servicios – Servicios  a naves y aeronaves de bandera extranjera,"Factura, Boletas",1
+catalog51_0205,0205,Exportación de Servicios  - Servicios que conformen un Paquete Turístico,"Factura, Boletas",1
+catalog51_0206,0206,Exportación de Servicios – Servicios complementarios al transporte de carga,"Factura, Boletas",1
+catalog51_0207,0207,Exportación de Servicios – Suministro de energía eléctrica a favor de sujetos domiciliados en ZED,"Factura, Boletas",1
+catalog51_0208,0208,Exportación de Servicios – Prestación servicios realizados parcialmente en el extranjero,"Factura, Boletas",1
+catalog51_0301,0301,Operaciones con Carta de porte aéreo (emitidas en el ámbito nacional),"Factura, Boletas",1
+catalog51_0302,0302,Operaciones de Transporte ferroviario de pasajeros,"Factura, Boletas",1
+catalog51_0303,0303,Operaciones de Pago de regalía petrolera,"Factura, Boletas",0
+catalog51_0401,0401,Ventas no domiciliados que no califican como exportación,"Factura, Boletas",1
+catalog51_1001,1001,Operación Sujeta a Detracción,"Factura, Boletas",1
+catalog51_1002,1002,Operación Sujeta a Detracción- Recursos Hidrobiológicos,"Factura, Boletas",1
+catalog51_1003,1003,Operación Sujeta a Detracción- Servicios de Transporte Pasajeros,"Factura, Boletas",1
+catalog51_1004,1004,Operación Sujeta a Detracción- Servicios de Transporte Carga,"Factura, Boletas",1
+catalog51_2001,2001,Operación Sujeta a Percepción,"Factura, Boletas",0
+catalog51_2100,2100,Créditos a empresas,"Factura, Boletas",1
+catalog51_2101,2101,Créditos de consumo revolvente,"Factura, Boletas",1
+catalog51_2102,2102,Créditos de consumo no revolvente,"Factura, Boletas",1
+catalog51_2103,2103,Otras operaciones no gravadas - Empresas del sist. financiero y coop. de ahorro y crédito no autorizadas a captar recursos del público,"Factura, Boletas",1
+catalog51_2104,2104,Otras operaciones no gravadas - Empresas del sistema de seguros,"Factura, Boletas",1

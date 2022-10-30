@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_order_form_pe_cpe">
+        <field name="name">sale.order.view.form.pe.cpe</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+			<xpath expr="//page[@name='other_information']" position="inside">
+				<group string="Cuotas">
+					<group>
+						<field name="pe_qty_fees" required="True"/>
+					</group>
+					<group>
+						<button name="generate_pe_fees" nolabel="1" type="object" class="btn-primary" string="Generate Quotas"/>
+					</group>
+					<field name="pe_payment_lines" nolabel="1" />
+				</group>
+
+			</xpath>
+            
+        </field>
+    </record>
+    
+</odoo>

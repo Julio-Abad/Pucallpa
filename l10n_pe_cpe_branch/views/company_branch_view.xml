@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+	<record model="ir.ui.view" id="view_company_branch_form">
+        <field name="name">res.company.branch.form.inherit.l10n.pe.branch</field>
+        <field name="model">res.company.branch</field>
+        <field name="inherit_id" ref="base_branch.view_company_branch_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//sheet/notebook/page" position="inside">
+            <group string="Peruvian Customization">
+              <group>
+                <field name="pe_branch_code" />
+                <field name="pe_ws_url" />
+                <field name="pe_ws_status_url" />
+              </group>
+              <group>
+                <field name="pe_ws_user" />
+                <field name="pe_ws_password" />
+              </group>
+            </group>
+          </xpath>
+
+        </field>
+    </record>
+
+  </data>
+</odoo>

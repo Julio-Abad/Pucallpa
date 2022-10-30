@@ -1,0 +1,40 @@
+id,code,name,description,rate,active
+catalog54_001,001,Azúcar,,10,1
+catalog54_002,002,Arroz,,10,0
+catalog54_003,003,Alcohol etílico,,10,1
+catalog54_004,004,Recursos hidrobiológicos,,4,1
+catalog54_005,005,Maíz amarillo duro,,4,1
+catalog54_006,006,Algodón,,10,1
+catalog54_007,007,Caña de azúcar,,10,1
+catalog54_008,008,Madera,,10,1
+catalog54_009,009,Arena y piedra.,,15,1
+catalog54_010,010,"Residuos, subproductos, desechos, recortes y desperdicios",,10,1
+catalog54_011,011,"Bienes gravados con el IGV, o renuncia a la exoneración",,4,1
+catalog54_012,012,Intermediación laboral y tercerización,,12,1
+catalog54_013,013,Animales vivos,,10,1
+catalog54_014,014,Carnes y despojos comestibles,,10,1
+catalog54_015,015,"Abonos, cueros y pieles de origen animal",,10,1
+catalog54_016,016,Aceite de pescado,,10,1
+catalog54_017,017,"Harina, polvo y “pellets” de pescado, crustáceos, moluscos y demás invertebrados acuáticos",,10,1
+catalog54_018,018,Embarcaciones pesqueras,,10,1
+catalog54_019,019,Arrendamiento de bienes muebles,,10,1
+catalog54_020,020,Mantenimiento y reparación de bienes muebles,,12,1
+catalog54_021,021,Movimiento de carga,,10,1
+catalog54_022,022,Otros servicios empresariales,,12,1
+catalog54_023,023,Leche,,1.5,1
+catalog54_024,024,Comisión mercantil,,1.5,1
+catalog54_025,025,Fabricación de bienes por encargo,,10,1
+catalog54_026,026,Servicio de transporte de personas,,10,1
+catalog54_027,027,Servicio de transporte de carga,,4,0
+catalog54_028,028,Transporte de pasajeros,,0,0
+catalog54_029,029,Algodón en rama sin desmontar,,4,1
+catalog54_030,030,Contratos de construcción,,10,1
+catalog54_031,031,Oro gravado con el IGV,,10,1
+catalog54_032,032,Páprika y otros frutos de los géneros capsicum o pimienta,,4,1
+catalog54_033,033,Espárragos,,4,1
+catalog54_034,034,Minerales metálicos no auríferos,,10,1
+catalog54_035,035,Bienes exonerados del IGV,,4,1
+catalog54_036,036,Oro y demás minerales metálicos exonerados del IGV,,10,1
+catalog54_037,037,Demás servicios gravados con el IGV,,12,1
+catalog54_039,039,Minerales no metálicos,,10,1
+catalog54_040,040,Bien inmueble gravado con IGV,,4,1

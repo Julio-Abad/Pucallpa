@@ -1,0 +1,34 @@
+<odoo>
+  <data>
+
+    <record id="view_pe_payment_date_tree" model="ir.ui.view">
+      <field name="name">pe.payment.date.tree</field>
+      <field name="model">pe.payment.date</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="date"/>
+          <field name="amount"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_pe_payment_date_from" model="ir.ui.view">
+      <field name="name">pe.payment.date.form</field>
+      <field name="model">pe.payment.date</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet string="Payment Fees">
+            <group>
+              <group>
+                <field name="date"/>
+              </group>
+              <group>
+                <field name="amount"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>

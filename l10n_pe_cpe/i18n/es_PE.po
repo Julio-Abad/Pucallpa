@@ -1,0 +1,1088 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pe_cpe
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e-20211201\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-29 18:49+0000\n"
+"PO-Revision-Date: 2022-06-29 14:49-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_PE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid ", consulte en"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_pe_cpe_wizard
+msgid ""
+"<b>DESARROLLO:</b><br/>\n"
+"                            https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService?wsdl<br/>\n"
+"                            https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService?wsdl<br/>"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_pe_cpe_wizard
+msgid ""
+"<b>PRODUCTION:</b><br/>\n"
+"                            https://e-factura.sunat.gob.pe/ol-ti-itcpfegem/billService?wsdl<br/>\n"
+"                            https://e-factura.sunat.gob.pe/ol-it-wsconscpegem/billConsultService?wsdl<br/>"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<br/>Placa"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.portal_cpe_page
+msgid "<i class=\"fa fa-download\"/> Download Response"
+msgstr "<i class=\"fa fa-download\"/> Respuesta Sunat"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.portal_cpe_page
+msgid "<i class=\"fa fa-download\"/> Download XML"
+msgstr "<i class=\"fa fa-download\"/> Descargar XML"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.res_config_settings_view_form_cpe
+msgid ""
+"<span class=\"o_form_label\">\n"
+"                                    CPE\n"
+"                                </span>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.res_config_settings_view_form_cpe
+msgid "<span class=\"o_form_label\">Default Maximum days</span>"
+msgstr "<span class=\"o_form_label\">Días Máximos Predeterminados</span>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<span>Cash</span>"
+msgstr "<span>Contado</span>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid ""
+"<span>Credit</span><br/>\n"
+"\t            \t\t\t<strong>Number of Quotas:</strong>"
+msgstr ""
+"<span>Crédito</span><br/>\n"
+"\t            \t\t\t<strong>Número de Cuotas:</strong>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<strong>Amount in letters: </strong> <br/>"
+msgstr "<strong>Monto en Letras: </strong> <br/>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<strong>Amount</strong>"
+msgstr "<strong>Monto</strong>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<strong>Date</strong>"
+msgstr "<strong>Fecha</strong>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<strong>Method of payment:</strong>"
+msgstr "<strong>Forma de Pago:</strong>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<strong>Summary: </strong> <br/>"
+msgstr "<strong>Resumen: </strong> <br/>"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>Tota a Pagarl</strong>"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_account_invoice_send
+msgid "Account Invoice Send"
+msgstr "Enviar Factura"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_account_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Additional notes..."
+msgstr "Notas Adicionales"
+
+#. module: l10n_pe_cpe
+#: model:res.groups,name:l10n_pe_cpe.group_pe_cpe_manager
+msgid "Administrator"
+msgstr "Administrador"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Annulled"
+msgstr "Anulado"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_ticket_api
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_ticket_api
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_ticket_api
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_ticket_api
+msgid "Api Ticket"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__attachment_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__attachment_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__attachment_id
+msgid "Attachment"
+msgstr "Archivo adjunto"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__is_auto
+msgid "Autogenerated"
+msgstr "Autogrenerado"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Autorizado mediante"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_branch_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_branch_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_branch_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_branch_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_branch_code
+msgid "Branch Code"
+msgstr "Código de sucursal"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.product_template_form_pe_cpe
+msgid "Brand"
+msgstr "Marca"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_cpe_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_cpe_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_cpe_id
+#: model:ir.module.category,name:l10n_pe_cpe.module_category_pe_cpe
+#: model:ir.ui.menu,name:l10n_pe_cpe.pe_cpe_document_menu
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_account_edi_document
+msgid "CPE"
+msgstr "Documentos Electronicos"
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.act_window,name:l10n_pe_cpe.action_view_cpe_xml_bk_wizard
+#: model:ir.ui.menu,name:l10n_pe_cpe.cpe_xml_bk_wizard_menu
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_cpe_xml_bk_wizard
+msgid "CPE Backup"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/res_config_settings.py:0
+#: model:ir.model,name:l10n_pe_cpe.model_pe_cpe_wizard
+#, python-format
+msgid "CPE Wizard"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_account_edi_document
+msgid "CPE details"
+msgstr "Detalles CPE"
+
+#. module: l10n_pe_cpe
+#: model:ir.ui.menu,name:l10n_pe_cpe.pe_cpe_root
+msgid "CPEs"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_cpe_xml_bk_wizard
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_pe_cpe_wizard
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Cancel"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_ra__state__cancelled
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_rc__state__cancelled
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Cancelled Invoice"
+msgstr "Factura Cancelada"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_res_company
+msgid "Companies"
+msgstr "Compañias"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__company_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__company_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__company_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__company_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_condition_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_condition_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_condition_code
+msgid "Condition Code"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.res_config_settings_view_form_cpe
+msgid "Configure Wizard"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_pe_cpe_wizard
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.server,name:l10n_pe_cpe.ra_auto_check_ticket_ir_actions_server
+#: model:ir.cron,cron_name:l10n_pe_cpe.ra_auto_check_ticket
+#: model:ir.cron,name:l10n_pe_cpe.ra_auto_check_ticket
+msgid "Consultar Estado de Tickets Baja"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.server,name:l10n_pe_cpe.rc_auto_check_ticket_ir_actions_server
+#: model:ir.cron,cron_name:l10n_pe_cpe.rc_auto_check_ticket
+#: model:ir.cron,name:l10n_pe_cpe.rc_auto_check_ticket
+msgid "Consultar Estado de Tickets Resumen"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__create_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__create_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__create_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__create_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Credit Note"
+msgstr "Nota de Crédito"
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.act_window,name:l10n_pe_cpe.action_pe_cpe_rc
+#: model:ir.model,name:l10n_pe_cpe.model_pe_cpe_rc model:ir.ui.menu,name:l10n_pe_cpe.pe_cpe_rc_menu
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Daily Summary"
+msgstr "Resumen Diario"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Daily Summary details"
+msgstr "Detalles de Resumen Diario"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.res_config_settings_view_form_cpe
+msgid "Default Maximum days of CPE"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Detraction"
+msgstr "Detracción"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_detraction_account_number
+msgid "Detraction Account Number"
+msgstr "Número de Cuenta de Detracción"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_wizard__pe_ws_type__development
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__res_company__pe_ws_type__development
+msgid "Development"
+msgstr "Desarrollo"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_digest
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_digest
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_digest
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_digest
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_digest
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_digest
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_digest
+msgid "Digest"
+msgstr "Resumen"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_move_form
+msgid "Digest value:"
+msgstr "Valor de Resumen:"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_format__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_invoice_send__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_journal__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_mail_compose_message__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_send__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_product_template__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.actions.act_window,help:l10n_pe_cpe.action_pe_cpe_document
+#: model_terms:ir.actions.act_window,help:l10n_pe_cpe.action_pe_cpe_ra
+#: model_terms:ir.actions.act_window,help:l10n_pe_cpe.action_pe_cpe_rc
+msgid "Display and manage the CPE."
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.act_window,name:l10n_pe_cpe.action_pe_cpe_document
+msgid "Document"
+msgstr "Documento"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_account_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Document Status"
+msgstr "Estado de Documento"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Done"
+msgstr "Realizado"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.portal_cpe_page
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_cpe_xml_bk_wizard
+msgid "Download"
+msgstr "Descargar"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Draft Invoice"
+msgstr "Factura Borrador"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_account_edi_format
+msgid "EDI format"
+msgstr "Formato EDI"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__edi_format_id
+msgid "Edi Format"
+msgstr "Formato EDI"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_account_edi_document
+msgid "Electronic Document for an account.move"
+msgstr "Documento Electrónico para un account.move"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.res_config_settings_view_form_cpe
+msgid "Electronic Payment Voucher"
+msgstr "Comprobante de Pago Electrónico"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Electronics"
+msgstr "Electronica"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Asistente de redacción de correo electrónico"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_date_end
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__end_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_date_end
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_date_end
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_date_end
+msgid "End Date"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.server,name:l10n_pe_cpe.ra_auto_send_ir_actions_server
+#: model:ir.cron,cron_name:l10n_pe_cpe.ra_auto_send model:ir.cron,name:l10n_pe_cpe.ra_auto_send
+msgid "Envio Automatico Comunicacion de Baja"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.server,name:l10n_pe_cpe.invoice_auto_send_ir_actions_server
+#: model:ir.cron,cron_name:l10n_pe_cpe.invoice_auto_send model:ir.cron,name:l10n_pe_cpe.invoice_auto_send
+msgid "Envio Automatico Facturas/Notas"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.server,name:l10n_pe_cpe.sync_auto_send_ir_actions_server
+#: model:ir.cron,cron_name:l10n_pe_cpe.sync_auto_send model:ir.cron,name:l10n_pe_cpe.sync_auto_send
+msgid "Envio Automatico de Facturas/Boletas/Notas"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.server,name:l10n_pe_cpe.rc_auto_send_ir_actions_server
+#: model:ir.cron,cron_name:l10n_pe_cpe.rc_auto_send model:ir.cron,name:l10n_pe_cpe.rc_auto_send
+msgid "Envio Automatico de Resumen"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__error
+msgid "Error"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_is_exonerated
+msgid "Exonerated"
+msgstr "Exonerado"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__file_name
+msgid "File Name"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_ra__state__generate
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_rc__state__generate
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Generate"
+msgstr "Generar"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_format__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_invoice_send__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_journal__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move_line__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_mail_compose_message__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_send__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_product_template__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_invoice_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_invoice_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_invoice_date
+msgid "Invoice Date Time"
+msgstr "Fecha y hora de Factura"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_invoice_code
+msgid "Invoice Type Code"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_is_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_is_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_is_cpe
+msgid "Is CPE"
+msgstr "Es CPE"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_is_sync
+msgid "Is Synchronous"
+msgstr "Es síncrono"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_import_journal_creation__pe_is_synchronous
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_journal__pe_is_synchronous
+msgid "Is synchronous"
+msgstr "Es síncrono"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,help:l10n_pe_cpe.field_account_bank_statement_line__pe_invoice_sent
+#: model:ir.model.fields,help:l10n_pe_cpe.field_account_move__pe_invoice_sent
+#: model:ir.model.fields,help:l10n_pe_cpe.field_account_payment__pe_invoice_sent
+msgid "It indicates that the invoice has been sent."
+msgstr "Indica que la factura ha sido enviada."
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento Contable"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_format____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_invoice_send____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_journal____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_mail_compose_message____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_send____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_product_template____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company____last_update
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__write_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__write_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__write_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__write_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_legend_ids
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_legend_ids
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_legend_ids
+msgid "Legend"
+msgstr "Leyenda"
+
+#. module: l10n_pe_cpe
+#: model:ir.actions.act_window,name:l10n_pe_cpe.action_pe_cpe_ra
+#: model:ir.model,name:l10n_pe_cpe.model_pe_cpe_ra model:ir.ui.menu,name:l10n_pe_cpe.pe_cpe_ra_menu
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+msgid "Low communication"
+msgstr "Comunicación de Baja"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+msgid "Low communication details"
+msgstr "Detalles de la Comunicación de Baja"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_max_amount
+msgid "Maximum Amount"
+msgstr "Monto Maximo"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,help:l10n_pe_cpe.field_res_company__pe_max_amount
+msgid "Maximum billing limit for anonymous customers"
+msgstr "Límite máximo de facturación para clientes anónimos."
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_max_days
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_config_settings__pe_max_days
+msgid "Maximum days"
+msgstr "Días máximos"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,help:l10n_pe_cpe.field_res_config_settings__pe_max_days
+msgid "Maximum days to send electronic documents."
+msgstr "Días máximos para enviar documentos electrónicos."
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__move_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__move_id
+msgid "Move"
+msgstr "Asiento"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__name
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_legend__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_note
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_note
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_note
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_note
+msgid "Note"
+msgstr "Nota"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_wizard__pe_ws_server__nubefact_pse
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__res_company__pe_ws_server__nubefact_pse
+msgid "NubeFact PSE"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_ws_password
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_ws_password
+msgid "Password/Token"
+msgstr "Contraseña/Token"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_invoice_sent
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_invoice_sent
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_invoice_sent
+msgid "Pe Invoice Sent"
+msgstr "Factura Enviada"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_company_form
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_move_form
+msgid "Peruvian Customization"
+msgstr "Personalizacion Peruana"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_private_key
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_private_key
+msgid "Private key"
+msgstr "Clave Privada"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de Producto"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_wizard__pe_ws_type__production
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__res_company__pe_ws_type__production
+msgid "Production"
+msgstr "Producción"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_public_key
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_public_key
+msgid "Public key"
+msgstr "Clave Publica"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_qr_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_qr_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_qr_code
+msgid "QR Code"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Representacion impresa de:"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_product_product__pe_require_plate
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_product_template__pe_require_plate
+msgid "Require Plate"
+msgstr "Requiere Placa"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_resolution_number
+msgid "Resolution Number"
+msgstr "Numero de Resolucion"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_resolution_type
+msgid "Resolution Type"
+msgstr "Tipo de Resolucion"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_response
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_response
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_response
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_response
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_response
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_response
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_response
+msgid "Response"
+msgstr "Respuesta"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_response_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_response_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_response_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_response_code
+msgid "Response Code"
+msgstr "Código de Respuesta"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Retention"
+msgstr "Retención"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_return_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_return_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_return_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_return_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_return_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_return_code
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_return_code
+msgid "Return Code"
+msgstr "Codigo de Retorno"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_wizard__pe_ws_server__sunat
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__res_company__pe_ws_server__sunat
+msgid "SUNAT"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_send_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_send_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_send_date
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_send_date
+msgid "Send Date"
+msgstr "Fecha de Envío"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_send_date_pe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_send_date_pe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_send_date_pe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_send_date_pe
+msgid "Send Date UTC-5"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_pe_cpe_send
+msgid "Send Document"
+msgstr "Enviar Documento"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_document.py:0
+#, python-format
+msgid "Sending the electronic document succeeded.<br/>%s"
+msgstr "El envío del documento electrónico fue exitoso.<br/>%s"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/pe_cpe.py:0
+#, python-format
+msgid "Sending the voided electronic document succeeded.<br/>%s"
+msgstr "Envío exitoso del documento electrónico anulado.<br/>%s"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_ra__state__sent
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_rc__state__sent
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_form_account_edi_document
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Sent"
+msgstr "Enviar"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/pe_cpe.py:0
+#, python-format
+msgid "Sequence %s"
+msgstr "Secuencia %s"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_ws_server
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_ws_server
+msgid "Server"
+msgstr "Servidor"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_ws_type
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_ws_type
+msgid "Server Type"
+msgstr "Tipo de Servido"
+
+#. module: l10n_pe_cpe
+#: model:ir.module.category,description:l10n_pe_cpe.module_category_pe_cpe
+msgid "Set up electronic payment vouchers"
+msgstr "Configurar comprobantes de pago electrónico"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__start_date
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__state
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_summary_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_summary_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_summary_id
+msgid "Summary Document"
+msgstr "Resumen de Documentos"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__summary_ids
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "Summary Invoices"
+msgstr "Resumen de Boletas"
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_pe_cpe_mixin
+msgid "Sunat CPE"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_pe_legend model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_move_form
+msgid "Sunat Legend"
+msgstr "Leyenda SUNAT"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/wizard/cpe_xml_bk_wizard.py:0
+#, python-format
+msgid "The copy must be in the same month"
+msgstr "La copia debe ser en el mismo mes."
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,help:l10n_pe_cpe.field_account_edi_document__attachment_id
+#: model:ir.model.fields,help:l10n_pe_cpe.field_pe_cpe_ra__attachment_id
+#: model:ir.model.fields,help:l10n_pe_cpe.field_pe_cpe_rc__attachment_id
+msgid "The file generated by edi_format_id when the invoice is posted (and this document is processed)."
+msgstr ""
+"El archivo que genera edi_format_id cuando se publica la factura (y una vez que se procesa el documento)."
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The password of server is required"
+msgstr "Se requiere la contraseña del servidor"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The private key is required"
+msgstr "Se requiere la clave privada"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The public key is required"
+msgstr "Se requiere la clave pública"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The server is required"
+msgstr "El servidor es requerido"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,help:l10n_pe_cpe.field_account_edi_document__error
+msgid "The text of the last error that happened during Electronic Invoice operation."
+msgstr "El texto del último error ocurrido durante la operación de Factura Electrónica."
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The type of server is required"
+msgstr "El tipo de servidor es requerido"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The url of server is required"
+msgstr "Se requiere la url del servidor"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The url status of server is required"
+msgstr "Se requiere el estado de la URL del servidor"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_edi_format.py:0
+#, python-format
+msgid "The user of server is required"
+msgstr "Se requiere el usuario del servidor."
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,help:l10n_pe_cpe.field_product_product__pe_require_plate
+#: model:ir.model.fields,help:l10n_pe_cpe.field_product_template__pe_require_plate
+msgid "This Product Requires Vehicle License Plate"
+msgstr "Este producto requiere matrícula del vehículo"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_ticket
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_ticket
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_ticket
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_ticket
+msgid "Ticket"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_ra__state__to_cancel
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_rc__state__to_cancel
+msgid "To Cancel"
+msgstr "A Cancelar"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_ra__state__to_check
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_rc__state__to_check
+msgid "To Check"
+msgstr "A Revisar"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_ra__state__to_send
+#: model:ir.model.fields.selection,name:l10n_pe_cpe.selection__pe_cpe_rc__state__to_send
+msgid "To Send"
+msgstr "A Enviar"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_rc_from
+msgid "To Sent"
+msgstr "A Enviar"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_operation_type
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_operation_type
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_operation_type
+msgid "Type of operation"
+msgstr "Tipo de Operación"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_ws_user
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_ws_user
+#: model:res.groups,name:l10n_pe_cpe.group_pe_cpe_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Vendor Bill"
+msgstr "Factura del vendedor"
+
+#. module: l10n_pe_cpe
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.report_invoice_document
+msgid "Vendor Credit Note"
+msgstr "Nota de Credio del Vendedor"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_voided_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_voided_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_voided_id
+msgid "Voided Document"
+msgstr "Documento anulado"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__voided_ids
+#: model_terms:ir.ui.view,arch_db:l10n_pe_cpe.view_pe_cpe_ra_from
+msgid "Voided Invoices"
+msgstr "Facturas anuladas"
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_ws_status_url
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_ws_status_url
+msgid "Web Service Status URL"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_wizard__pe_ws_url
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_res_company__pe_ws_url
+msgid "Web Service URL"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model,name:l10n_pe_cpe.model_cpe_xml_bk_wizard
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_cpe_xml_bk_wizard__file_data
+msgid "XML Backup"
+msgstr ""
+
+#. module: l10n_pe_cpe
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_attachment_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_bank_statement_line__pe_response_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_edi_document__pe_response_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_attachment_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_move__pe_response_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_attachment_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_account_payment__pe_response_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_mixin__pe_response_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_ra__pe_response_id
+#: model:ir.model.fields,field_description:l10n_pe_cpe.field_pe_cpe_rc__pe_response_id
+msgid "XML Response"
+msgstr "XML Respuesta"
+
+#. module: l10n_pe_cpe
+#: code:addons/l10n_pe_cpe/models/account_move.py:0
+#, python-format
+msgid "You can not reset the draft a document sent to the sunat"
+msgstr "No puede restablecer el borrador de un documento enviado al sunat"

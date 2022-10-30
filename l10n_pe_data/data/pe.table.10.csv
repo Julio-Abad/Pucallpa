@@ -1,0 +1,62 @@
+id,code,name,description
+tabla10_00,00,Otros,Otros
+tabla10_01,01,Factura,Factura
+tabla10_02,02,Recibo por Honorarios,Recibo por Honorarios
+tabla10_03,03,Boleta de Venta,Boleta de Venta
+tabla10_04,04,Liquidación de compra,Liquidación de compra
+tabla10_05,05,"Boletos de Transporte Aéreo que emiten las Compañías de Aviación Comercial por el servicio de transporte aéreo regular de pasajeros, emitido de manera manual, mecanizada o por medios electrónicos (BME)","Boletos de Transporte Aéreo que emiten las Compañías de Aviación Comercial por el servicio de transporte aéreo regular de pasajeros, emitido de manera manual, mecanizada o por medios electrónicos (BME)"
+tabla10_06,06,Carta de porte aéreo por el servicio de transporte de carga aérea,Carta de porte aéreo por el servicio de transporte de carga aérea
+tabla10_07,07,Nota de crédito,Nota de crédito
+tabla10_08,08,Nota de débito,Nota de débito
+tabla10_09,09,Guía de remisión - Remitente,Guía de remisión - Remitente
+tabla10_10,10,Recibo por Arrendamiento,Recibo por Arrendamiento
+tabla10_11,11,"Póliza emitida por las Bolsas de Valores, Bolsas de Productos o Agentes de Intermediación por operaciones realizadas en las Bolsas de Valores o Productos o fuera de las mismas, autorizadas por SMV","Póliza emitida por las Bolsas de Valores, Bolsas de Productos o Agentes de Intermediación por operaciones realizadas en las Bolsas de Valores o Productos o fuera de las mismas, autorizadas por SMV"
+tabla10_12,12,Ticket o cinta emitido por máquina registradora,Ticket o cinta emitido por máquina registradora
+tabla10_13,13,"Documentos emitidos por las empresas del sistema financiero y de seguros, y por las cooperativas de ahorro y crédito no autorizadas a captar recursos del público, que se encuentren bajo el control de la Superintendencia de Banca, Seguros y AFP.","Documentos emitidos por las empresas del sistema financiero y de seguros, y por las cooperativas de ahorro y crédito no autorizadas a captar recursos del público, que se encuentren bajo el control de la Superintendencia de Banca, Seguros y AFP."
+tabla10_14,14,"Recibo por servicios públicos de suministro de energía eléctrica, agua, teléfono, telex y telegráficos y otros servicios complementarios que se incluyan en el recibo de servicio público","Recibo por servicios públicos de suministro de energía eléctrica, agua, teléfono, telex y telegráficos y otros servicios complementarios que se incluyan en el recibo de servicio público"
+tabla10_15,15,Boletos emitidos por el servicio de transporte terrestre regular urbano de pasajeros y el ferroviario público de pasajeros prestado en vía férrea local.,Boletos emitidos por el servicio de transporte terrestre regular urbano de pasajeros y el ferroviario público de pasajeros prestado en vía férrea local.
+tabla10_16,16,"Boletos de viaje emitidos por las empresas de transporte nacional de pasajeros, siempre que cuenten con la autorización de la autoridad competente, en las rutas autorizadas. Vía terrestre o ferroviario público no emitido por medios electrónicos (BVME)","Boletos de viaje emitidos por las empresas de transporte nacional de pasajeros, siempre que cuenten con la autorización de la autoridad competente, en las rutas autorizadas. Vía terrestre o ferroviario público no emitido por medios electrónicos (BVME)"
+tabla10_17,17,Documento emitido por la Iglesia Católica por el arrendamiento de bienes inmuebles,Documento emitido por la Iglesia Católica por el arrendamiento de bienes inmuebles
+tabla10_18,18,"Documento emitido por las Administradoras Privadas de Fondo de Pensiones que se encuentran bajo la supervisión de la Superintendencia de Banca, Seguros y AFP","Documento emitido por las Administradoras Privadas de Fondo de Pensiones que se encuentran bajo la supervisión de la Superintendencia de Banca, Seguros y AFP"
+tabla10_19,19,Boleto o entrada por atracciones y espectáculos públicos,Boleto o entrada por atracciones y espectáculos públicos
+tabla10_20,20,Comprobante de Retención,Comprobante de Retención
+tabla10_21,21,Conocimiento de embarque por el servicio de transporte de carga marítima,Conocimiento de embarque por el servicio de transporte de carga marítima
+tabla10_22,22,Comprobante por Operaciones No Habituales,Comprobante por Operaciones No Habituales
+tabla10_23,23,"Pólizas de Adjudicación emitidas con ocasión del remate o adjudicación de bienes por venta forzada, por los martilleros o las entidades que rematen o subasten bienes por cuenta de terceros","Pólizas de Adjudicación emitidas con ocasión del remate o adjudicación de bienes por venta forzada, por los martilleros o las entidades que rematen o subasten bienes por cuenta de terceros"
+tabla10_24,24,Certificado de pago de regalías emitidas por PERUPETRO S.A,Certificado de pago de regalías emitidas por PERUPETRO S.A
+tabla10_25,25,"Documento de Atribución (Ley del Impuesto General a las Ventas e Impuesto Selectivo al Consumo, Art. 19º, último párrafo, R.S. N° 022-98-SUNAT).","Documento de Atribución (Ley del Impuesto General a las Ventas e Impuesto Selectivo al Consumo, Art. 19º, último párrafo, R.S. N° 022-98-SUNAT)."
+tabla10_26,26,"Recibo por el Pago de la Tarifa por Uso de Agua Superficial con fines agrarios y por el pago de la Cuota para la ejecución de una determinada obra o actividad acordada por la Asamblea General de la Comisión de Regantes o Resolución expedida por el Jefe de la Unidad de Aguas y de Riego (Decreto Supremo N° 003-90-AG, Arts. 28 y 48)","Recibo por el Pago de la Tarifa por Uso de Agua Superficial con fines agrarios y por el pago de la Cuota para la ejecución de una determinada obra o actividad acordada por la Asamblea General de la Comisión de Regantes o Resolución expedida por el Jefe de la Unidad de Aguas y de Riego (Decreto Supremo N° 003-90-AG, Arts. 28 y 48)"
+tabla10_27,27,Seguro Complementario de Trabajo de Riesgo,Seguro Complementario de Trabajo de Riesgo
+tabla10_28,28,"Documentos emitidos por los servicios aeroportuarios prestados a favor de los pasajeros, mediante mecanismo de etiquetas autoadhesivas.  ","Documentos emitidos por los servicios aeroportuarios prestados a favor de los pasajeros, mediante mecanismo de etiquetas autoadhesivas.  "
+tabla10_29,29,"Documentos emitidos por la COFOPRI en calidad de oferta de venta de terrenos, los correspondientes a las subastas públicas y a la retribución de los servicios que presta","Documentos emitidos por la COFOPRI en calidad de oferta de venta de terrenos, los correspondientes a las subastas públicas y a la retribución de los servicios que presta"
+tabla10_30,30,"Documentos emitidos por las empresas que desempeñan el rol adquirente en los sistemas de pago mediante tarjetas de crédito y débito, emitidas por bancos e instituciones financieras o crediticias, domiciliados o no en el país.","Documentos emitidos por las empresas que desempeñan el rol adquirente en los sistemas de pago mediante tarjetas de crédito y débito, emitidas por bancos e instituciones financieras o crediticias, domiciliados o no en el país."
+tabla10_31,31,Guía de Remisión - Transportista,Guía de Remisión - Transportista
+tabla10_32,32,Documentos emitidos por las empresas recaudadoras de la denominada Garantía de Red Principal a la que hace referencia el numeral 7.6 del artículo 7° de la Ley N° 27133 – Ley de Promoción del Desarrollo de la Industria del Gas Natural,Documentos emitidos por las empresas recaudadoras de la denominada Garantía de Red Principal a la que hace referencia el numeral 7.6 del artículo 7° de la Ley N° 27133 – Ley de Promoción del Desarrollo de la Industria del Gas Natural
+tabla10_33,33,Manifiesto de Pasajeros,Manifiesto de Pasajeros
+tabla10_34,34,Documento del Operador,Documento del Operador
+tabla10_35,35,Documento del Partícipe,Documento del Partícipe
+tabla10_36,36,Recibo de Distribución de Gas Natural,Recibo de Distribución de Gas Natural
+tabla10_37,37,"Documentos que emitan los concesionarios del servicio de revisiones técnicas vehiculares, por la prestación de dicho servicio","Documentos que emitan los concesionarios del servicio de revisiones técnicas vehiculares, por la prestación de dicho servicio"
+tabla10_40,40,Comprobante de Percepción,Comprobante de Percepción
+tabla10_41,41,Comprobante de Percepción - Venta interna,Comprobante de Percepción - Venta interna
+tabla10_42,42,Documentos emitidos por las empresas que desempeñan el rol adquiriente en los sistemas de pago mediante tarjetas de crédito emitidas por ellas mismas,Documentos emitidos por las empresas que desempeñan el rol adquiriente en los sistemas de pago mediante tarjetas de crédito emitidas por ellas mismas
+tabla10_43,43,Boletos emitidos por las Compañías de Aviación Comercial que prestan servicios de transporte aéreo no regular de pasajeros y transporte aéreo especial de pasajeros.,Boletos emitidos por las Compañías de Aviación Comercial que prestan servicios de transporte aéreo no regular de pasajeros y transporte aéreo especial de pasajeros.
+tabla10_44,44,"Billetes de lotería, rifas y apuestas. ","Billetes de lotería, rifas y apuestas. "
+tabla10_45,45,"Documentos emitidos por centros educativos y culturales, universidades, asociaciones y fundaciones, en lo referente a actividades no gravadas con tributos administrados por la SUNAT.","Documentos emitidos por centros educativos y culturales, universidades, asociaciones y fundaciones, en lo referente a actividades no gravadas con tributos administrados por la SUNAT."
+tabla10_46,46,Formulario de Declaración - pago o Boleta de pago de tributos Internos,Formulario de Declaración - pago o Boleta de pago de tributos Internos
+tabla10_48,48,Comprobante de Operaciones - Ley N° 29972,Comprobante de Operaciones - Ley N° 29972
+tabla10_49,49,Constancia de Depósito - IVAP (Ley 28211),Constancia de Depósito - IVAP (Ley 28211)
+tabla10_50,50,Declaración Única de Aduanas - Importación definitiva                 ,Declaración Única de Aduanas - Importación definitiva                 
+tabla10_51,51,Póliza o DUI Fraccionada,Póliza o DUI Fraccionada
+tabla10_52,52,Despacho Simplificado - Importación Simplificada                        ,Despacho Simplificado - Importación Simplificada                        
+tabla10_53,53,Declaración de Mensajería o Courier                                         ,Declaración de Mensajería o Courier                                         
+tabla10_54,54,Liquidación de Cobranza                                                     ,Liquidación de Cobranza                                                     
+tabla10_55,55,BVME para transporte ferroviario de pasajeros,BVME para transporte ferroviario de pasajeros
+tabla10_56,56,Comprobante de pago SEAE,Comprobante de pago SEAE
+tabla10_87,87,Nota de Crédito Especial,Nota de Crédito Especial
+tabla10_88,88,Nota de Débito Especial,Nota de Débito Especial
+tabla10_89,89,Nota de Ajuste de Operaciones - Ley N° 29972,Nota de Ajuste de Operaciones - Ley N° 29972
+tabla10_91,91,Comprobante de No Domiciliado                                                 ,Comprobante de No Domiciliado                                                 
+tabla10_96,96,Exceso de crédito fiscal por retiro de bienes                           ,Exceso de crédito fiscal por retiro de bienes                           
+tabla10_97,97,Nota de Crédito - No Domiciliado,Nota de Crédito - No Domiciliado
+tabla10_98,98,Nota de Débito - No Domiciliado,Nota de Débito - No Domiciliado
